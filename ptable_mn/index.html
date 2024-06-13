@@ -1,0 +1,2079 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Үелэх систем</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <main>
+      <section class="group-period">
+        <ul class="group__list">
+          <li class="group__item flex-row-wrap group-1"><span>1</span></li>
+          <li class="group__item flex-row-wrap group-2"><span>2</span></li>
+          <li class="group__item flex-row-wrap group-3"><span>3</span></li>
+          <li class="group__item flex-row-wrap group-4"><span>4</span></li>
+          <li class="group__item flex-row-wrap group-5"><span>5</span></li>
+          <li class="group__item flex-row-wrap group-6"><span>6</span></li>
+          <li class="group__item flex-row-wrap group-7"><span>7</span></li>
+          <li class="group__item flex-row-wrap group-8"><span>8</span></li>
+          <li class="group__item flex-row-wrap group-9"><span>9</span></li>
+          <li class="group__item flex-row-wrap group-10"><span>10</span></li>
+          <li class="group__item flex-row-wrap group-11"><span>11</span></li>
+          <li class="group__item flex-row-wrap group-12"><span>12</span></li>
+          <li class="group__item flex-row-wrap group-13"><span>13</span></li>
+          <li class="group__item flex-row-wrap group-14"><span>14</span></li>
+          <li class="group__item flex-row-wrap group-15">
+            <span>15</span><span>Пниктогенууд</span>
+          </li>
+          <li class="group__item flex-row-wrap group-16">
+            <span>16</span><span>Калкогенууп</span>
+          </li>
+          <li class="group__item flex-row-wrap group-17">
+            <span>17</span><span></span>
+          </li>
+          <li class="group__item flex-row-wrap group-18"><span>18</span></li>
+        </ul>
+        <ul class="period__list">
+          <li class="period__item flex-row-wrap period-1"><span>1</span></li>
+          <li class="period__item flex-row-wrap period-2"><span>2</span></li>
+          <li class="period__item flex-row-wrap period-3"><span>3</span></li>
+          <li class="period__item flex-row-wrap period-4"><span>4</span></li>
+          <li class="period__item flex-row-wrap period-5"><span>5</span></li>
+          <li class="period__item flex-row-wrap period-6"><span>6</span></li>
+          <li class="period__item flex-row-wrap period-7"><span>7</span></li>
+        </ul>
+      </section>
+      <section class="dynamic-periodic-table">
+        <div class="key flex-row-wrap">
+          <abbr class="key__abbr">Тэмдэг</abbr>
+          <span class="key__name">Нэр</span>
+          <span class="key__atomic-number">Дэс дугаар</span>
+          <span class="key__atomic-mass">Атом масс</span>
+        </div>
+        <section class="legend flex-row-nowrap">
+          <article class="legend__element-type flex-row-wrap">
+            <div class="legend__element-type__metals flex-row-nowrap">
+              <div
+                class="legend__element-type__metals__alkali-metal legend-box flex-column-wrap"
+                data-element-type="alkali-metal"
+              >
+                <span>Шүлт метал</span>
+              </div>
+              <div
+                class="legend__element-type__metals__alkali-earth-metal legend-box flex-column-wrap"
+                data-element-type="alkali-earth-metal"
+              >
+                <span>Газрын шүлтийн метал</span>
+              </div>
+              <div
+                class="legend__element-type__metals__lanthanoid-actinoid flex-row-wrap"
+              >
+                <div
+                  class="lanthanoid flex-row-wrap legend-box"
+                  data-element-type="Lanthanoid"
+                >
+                  <span>Лантанойдууд</span>
+                </div>
+                <div
+                  class="actinoid flex-row-wrap legend-box"
+                  data-element-type="Actinoid"
+                >
+                  <span>Актинойдууд</span>
+                </div>
+              </div>
+              <div
+                class="legend__element-type__metals__transition-metal legend-box flex-column-wrap"
+                data-element-type="transition-metal"
+              >
+                <span>Шилжилтийн метал</span>
+              </div>
+              <div
+                class="legend__element-type__metals__post-transition-metal legend-box flex-column-wrap"
+                data-element-type="post-transition-metal"
+              >
+                <span>Шилжилтийн дараах метал</span>
+              </div>
+            </div>
+            <div
+              class="legend__element-type__metalloid legend-box"
+              data-element-type="metalloid"
+            >
+              <span>Металлойдууд</span>
+            </div>
+            <div class="legend__element-type__nonmetals flex-row-wrap">
+              <div
+                class="legend__element-type__nonmetals__other-nonmetal legend-box"
+                data-element-type="other-nonmetal"
+              >
+                <span
+                  >Бусад <br />
+                  метал/бишүүд</span
+                >
+              </div>
+              <div
+                class="legend__element-type__nonmetals__noble-gas legend-box"
+                data-element-type="noble-gas"
+              >
+                <span>Инерт хий</span>
+              </div>
+            </div>
+            <div
+              class="legend__element-type__unknown legend-box flex-row-wrap"
+              data-element-type="unknown"
+            >
+              <span>Тодорхой -гүй</span>
+            </div>
+          </article>
+          <article class="legend__element-state flex-row-wrap">
+            <div
+              class="legend__element-state__gas legend-box flex-row-wrap"
+              data-element-state="gas"
+            >
+              <span>Хий</span>
+            </div>
+            <div
+              class="legend__element-state__liquid legend-box flex-row-wrap"
+              data-element-state="liquid"
+            >
+              <span>Шингэн</span>
+            </div>
+            <div
+              class="legend__element-state__solid legend-box flex-row-wrap"
+              data-element-state="solid"
+            >
+              <span>Хатуу</span>
+            </div>
+            <div
+              class="legend__element-state__unknown legend-box flex-row-wrap"
+              data-element-state="unknown"
+            >
+              <span>Тодор -хойгүй</span>
+            </div>
+          </article>
+        </section>
+        <section class="temperature flex-row-nowrap">
+          <div class="temperature__inputs flex-row-nowrap">
+            <input
+              class="temperature__inputs__slider"
+              name="temperature__inputs__slider"
+              type="range"
+              min="0"
+              max="7000"
+              value="273"
+            />
+            <p class="temperature__inputs__result flex-row-wrap">273 K</p>
+          </div>
+          <div class="temperature__unit-conversion flex-row-wrap">
+            <p class="celsius">0ºC</p>
+            <p class="farenheit">31.4ºF</p>
+          </div>
+          <button class="reset__temperature flex-row-wrap">
+            <span>Стандарт орчин руу буцаах</span>
+          </button>
+        </section>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="other-nonmetal"
+          data-element-state="gas"
+          data-element-melting-point="13.99"
+          data-element-boiling-point="20.271"
+          data-element-period="1"
+          data-element-group="1"
+          data-element-name="Устөрөгч"
+        >
+          <abbr class="element__abbr">H</abbr>
+          <span class="element__name">Устөрөгч</span>
+          <span class="element__atomic-number">1</span>
+          <span class="element__atomic-mass">1.008</span>
+          <p class="tooltip right-tooltip">Устөрөгч</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="alkali-metal"
+          data-element-state="solid"
+          data-element-melting-point="453.65"
+          data-element-boiling-point="1603"
+          data-element-period="2"
+          data-element-group="1"
+          data-element-name="Лити"
+        >
+          <abbr class="element__abbr">Li</abbr>
+          <span class="element__name">Лити</span>
+          <span class="element__atomic-number">3</span>
+          <span class="element__atomic-mass">6.940</span>
+          <p class="tooltip top-tooltip">Лити</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="alkali-metal"
+          data-element-state="solid"
+          data-element-melting-point="370.944"
+          data-element-boiling-point="1156.090"
+          data-element-period="3"
+          data-element-group="1"
+          data-element-name="Sodium"
+        >
+          <abbr class="element__abbr">Na</abbr>
+          <span class="element__name">Натри</span>
+          <span class="element__atomic-number">11</span>
+          <span class="element__atomic-mass">22.989</span>
+          <p class="tooltip top-tooltip">Натри</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="alkali-metal"
+          data-element-state="solid"
+          data-element-melting-point="336.7"
+          data-element-boiling-point="1032"
+          data-element-period="4"
+          data-element-group="1"
+          data-element-name="Potassium"
+        >
+          <abbr class="element__abbr">K</abbr>
+          <span class="element__name">Кали</span>
+          <span class="element__atomic-number">19</span>
+          <span class="element__atomic-mass">39.098</span>
+          <p class="tooltip top-tooltip">Кали</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="alkali-metal"
+          data-element-state="solid"
+          data-element-melting-point="312.45"
+          data-element-boiling-point="961"
+          data-element-period="5"
+          data-element-group="1"
+          data-element-name="Рубиди"
+        >
+          <abbr class="element__abbr">Rb</abbr>
+          <span class="element__name">Рубиди</span>
+          <span class="element__atomic-number">37</span>
+          <span class="element__atomic-mass">85.468</span>
+          <p class="tooltip top-tooltip">Рубиди</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="alkali-metal"
+          data-element-state="solid"
+          data-element-melting-point="301.7"
+          data-element-boiling-point="944"
+          data-element-period="6"
+          data-element-group="1"
+          data-element-name="Цези"
+        >
+          <abbr class="element__abbr">Cs</abbr>
+          <span class="element__name">Цези</span>
+          <span class="element__atomic-number">55</span>
+          <span class="element__atomic-mass">132.905</span>
+          <p class="tooltip top-tooltip">Цези</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="alkali-metal"
+          data-element-state="solid"
+          data-element-melting-point="300"
+          data-element-boiling-point="950"
+          data-element-period="7"
+          data-element-group="1"
+          data-element-name="Франци"
+        >
+          <abbr class="element__abbr">Fr</abbr>
+          <span class="element__name">Франци</span>
+          <span class="element__atomic-number">87</span>
+          <span class="element__atomic-mass">(223.000)</span>
+          <p class="tooltip bottom-tooltip">Франци</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="alkali-earth-metal"
+          data-element-state="solid"
+          data-element-melting-point="1560"
+          data-element-boiling-point="2742"
+          data-element-period="2"
+          data-element-group="2"
+          data-element-name="Берилли"
+        >
+          <abbr class="element__abbr">Be</abbr>
+          <span class="element__name">Берилли</span>
+          <span class="element__atomic-number">4</span>
+          <span class="element__atomic-mass">9.012</span>
+          <p class="tooltip right-tooltip">Берилли</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="alkali-earth-metal"
+          data-element-state="solid"
+          data-element-melting-point="923"
+          data-element-boiling-point="1363"
+          data-element-period="3"
+          data-element-group="2"
+          data-element-name="Магни"
+        >
+          <abbr class="element__abbr">Mg</abbr>
+          <span class="element__name">Магни</span>
+          <span class="element__atomic-number">12</span>
+          <span class="element__atomic-mass">24.305</span>
+          <p class="tooltip right-tooltip">Магни</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="alkali-earth-metal"
+          data-element-state="solid"
+          data-element-melting-point="1115"
+          data-element-boiling-point="1757"
+          data-element-period="4"
+          data-element-group="2"
+          data-element-name="Кальци"
+        >
+          <abbr class="element__abbr">Ca</abbr>
+          <span class="element__name">Кальци</span>
+          <span class="element__atomic-number">20</span>
+          <span class="element__atomic-mass">40.078</span>
+          <p class="tooltip top-tooltip">Кальци</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="alkali-earth-metal"
+          data-element-state="solid"
+          data-element-melting-point="1050"
+          data-element-boiling-point="1650"
+          data-element-period="5"
+          data-element-group="2"
+          data-element-name="Стронци"
+        >
+          <abbr class="element__abbr">Sr</abbr>
+          <span class="element__name">Стронци</span>
+          <span class="element__atomic-number">38</span>
+          <span class="element__atomic-mass">87.620</span>
+          <p class="tooltip top-tooltip">Стронци</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="alkali-earth-metal"
+          data-element-state="solid"
+          data-element-melting-point="1000"
+          data-element-boiling-point="2118"
+          data-element-period="6"
+          data-element-group="2"
+          data-element-name="Бари"
+        >
+          <abbr class="element__abbr">Ba</abbr>
+          <span class="element__name">Бари</span>
+          <span class="element__atomic-number">56</span>
+          <span class="element__atomic-mass">137.327</span>
+          <p class="tooltip top-tooltip">Бари</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="alkali-earth-metal"
+          data-element-state="solid"
+          data-element-melting-point="973"
+          data-element-boiling-point="2010"
+          data-element-period="7"
+          data-element-group="2"
+          data-element-name="Ради"
+        >
+          <abbr class="element__abbr">Ra</abbr>
+          <span class="element__name">Ради</span>
+          <span class="element__atomic-number">88</span>
+          <span class="element__atomic-mass">(226.000)</span>
+          <p class="tooltip bottom-tooltip">Ради</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="1814"
+          data-element-boiling-point="3109"
+          data-element-period="4"
+          data-element-group="3"
+          data-element-name="Сканди"
+        >
+          <abbr class="element__abbr">Sc</abbr>
+          <span class="element__name">Сканди</span>
+          <span class="element__atomic-number">21</span>
+          <span class="element__atomic-mass">44.956</span>
+          <p class="tooltip top-tooltip">Сканди</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="1799"
+          data-element-boiling-point="3203"
+          data-element-period="5"
+          data-element-group="3"
+          data-element-name="Иттри"
+        >
+          <abbr class="element__abbr">Y</abbr>
+          <span class="element__name">Иттри</span>
+          <span class="element__atomic-number">39</span>
+          <span class="element__atomic-mass">88.906</span>
+          <p class="tooltip top-tooltip">Иттри</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-name="Lanthanoids"
+          data-element-melting-point="0"
+          data-element-boiling-point="7001"
+          data-element-name="Lanthanoids"
+        >
+          <span class="element__name">57-71</span>
+          <span class="element__name">Лантаной-дууд</span>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-name="Актинойдууд"
+          data-element-melting-point="0"
+          data-element-boiling-point="7001"
+        >
+          <span class="element__name">89-103</span>
+          <span class="element__name">Актинойдууд</span>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="1941"
+          data-element-boiling-point="3560"
+          data-element-period="4"
+          data-element-group="4"
+          data-element-name="Титан"
+        >
+          <abbr class="element__abbr">Ti</abbr>
+          <span class="element__name">Титан</span>
+          <span class="element__atomic-number">22</span>
+          <span class="element__atomic-mass">47.867</span>
+          <p class="tooltip top-tooltip">Титан</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="2128"
+          data-element-boiling-point="4650"
+          data-element-period="5"
+          data-element-group="4"
+          data-element-name="Зиркони"
+        >
+          <abbr class="element__abbr">Zr</abbr>
+          <span class="element__name">Зиркони</span>
+          <span class="element__atomic-number">40</span>
+          <span class="element__atomic-mass">91.224</span>
+          <p class="tooltip top-tooltip">Зиркони</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="2506"
+          data-element-boiling-point="4876"
+          data-element-period="6"
+          data-element-group="4"
+          data-element-name="Гафни"
+        >
+          <abbr class="element__abbr">Hf</abbr>
+          <span class="element__name">Гафни</span>
+          <span class="element__atomic-number">72</span>
+          <span class="element__atomic-mass">178.490</span>
+          <p class="tooltip top-tooltip">Гафни</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="unknown"
+          data-element-melting-point="unknown"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-group="4"
+          data-element-name="Резерфорди"
+        >
+          <abbr class="element__abbr">Rf</abbr>
+          <span class="element__name">Резерфор-ди</span>
+          <span class="element__atomic-number">104</span>
+          <span class="element__atomic-mass">(267.000)</span>
+          <p class="tooltip bottom-tooltip">Резерфорди</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="2183"
+          data-element-boiling-point="3680"
+          data-element-period="4"
+          data-element-group="5"
+          data-element-name="Ванади"
+        >
+          <abbr class="element__abbr">V</abbr>
+          <span class="element__name">Ванади</span>
+          <span class="element__atomic-number">23</span>
+          <span class="element__atomic-mass">50.942</span>
+          <p class="tooltip top-tooltip">Ванади</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="2750"
+          data-element-boiling-point="5017"
+          data-element-period="5"
+          data-element-group="5"
+          data-element-name="Ниоби"
+        >
+          <abbr class="element__abbr">Nb</abbr>
+          <span class="element__name">Ниоби</span>
+          <span class="element__atomic-number">41</span>
+          <span class="element__atomic-mass">92.906</span>
+          <p class="tooltip top-tooltip">Ниоби</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="3290"
+          data-element-boiling-point="5731"
+          data-element-period="6"
+          data-element-group="5"
+          data-element-name="Тантал"
+        >
+          <abbr class="element__abbr">Ta</abbr>
+          <span class="element__name">Тантал</span>
+          <span class="element__atomic-number">73</span>
+          <span class="element__atomic-mass">180.947</span>
+          <p class="tooltip top-tooltip">Тантал</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="unknown"
+          data-element-melting-point="unknown"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-group="5"
+          data-element-name="Дубни"
+        >
+          <abbr class="element__abbr">Db</abbr>
+          <span class="element__name">Дубни</span>
+          <span class="element__atomic-number">105</span>
+          <span class="element__atomic-mass">(268.000)</span>
+          <p class="tooltip bottom-tooltip">Дубни</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="2180"
+          data-element-boiling-point="2944"
+          data-element-period="4"
+          data-element-group="6"
+          data-element-name="Хром"
+        >
+          <abbr class="element__abbr">Cr</abbr>
+          <span class="element__name">Хром</span>
+          <span class="element__atomic-number">24</span>
+          <span class="element__atomic-mass">51.996</span>
+          <p class="tooltip top-tooltip">Хром</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="2896"
+          data-element-boiling-point="4912"
+          data-element-period="5"
+          data-element-group="6"
+          data-element-name="Молибден"
+        >
+          <abbr class="element__abbr">Mo</abbr>
+          <span class="element__name">Молибден</span>
+          <span class="element__atomic-number">42</span>
+          <span class="element__atomic-mass">95.950</span>
+          <p class="tooltip top-tooltip">Молибден</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="3695"
+          data-element-boiling-point="6203"
+          data-element-period="6"
+          data-element-group="6"
+          data-element-name="Вольфрам"
+        >
+          <abbr class="element__abbr">W</abbr>
+          <span class="element__name">Вольфрам</span>
+          <span class="element__atomic-number">74</span>
+          <span class="element__atomic-mass">183.840</span>
+          <p class="tooltip top-tooltip">Вольфрам</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="unknown"
+          data-element-melting-point="unknown"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-group="6"
+          data-element-name="Сиборги"
+        >
+          <abbr class="element__abbr">Sg</abbr>
+          <span class="element__name">Сиборги</span>
+          <span class="element__atomic-number">106</span>
+          <span class="element__atomic-mass">(268.000)</span>
+          <p class="tooltip bottom-tooltip">Сиборги</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="1519"
+          data-element-boiling-point="2334"
+          data-element-period="4"
+          data-element-group="7"
+          data-element-name="Манган"
+        >
+          <abbr class="element__abbr">Mn</abbr>
+          <span class="element__name">Манган</span>
+          <span class="element__atomic-number">25</span>
+          <span class="element__atomic-mass">54.938</span>
+          <p class="tooltip top-tooltip">Манган</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="2430"
+          data-element-boiling-point="4538"
+          data-element-period="5"
+          data-element-group="7"
+          data-element-name="Техници"
+        >
+          <abbr class="element__abbr">Tc</abbr>
+          <span class="element__name">Техници</span>
+          <span class="element__atomic-number">43</span>
+          <span class="element__atomic-mass">(98.000)</span>
+          <p class="tooltip top-tooltip">Техници</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="3459"
+          data-element-boiling-point="5903"
+          data-element-period="6"
+          data-element-group="7"
+          data-element-name="Рени"
+        >
+          <abbr class="element__abbr">Re</abbr>
+          <span class="element__name">Рени</span>
+          <span class="element__atomic-number">75</span>
+          <span class="element__atomic-mass">186.207</span>
+          <p class="tooltip top-tooltip">Рени</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="unknown"
+          data-element-melting-point="unknown"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-group="7"
+          data-element-name="Бори"
+        >
+          <abbr class="element__abbr">Bh</abbr>
+          <span class="element__name">Бори</span>
+          <span class="element__atomic-number">107</span>
+          <span class="element__atomic-mass">(270.000)</span>
+          <p class="tooltip bottom-tooltip">Бори</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="1811"
+          data-element-boiling-point="3134"
+          data-element-period="4"
+          data-element-group="8"
+          data-element-name="Төмөр"
+        >
+          <abbr class="element__abbr">Fe</abbr>
+          <span class="element__name">Төмөр</span>
+          <span class="element__atomic-number">26</span>
+          <span class="element__atomic-mass">55.845</span>
+          <p class="tooltip top-tooltip">Төмөр</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="2607"
+          data-element-boiling-point="4423"
+          data-element-period="5"
+          data-element-group="8"
+          data-element-name="Рутини"
+        >
+          <abbr class="element__abbr">Ru</abbr>
+          <span class="element__name">Рутини</span>
+          <span class="element__atomic-number">44</span>
+          <span class="element__atomic-mass">101.070</span>
+          <p class="tooltip top-tooltip">Рутини</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="3306"
+          data-element-boiling-point="5285"
+          data-element-period="6"
+          data-element-group="8"
+          data-element-name="Осми"
+        >
+          <abbr class="element__abbr">Os</abbr>
+          <span class="element__name">Осми</span>
+          <span class="element__atomic-number">76</span>
+          <span class="element__atomic-mass">190.230</span>
+          <p class="tooltip top-tooltip">Осми</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="unknown"
+          data-element-melting-point="unknown"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-group="8"
+          data-element-name="Хасси"
+        >
+          <abbr class="element__abbr">Hs</abbr>
+          <span class="element__name">Хасси</span>
+          <span class="element__atomic-number">108</span>
+          <span class="element__atomic-mass">(277.000)</span>
+          <p class="tooltip bottom-tooltip">Хасси</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="1768"
+          data-element-boiling-point="3200"
+          data-element-period="4"
+          data-element-group="9"
+          data-element-name="Кобальт"
+        >
+          <abbr class="element__abbr">Co</abbr>
+          <span class="element__name">Кобальт</span>
+          <span class="element__atomic-number">27</span>
+          <span class="element__atomic-mass">58.993</span>
+          <p class="tooltip top-tooltip">Кобальт</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="2237"
+          data-element-boiling-point="3968"
+          data-element-period="5"
+          data-element-group="9"
+          data-element-name="Роди"
+        >
+          <abbr class="element__abbr">Rh</abbr>
+          <span class="element__name">Роди</span>
+          <span class="element__atomic-number">45</span>
+          <span class="element__atomic-mass">102.905</span>
+          <p class="tooltip top-tooltip">Роди</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="2719"
+          data-element-boiling-point="4403"
+          data-element-period="6"
+          data-element-group="9"
+          data-element-name="Ириди"
+        >
+          <abbr class="element__abbr">Ir</abbr>
+          <span class="element__name">Ириди</span>
+          <span class="element__atomic-number">77</span>
+          <span class="element__atomic-mass">192.217</span>
+          <p class="tooltip top-tooltip">Ириди</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="unknown"
+          data-element-state="unknown"
+          data-element-melting-point="unknown"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-group="9"
+          data-element-name="Мейтнери"
+        >
+          <abbr class="element__abbr">Mt</abbr>
+          <span class="element__name">Мейтнери</span>
+          <span class="element__atomic-number">109</span>
+          <span class="element__atomic-mass">(278.000)</span>
+          <p class="tooltip bottom-tooltip">Мейтнери</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="1728"
+          data-element-boiling-point="3003"
+          data-element-period="4"
+          data-element-group="10"
+          data-element-name="Никель"
+        >
+          <abbr class="element__abbr">Ni</abbr>
+          <span class="element__name">Никель</span>
+          <span class="element__atomic-number">28</span>
+          <span class="element__atomic-mass">58.963</span>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="1828.05"
+          data-element-boiling-point="3236"
+          data-element-period="5"
+          data-element-group="10"
+          data-element-name="Паллади"
+        >
+          <abbr class="element__abbr">Pd</abbr>
+          <span class="element__name">Паллади</span>
+          <span class="element__atomic-number">46</span>
+          <span class="element__atomic-mass">106.420</span>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="2041.4"
+          data-element-boiling-point="4098"
+          data-element-period="6"
+          data-element-group="10"
+          data-element-name="Платин"
+        >
+          <abbr class="element__abbr">Pt</abbr>
+          <span class="element__name">Цагаан алт</span>
+          <span class="element__atomic-number">78</span>
+          <span class="element__atomic-mass">195.084</span>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="unknown"
+          data-element-state="unknown"
+          data-element-melting-point="unknown"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-group="10"
+          data-element-name="Дармштади"
+        >
+          <abbr class="element__abbr">Ds</abbr>
+          <span class="element__name">Дармш-тади</span>
+          <span class="element__atomic-number">110</span>
+          <span class="element__atomic-mass">(281.000)</span>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="1357.77"
+          data-element-boiling-point="2835"
+          data-element-period="4"
+          data-element-group="11"
+          data-element-name="Зэс"
+        >
+          <abbr class="element__abbr">Cu</abbr>
+          <span class="element__name">Зэс</span>
+          <span class="element__atomic-number">29</span>
+          <span class="element__atomic-mass">63.546</span>
+          <p class="tooltip top-tooltip">Зэс</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="1234.93"
+          data-element-boiling-point="2435"
+          data-element-period="5"
+          data-element-group="11"
+          data-element-name="Мөнгө"
+        >
+          <abbr class="element__abbr">Ag</abbr>
+          <span class="element__name">Мөнгө</span>
+          <span class="element__atomic-number">47</span>
+          <span class="element__atomic-mass">107.868</span>
+          <p class="tooltip top-tooltip">Мөнгө</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="1337.33"
+          data-element-boiling-point="3243"
+          data-element-period="6"
+          data-element-group="11"
+          data-element-name="Алт"
+        >
+          <abbr class="element__abbr">Au</abbr>
+          <span class="element__name">Алт</span>
+          <span class="element__atomic-number">79</span>
+          <span class="element__atomic-mass">107.868</span>
+          <p class="tooltip top-tooltip">Алт</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="unknown"
+          data-element-state="unknown"
+          data-element-melting-point="unknown"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-group="11"
+          data-element-name="Рентгени"
+        >
+          <abbr class="element__abbr">Rg</abbr>
+          <span class="element__name">Рентгени</span>
+          <span class="element__atomic-number">111</span>
+          <span class="element__atomic-mass">(282.000)</span>
+          <p class="tooltip bottom-tooltip">Рентгени</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="692.68"
+          data-element-boiling-point="1180"
+          data-element-period="4"
+          data-element-group="12"
+          data-element-name="Цайр"
+        >
+          <abbr class="element__abbr">Zn</abbr>
+          <span class="element__name">Цайр</span>
+          <span class="element__atomic-number">30</span>
+          <span class="element__atomic-mass">65.380</span>
+          <p class="tooltip top-tooltip">Цайр</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="594.22"
+          data-element-boiling-point="1040"
+          data-element-period="5"
+          data-element-group="12"
+          data-element-name="Кадми"
+        >
+          <abbr class="element__abbr">Cd</abbr>
+          <span class="element__name">Кадми</span>
+          <span class="element__atomic-number">48</span>
+          <span class="element__atomic-mass">112.414</span>
+          <p class="tooltip top-tooltip">Кадми</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="transition-metal"
+          data-element-state="liquid"
+          data-element-melting-point="234.3210"
+          data-element-boiling-point="629.88"
+          data-element-period="6"
+          data-element-group="12"
+          data-element-name="Мөнгөнус"
+        >
+          <abbr class="element__abbr">Hg</abbr>
+          <span class="element__name">Мөнгөнус</span>
+          <span class="element__atomic-number">80</span>
+          <span class="element__atomic-mass">200.592</span>
+          <p class="tooltip top-tooltip">Мөнгөнус</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="post-transition-metal"
+          data-element-state="unknown"
+          data-element-melting-point="unknown"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-group="12"
+          data-element-name="Коперници"
+        >
+          <abbr class="element__abbr">Cn</abbr>
+          <span class="element__name">Коперници</span>
+          <span class="element__atomic-number">112</span>
+          <span class="element__atomic-mass">(285.000)</span>
+          <p class="tooltip bottom-tooltip">Коперници</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="metalloid"
+          data-element-state="solid"
+          data-element-melting-point="2349"
+          data-element-boiling-point="4200"
+          data-element-period="2"
+          data-element-group="13"
+          data-element-name="Бор"
+        >
+          <abbr class="element__abbr">B</abbr>
+          <span class="element__name">Бор</span>
+          <span class="element__atomic-number">5</span>
+          <span class="element__atomic-mass">10.810</span>
+          <p class="tooltip left-tooltip">Бор</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="post-transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="933.47"
+          data-element-boiling-point="2743"
+          data-element-period="3"
+          data-element-group="13"
+          data-element-name="Хөнгөнцагаан"
+        >
+          <abbr class="element__abbr">Al</abbr>
+          <span class="element__name">Хөнгөнцагаан</span>
+          <span class="element__atomic-number">13</span>
+          <span class="element__atomic-mass">26.982</span>
+          <p class="tooltip left-tooltip">Хөнгөнцагаан</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="post-transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="302.9146"
+          data-element-boiling-point="2673"
+          data-element-period="4"
+          data-element-group="13"
+          data-element-name="Галли"
+        >
+          <abbr class="element__abbr">Ga</abbr>
+          <span class="element__name">Галли</span>
+          <span class="element__atomic-number">31</span>
+          <span class="element__atomic-mass">69.723</span>
+          <p class="tooltip top-tooltip">Галли</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="post-transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="429.7485"
+          data-element-boiling-point="2345"
+          data-element-period="5"
+          data-element-group="13"
+          data-element-name="Инди"
+        >
+          <abbr class="element__abbr">in</abbr>
+          <span class="element__name">Инди</span>
+          <span class="element__atomic-number">49</span>
+          <span class="element__atomic-mass">114.818</span>
+          <p class="tooltip top-tooltip">Инди</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="post-transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="577"
+          data-element-boiling-point="1746"
+          data-element-period="6"
+          data-element-group="13"
+          data-element-name="Талли"
+        >
+          <abbr class="element__abbr">Th</abbr>
+          <span class="element__name">Талли</span>
+          <span class="element__atomic-number">81</span>
+          <span class="element__atomic-mass">204.380</span>
+          <p class="tooltip top-tooltip">Талли</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="unknown"
+          data-element-state="unknown"
+          data-element-period="7"
+          data-element-group="13"
+          data-element-name="Нихони"
+          data-element-melting-point="unknown"
+          data-element-boiling-point="unknown"
+        >
+          <abbr class="element__abbr">Nh</abbr>
+          <span class="element__name">Нихони</span>
+          <span class="element__atomic-number">113</span>
+          <span class="element__atomic-mass">(286.000)</span>
+          <p class="tooltip bottom-tooltip">Нихони</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="other-nonmetal"
+          data-element-state="solid"
+          data-element-melting-point="3915"
+          data-element-boiling-point="4600"
+          data-element-period="2"
+          data-element-group="14"
+          data-element-name="Нүүрстөрөгч"
+        >
+          <abbr class="element__abbr">C</abbr>
+          <span class="element__name">Нүүрстөрөгч</span>
+          <span class="element__atomic-number">6</span>
+          <span class="element__atomic-mass">12.001</span>
+          <p class="tooltip top-tooltip">Нүүрстөрөгч</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="metalloid"
+          data-element-state="solid"
+          data-element-melting-point="1687"
+          data-element-boiling-point="3538"
+          data-element-period="3"
+          data-element-group="14"
+          data-element-name="Цахиур"
+        >
+          <abbr class="element__abbr">Si</abbr>
+          <span class="element__name">Цахиур</span>
+          <span class="element__atomic-number">14</span>
+          <span class="element__atomic-mass">28.085</span>
+          <p class="tooltip top-tooltip">Цахиур</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="metalloid"
+          data-element-state="solid"
+          data-element-melting-point="1211.40"
+          data-element-boiling-point="3106"
+          data-element-period="4"
+          data-element-group="14"
+          data-element-name="Германи"
+        >
+          <abbr class="element__abbr">Ge</abbr>
+          <span class="element__name">Германи</span>
+          <span class="element__atomic-number">32</span>
+          <span class="element__atomic-mass">72.630</span>
+          <p class="tooltip top-tooltip">Германи</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="post-transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="505.08"
+          data-element-boiling-point="2875"
+          data-element-period="5"
+          data-element-group="14"
+          data-element-name="Цагаантугалга"
+        >
+          <abbr class="element__abbr">Sn</abbr>
+          <span class="element__name">Цагаантугалга</span>
+          <span class="element__atomic-number">50</span>
+          <span class="element__atomic-mass">118.710</span>
+          <p class="tooltip top-tooltip">Цагаантугалга</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="post-transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="600.61"
+          data-element-boiling-point="2022"
+          data-element-period="6"
+          data-element-group="14"
+          data-element-name="Хартугалга"
+        >
+          <abbr class="element__abbr">Pb</abbr>
+          <span class="element__name">Хартугалга</span>
+          <span class="element__atomic-number">82</span>
+          <span class="element__atomic-mass">207.200</span>
+          <p class="tooltip top-tooltip">Хартугалга</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="post-transition-metal"
+          data-element-state="unknown"
+          data-element-melting-point="unknown"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-group="14"
+          data-element-name="Флерони"
+        >
+          <abbr class="element__abbr">Fl</abbr>
+          <span class="element__name">Флерони</span>
+          <span class="element__atomic-number">114</span>
+          <span class="element__atomic-mass">(289.000)</span>
+          <p class="tooltip bottom-tooltip">Флерони</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="other-nonmetal"
+          data-element-state="gas"
+          data-element-melting-point="63.15"
+          data-element-boiling-point="77.355"
+          data-element-period="2"
+          data-element-group="15"
+          data-element-name="Азот"
+        >
+          <abbr class="element__abbr">N</abbr>
+          <span class="element__name">Азот</span>
+          <span class="element__atomic-number">7</span>
+          <span class="element__atomic-mass">14.007</span>
+          <p class="tooltip top-tooltip">Азот</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="other-nonmetal"
+          data-element-state="solid"
+          data-element-melting-point="317.2"
+          data-element-boiling-point="553"
+          data-element-period="3"
+          data-element-group="15"
+          data-element-name="Фосфор"
+        >
+          <abbr class="element__abbr">P</abbr>
+          <span class="element__name">Фосфор</span>
+          <span class="element__atomic-number">15</span>
+          <span class="element__atomic-mass">30.974</span>
+          <p class="tooltip top-tooltip">Фосфор</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="metalloid"
+          data-element-state="solid"
+          data-element-melting-point="887"
+          data-element-boiling-point="887"
+          data-element-period="4"
+          data-element-group="15"
+          data-element-name="Арсени"
+        >
+          <abbr class="element__abbr">As</abbr>
+          <span class="element__name">Арсени</span>
+          <span class="element__atomic-number">33</span>
+          <span class="element__atomic-mass">74.922</span>
+          <p class="tooltip top-tooltip">Арсени</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="metalloid"
+          data-element-state="solid"
+          data-element-melting-point="903.78"
+          data-element-boiling-point="1908"
+          data-element-period="5"
+          data-element-group="15"
+          data-element-name="Сурьма"
+        >
+          <abbr class="element__abbr">Sb</abbr>
+          <span class="element__name">Сурьма</span>
+          <span class="element__atomic-number">51</span>
+          <span class="element__atomic-mass">121.760</span>
+          <p class="tooltip top-tooltip">Сурьма</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="post-transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="544.7"
+          data-element-boiling-point="1837"
+          data-element-period="6"
+          data-element-group="15"
+          data-element-name="Висмут"
+        >
+          <abbr class="element__abbr">Bi</abbr>
+          <span class="element__name">Висмут</span>
+          <span class="element__atomic-number">83</span>
+          <span class="element__atomic-mass">208.980</span>
+          <p class="tooltip top-tooltip">Висмут</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="unknown"
+          data-element-state="unknown"
+          data-element-melting-point="unknown"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-group="15"
+          data-element-name="Москови"
+        >
+          <abbr class="element__abbr">Mc</abbr>
+          <span class="element__name">Москови</span>
+          <span class="element__atomic-number">115</span>
+          <span class="element__atomic-mass">(290.000)</span>
+          <p class="tooltip bottom-tooltip">Москови</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="other-nonmetal"
+          data-element-state="gas"
+          data-element-melting-point="54.36"
+          data-element-boiling-point="90.188"
+          data-element-period="2"
+          data-element-group="16"
+          data-element-name="Хүчилтөрөгч"
+        >
+          <abbr class="element__abbr">O</abbr>
+          <span class="element__name">Хүчилтөрөгч</span>
+          <span class="element__atomic-number">8</span>
+          <span class="element__atomic-mass">15.999</span>
+          <p class="tooltip top-tooltip">Хүчилтөрөгч</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="other-nonmetal"
+          data-element-state="solid"
+          data-element-melting-point="54.36"
+          data-element-boiling-point="717.8"
+          data-element-period="3"
+          data-element-group="16"
+          data-element-name="Хүхэр"
+        >
+          <abbr class="element__abbr">S</abbr>
+          <span class="element__name">Хүхэр</span>
+          <span class="element__atomic-number">16</span>
+          <span class="element__atomic-mass">32.060</span>
+          <p class="tooltip top-tooltip">Хүхэр</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="other-nonmetal"
+          data-element-state="solid"
+          data-element-melting-point="494"
+          data-element-boiling-point="958"
+          data-element-period="4"
+          data-element-group="16"
+          data-element-name="Селен"
+        >
+          <abbr class="element__abbr">Se</abbr>
+          <span class="element__name">Селен</span>
+          <span class="element__atomic-number">34</span>
+          <span class="element__atomic-mass">78.971</span>
+          <p class="tooltip top-tooltip">Селен</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="metalloid"
+          data-element-state="solid"
+          data-element-melting-point="722.66"
+          data-element-boiling-point="1261"
+          data-element-period="5"
+          data-element-group="16"
+          data-element-name="Теллур"
+        >
+          <abbr class="element__abbr">Te</abbr>
+          <span class="element__name">Теллур</span>
+          <span class="element__atomic-number">52</span>
+          <span class="element__atomic-mass">127.600</span>
+          <p class="tooltip top-tooltip">Теллур</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="post-transition-metal"
+          data-element-state="solid"
+          data-element-melting-point="527"
+          data-element-boiling-point="1235"
+          data-element-period="6"
+          data-element-group="16"
+          data-element-name="Полони"
+        >
+          <abbr class="element__abbr">Po</abbr>
+          <span class="element__name">Полони</span>
+          <span class="element__atomic-number">84</span>
+          <span class="element__atomic-mass">(209.000)</span>
+          <p class="tooltip top-tooltip">Полони</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="unknown"
+          data-element-state="unknown"
+          data-element-melting-point="unknown"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-group="16"
+          data-element-name="Ливермори"
+        >
+          <abbr class="element__abbr">Lv</abbr>
+          <span class="element__name">Ливермори</span>
+          <span class="element__atomic-number">116</span>
+          <span class="element__atomic-mass">(293.000)</span>
+          <p class="tooltip bottom-tooltip">Ливермори</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="other-nonmetal"
+          data-element-state="gas"
+          data-element-melting-point="53.48"
+          data-element-boiling-point="85.03"
+          data-element-period="2"
+          data-element-group="17"
+          data-element-name="Фтор"
+        >
+          <abbr class="element__abbr">F</abbr>
+          <span class="element__name">Фтор</span>
+          <span class="element__atomic-number">9</span>
+          <span class="element__atomic-mass">18.998</span>
+          <p class="tooltip top-tooltip">Фтор</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="other-nonmetal"
+          data-element-state="gas"
+          data-element-melting-point="171.6"
+          data-element-boiling-point="239.11"
+          data-element-period="3"
+          data-element-group="17"
+          data-element-name="Хлор"
+        >
+          <abbr class="element__abbr">Cl</abbr>
+          <span class="element__name">Хлор</span>
+          <span class="element__atomic-number">17</span>
+          <span class="element__atomic-mass">35.450</span>
+          <p class="tooltip top-tooltip">Хлор</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="other-nonmetal"
+          data-element-state="liquid"
+          data-element-melting-point="265.8"
+          data-element-boiling-point="332"
+          data-element-period="4"
+          data-element-group="17"
+          data-element-name="Бром"
+        >
+          <abbr class="element__abbr">Br</abbr>
+          <span class="element__name">Бром</span>
+          <span class="element__atomic-number">35</span>
+          <span class="element__atomic-mass">79.904</span>
+          <p class="tooltip top-tooltip">Бром</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="other-nonmetal"
+          data-element-state="solid"
+          data-element-melting-point="386.85"
+          data-element-boiling-point="457.4"
+          data-element-period="5"
+          data-element-group="17"
+          data-element-name="Иод"
+        >
+          <abbr class="element__abbr">I</abbr>
+          <span class="element__name">Иод</span>
+          <span class="element__atomic-number">53</span>
+          <span class="element__atomic-mass">126.904</span>
+          <p class="tooltip top-tooltip">Иод</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="metalloid"
+          data-element-state="solid"
+          data-element-melting-point="575"
+          data-element-boiling-point="610"
+          data-element-period="7"
+          data-element-group="17"
+          data-element-name="Астат"
+        >
+          <abbr class="element__abbr">At</abbr>
+          <span class="element__name">Астат</span>
+          <span class="element__atomic-number">85</span>
+          <span class="element__atomic-mass">(210.000)</span>
+          <p class="tooltip top-tooltip">Астат</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="unknown"
+          data-element-state="unknown"
+          data-element-melting-point="unknown"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-group="17"
+          data-element-name="Tennessine"
+        >
+          <abbr class="element__abbr">Ts</abbr>
+          <span class="element__name">Теннесин</span>
+          <span class="element__atomic-number">117</span>
+          <span class="element__atomic-mass">(294.000)</span>
+          <p class="tooltip bottom-tooltip">Tennessine</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="noble-gas"
+          data-element-state="gas"
+          data-element-melting-point="0.95"
+          data-element-boiling-point="4.222"
+          data-element-period="1"
+          data-element-group="18"
+          data-element-name="Гели"
+        >
+          <abbr class="element__abbr">He</abbr>
+          <span class="element__name">Гели</span>
+          <span class="element__atomic-number">2</span>
+          <span class="element__atomic-mass">4.002</span>
+          <p class="tooltip left-tooltip">Гели</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="noble-gas"
+          data-element-state="gas"
+          data-element-melting-point="24.56"
+          data-element-boiling-point="27.104"
+          data-element-period="2"
+          data-element-group="18"
+          data-element-name="Неон"
+        >
+          <abbr class="element__abbr">Ne</abbr>
+          <span class="element__name">Неон</span>
+          <span class="element__atomic-number">10</span>
+          <span class="element__atomic-mass">20.180</span>
+          <p class="tooltip top-tooltip">Неон</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="noble-gas"
+          data-element-state="gas"
+          data-element-melting-point="83.81"
+          data-element-boiling-point="87.302"
+          data-element-period="3"
+          data-element-group="18"
+          data-element-name="Аргон"
+        >
+          <abbr class="element__abbr">Ar</abbr>
+          <span class="element__name">Аргон</span>
+          <span class="element__atomic-number">18</span>
+          <span class="element__atomic-mass">39.948</span>
+          <p class="tooltip top-tooltip">Аргон</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="noble-gas"
+          data-element-state="gas"
+          data-element-melting-point="115.78"
+          data-element-boiling-point="119.93"
+          data-element-period="4"
+          data-element-group="18"
+          data-element-name="Криптон"
+        >
+          <abbr class="element__abbr">Kr</abbr>
+          <span class="element__name">Криптон</span>
+          <span class="element__atomic-number">36</span>
+          <span class="element__atomic-mass">83.798</span>
+          <p class="tooltip top-tooltip">Криптон</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="noble-gas"
+          data-element-state="gas"
+          data-element-melting-point="161.40"
+          data-element-boiling-point="165.051"
+          data-element-period="5"
+          data-element-group="18"
+          data-element-name="Ксенон"
+        >
+          <abbr class="element__abbr">Xe</abbr>
+          <span class="element__name">Ксенон</span>
+          <span class="element__atomic-number">54</span>
+          <span class="element__atomic-mass">131.293</span>
+          <p class="tooltip top-tooltip">Ксенон</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="noble-gas"
+          data-element-state="gas"
+          data-element-melting-point="202"
+          data-element-boiling-point="211.5"
+          data-element-period="6"
+          data-element-group="18"
+          data-element-name="Радон"
+        >
+          <abbr class="element__abbr">Rn</abbr>
+          <span class="element__name">Радон</span>
+          <span class="element__atomic-number">86</span>
+          <span class="element__atomic-mass">(222.000)</span>
+          <p class="tooltip top-tooltip">Радон</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="unknown"
+          data-element-state="unknown"
+          data-element-melting-point="unknown"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-group="18"
+          data-element-symbol="Og"
+          data-element-name="Оганессон"
+        >
+          <abbr class="element__abbr">Og</abbr>
+          <span class="element__name">Оганессон</span>
+          <span class="element__atomic-number">118</span>
+          <span class="element__atomic-mass">(294.000)</span>
+          <p class="tooltip bottom-tooltip">Оганессон</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-state="solid"
+          data-element-melting-point="1193"
+          data-element-boiling-point="3737"
+          data-element-period="6"
+          data-element-name="Лантан"
+        >
+          <abbr class="element__abbr">La</abbr>
+          <span class="element__name">Лантан</span>
+          <span class="element__atomic-number">57</span>
+          <span class="element__atomic-mass">138.905</span>
+          <p class="tooltip top-tooltip">Лантан</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-state="solid"
+          data-element-melting-point="1068"
+          data-element-boiling-point="3716"
+          data-element-period="6"
+          data-element-name="Цери"
+        >
+          <abbr class="element__abbr">Ce</abbr>
+          <span class="element__name">Цери</span>
+          <span class="element__atomic-number">58</span>
+          <span class="element__atomic-mass">140.116</span>
+          <p class="tooltip top-tooltip">Цери</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-state="solid"
+          data-element-melting-point="1208"
+          data-element-boiling-point="3403"
+          data-element-period="6"
+          data-element-name="Празеодим"
+        >
+          <abbr class="element__abbr">Pr</abbr>
+          <span class="element__name">Празеодим</span>
+          <span class="element__atomic-number">59</span>
+          <span class="element__atomic-mass">140.907</span>
+          <p class="tooltip top-tooltip">Празеодим</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-state="solid"
+          data-element-melting-point="1297"
+          data-element-boiling-point="3347"
+          data-element-period="6"
+          data-element-name="Ниодим"
+        >
+          <abbr class="element__abbr">Nd</abbr>
+          <span class="element__name">Ниодим</span>
+          <span class="element__atomic-number">60</span>
+          <span class="element__atomic-mass">144.242</span>
+          <p class="tooltip top-tooltip">Ниодим</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-state="solid"
+          data-element-melting-point="1315"
+          data-element-boiling-point="3273"
+          data-element-period="6"
+          data-element-name="Промети"
+        >
+          <abbr class="element__abbr">Pm</abbr>
+          <span class="element__name">Промети</span>
+          <span class="element__atomic-number">61</span>
+          <span class="element__atomic-mass">(145,000)</span>
+          <p class="tooltip top-tooltip">Промети</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-state="solid"
+          data-element-melting-point="1345"
+          data-element-boiling-point="2173"
+          data-element-period="6"
+          data-element-name="Самари"
+        >
+          <abbr class="element__abbr">Sm</abbr>
+          <span class="element__name">Самари</span>
+          <span class="element__atomic-number">62</span>
+          <span class="element__atomic-mass">150.360</span>
+          <p class="tooltip top-tooltip">Самари</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-state="solid"
+          data-element-melting-point="1099"
+          data-element-boiling-point="1802"
+          data-element-period="6"
+          data-element-name="Европи"
+        >
+          <abbr class="element__abbr">Eu</abbr>
+          <span class="element__name">Европи</span>
+          <span class="element__atomic-number">63</span>
+          <span class="element__atomic-mass">151.964</span>
+          <p class="tooltip top-tooltip">Европи</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-state="solid"
+          data-element-melting-point="1585"
+          data-element-boiling-point="3273"
+          data-element-period="6"
+          data-element-name="Гадолини"
+        >
+          <abbr class="element__abbr">Gd</abbr>
+          <span class="element__name">Гадолини</span>
+          <span class="element__atomic-number">64</span>
+          <span class="element__atomic-mass">157.250</span>
+          <p class="tooltip top-tooltip">Гадолини</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-state="solid"
+          data-element-melting-point="1629"
+          data-element-boiling-point="3396"
+          data-element-period="6"
+          data-element-name="Терби"
+        >
+          <abbr class="element__abbr">Tb</abbr>
+          <span class="element__name">Терби</span>
+          <span class="element__atomic-number">65</span>
+          <span class="element__atomic-mass">157.250</span>
+          <p class="tooltip top-tooltip">Терби</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-state="solid"
+          data-element-melting-point="1680"
+          data-element-boiling-point="2840"
+          data-element-period="6"
+          data-element-name="Диспрози"
+        >
+          <abbr class="element__abbr">Dy</abbr>
+          <span class="element__name">Диспрози</span>
+          <span class="element__atomic-number">66</span>
+          <span class="element__atomic-mass">162.500</span>
+          <p class="tooltip top-tooltip">Диспрози</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-state="solid"
+          data-element-melting-point="1734"
+          data-element-boiling-point="2873"
+          data-element-period="6"
+          data-element-name="Гольми"
+        >
+          <abbr class="element__abbr">Ho</abbr>
+          <span class="element__name">Гольми</span>
+          <span class="element__atomic-number">67</span>
+          <span class="element__atomic-mass">164.930</span>
+          <p class="tooltip top-tooltip">Гольми</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-state="solid"
+          data-element-melting-point="1802"
+          data-element-boiling-point="3141"
+          data-element-period="6"
+          data-element-name="Эрби"
+        >
+          <abbr class="element__abbr">Er</abbr>
+          <span class="element__name">Эрби</span>
+          <span class="element__atomic-number">68</span>
+          <span class="element__atomic-mass">167.259</span>
+          <p class="tooltip top-tooltip">Эрби</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-state="solid"
+          data-element-melting-point="1818"
+          data-element-boiling-point="2223"
+          data-element-period="6"
+          data-element-name="Тули"
+        >
+          <abbr class="element__abbr">Tm</abbr>
+          <span class="element__name">Тули</span>
+          <span class="element__atomic-number">69</span>
+          <span class="element__atomic-mass">168.934</span>
+          <p class="tooltip top-tooltip">Тули</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-state="solid"
+          data-element-melting-point="1097"
+          data-element-boiling-point="1469"
+          data-element-period="6"
+          data-element-name="Иттерби"
+        >
+          <abbr class="element__abbr">Yb</abbr>
+          <span class="element__name">Иттерби</span>
+          <span class="element__atomic-number">70</span>
+          <span class="element__atomic-mass">173.045</span>
+          <p class="tooltip top-tooltip">Иттерби</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Lanthanoid"
+          data-element-state="solid"
+          data-element-melting-point="1925"
+          data-element-boiling-point="3675"
+          data-element-period="6"
+          data-element-name="Лютеци"
+        >
+          <abbr class="element__abbr">Lu</abbr>
+          <span class="element__name">Лютеци</span>
+          <span class="element__atomic-number">71</span>
+          <span class="element__atomic-mass">174.967</span>
+          <p class="tooltip top-tooltip">Лютеци</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-state="solid"
+          data-element-melting-point="1500"
+          data-element-boiling-point="3500"
+          data-element-period="7"
+          data-element-name="Актини"
+        >
+          <abbr class="element__abbr">Ac</abbr>
+          <span class="element__name">Актини</span>
+          <span class="element__atomic-number">89</span>
+          <span class="element__atomic-mass">(227.000)</span>
+          <p class="tooltip bottom-tooltip">Актини</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-state="solid"
+          data-element-melting-point="2023"
+          data-element-boiling-point="5061"
+          data-element-period="7"
+          data-element-name="Тори"
+        >
+          <abbr class="element__abbr">Th</abbr>
+          <span class="element__name">Тори</span>
+          <span class="element__atomic-number">90</span>
+          <span class="element__atomic-mass">232.038</span>
+          <p class="tooltip bottom-tooltip">Тори</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-state="solid"
+          data-element-melting-point="1841"
+          data-element-boiling-point="4300"
+          data-element-period="7"
+          data-element-name="Протактини"
+        >
+          <abbr class="element__abbr">Pa</abbr>
+          <span class="element__name">Протактини</span>
+          <span class="element__atomic-number">91</span>
+          <span class="element__atomic-mass">231.035</span>
+          <p class="tooltip bottom-tooltip">Протактини</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-state="solid"
+          data-element-melting-point="1405.3"
+          data-element-boiling-point="4404"
+          data-element-period="7"
+          data-element-name="Уран"
+        >
+          <abbr class="element__abbr">U</abbr>
+          <span class="element__name">Уран</span>
+          <span class="element__atomic-number">92</span>
+          <span class="element__atomic-mass">238.028</span>
+          <p class="tooltip bottom-tooltip">Уран</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-state="solid"
+          data-element-melting-point="912"
+          data-element-boiling-point="4447"
+          data-element-period="7"
+          data-element-name="Нептуни"
+        >
+          <abbr class="element__abbr">Np</abbr>
+          <span class="element__name">Нептуни</span>
+          <span class="element__atomic-number">93</span>
+          <span class="element__atomic-mass">(237.000)</span>
+          <p class="tooltip bottom-tooltip">Нептуни</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-state="solid"
+          data-element-melting-point="912.5"
+          data-element-boiling-point="3505"
+          data-element-period="7"
+          data-element-name="Плутони"
+        >
+          <abbr class="element__abbr">Pu</abbr>
+          <span class="element__name">Плутони</span>
+          <span class="element__atomic-number">94</span>
+          <span class="element__atomic-mass">(244.000)</span>
+          <p class="tooltip bottom-tooltip">Плутони</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-state="solid"
+          data-element-melting-point="1449"
+          data-element-boiling-point="2880"
+          data-element-period="7"
+          data-element-name="Америци"
+        >
+          <abbr class="element__abbr">Am</abbr>
+          <span class="element__name">Америци</span>
+          <span class="element__atomic-number">95</span>
+          <span class="element__atomic-mass">(243.000)</span>
+          <p class="tooltip bottom-tooltip">Америци</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-state="solid"
+          data-element-melting-point="1613"
+          data-element-boiling-point="3383"
+          data-element-period="7"
+          data-element-name="Кюри"
+        >
+          <abbr class="element__abbr">Cm</abbr>
+          <span class="element__name">Кюри</span>
+          <span class="element__atomic-number">96</span>
+          <span class="element__atomic-mass">(247.000)</span>
+          <p class="tooltip bottom-tooltip">Кюри</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-state="solid"
+          data-element-melting-point="1259"
+          data-element-boiling-point="2900"
+          data-element-period="7"
+          data-element-name="Беркли"
+        >
+          <abbr class="element__abbr">Bk</abbr>
+          <span class="element__name">Беркли</span>
+          <span class="element__atomic-number">97</span>
+          <span class="element__atomic-mass">(247.000)</span>
+          <p class="tooltip bottom-tooltip">Беркли</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-state="solid"
+          data-element-melting-point="1173"
+          data-element-boiling-point="1743"
+          data-element-period="7"
+          data-element-name="Калифорни"
+        >
+          <abbr class="element__abbr">Cf</abbr>
+          <span class="element__name">Калифорни</span>
+          <span class="element__atomic-number">98</span>
+          <span class="element__atomic-mass">(251.000)</span>
+          <p class="tooltip bottom-tooltip">Калифорни</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-state="solid"
+          data-element-melting-point="1133"
+          data-element-boiling-point="1269"
+          data-element-period="7"
+          data-element-name="Эйнштэйни"
+        >
+          <abbr class="element__abbr">Es</abbr>
+          <span class="element__name">Эйнштэйни</span>
+          <span class="element__atomic-number">99</span>
+          <span class="element__atomic-mass">(252.000)</span>
+          <p class="tooltip bottom-tooltip">Эйнштэйни</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-state="solid"
+          data-element-melting-point="1133"
+          data-element-boiling-point="1269"
+          data-element-period="7"
+          data-element-name="Ферми"
+        >
+          <abbr class="element__abbr">Fm</abbr>
+          <span class="element__name">Ферми</span>
+          <span class="element__atomic-number">100</span>
+          <span class="element__atomic-mass">(257.000)</span>
+          <p class="tooltip bottom-tooltip">Ферми</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-state="solid"
+          data-element-melting-point="1133"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-name="Менделееви"
+        >
+          <abbr class="element__abbr">Md</abbr>
+          <span class="element__name">Менделееви</span>
+          <span class="element__atomic-number">101</span>
+          <span class="element__atomic-mass">(258.000)</span>
+          <p class="tooltip bottom-tooltip">Менделееви</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-state="solid"
+          data-element-melting-point="1100"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-name="Нобели"
+        >
+          <abbr class="element__abbr">No</abbr>
+          <span class="element__name">Нобели</span>
+          <span class="element__atomic-number">102</span>
+          <span class="element__atomic-mass">(259.000)</span>
+          <p class="tooltip bottom-tooltip">Нобели</p>
+        </div>
+        <div
+          class="element flex-row-wrap"
+          data-element-type="Actinoid"
+          data-element-state="solid"
+          data-element-melting-point="1900"
+          data-element-boiling-point="unknown"
+          data-element-period="7"
+          data-element-name="Lawrencium"
+        >
+          <abbr class="element__abbr">Lr</abbr>
+          <span class="element__name">Лоуренци</span>
+          <span class="element__atomic-number">103</span>
+          <span class="element__atomic-mass">(266.000)</span>
+          <p class="tooltip bottom-tooltip">Lawrencium</p>
+        </div>
+      </section>
+      <section class="modal flex-row-wrap">
+        <dialog class="modal__dialog" open>
+          <article class="modal__content">
+            <div class="modal__content__properties"></div>
+            <div class="atom">
+              <div class="atom__core"></div>
+            </div>
+          </article>
+          <a class="modal__close">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"
+              />
+              <path d="M0 0h24v24h-24z" fill="none" />
+            </svg>
+          </a>
+        </dialog>
+      </section>
+    </main>
+    <!-- partial -->
+    <script src="./script.js"></script>
+  </body>
+</html>

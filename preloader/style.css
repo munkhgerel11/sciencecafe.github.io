@@ -1,0 +1,1789 @@
+body {
+  overflow: hidden;
+  height: 100vh;
+  perspective: 40em;
+  perspective-origin: 50% calc(50% - 19em);
+  background: #000;
+}
+
+div {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.assembly {
+  top: 50%;
+  left: 50%;
+}
+
+.ring, :after {
+  animation: rotY 12s linear infinite;
+}
+
+.ring:nth-child(1), .ring:nth-child(1) :after {
+  animation-delay: 0s;
+}
+.ring:nth-child(1) .pos:nth-child(1) {
+  transform: rotateY(0deg) translateZ(2em) rotateY(0deg);
+}
+.ring:nth-child(1) .pos:nth-child(1) .dot {
+  animation-name: oscillate1;
+  animation-delay: 0s;
+}
+.ring:nth-child(1) .pos:nth-child(1) :after {
+  margin: -13px;
+  width: 26px;
+  height: 26px;
+  background: radial-gradient(at 25% 25%, currentColor, #7e1254);
+  color: #fd92d3;
+}
+.ring:nth-child(1) .pos:nth-child(2) {
+  transform: rotateY(72deg) translateZ(2em) rotateY(-72deg);
+}
+.ring:nth-child(1) .pos:nth-child(2) .dot {
+  animation-name: oscillate1;
+  animation-delay: -0.8s;
+}
+.ring:nth-child(1) .pos:nth-child(2) :after {
+  margin: -13px;
+  width: 26px;
+  height: 26px;
+  background: radial-gradient(at 25% 25%, currentColor, #7e1254);
+  color: #fd92d3;
+}
+.ring:nth-child(1) .pos:nth-child(3) {
+  transform: rotateY(144deg) translateZ(2em) rotateY(-144deg);
+}
+.ring:nth-child(1) .pos:nth-child(3) .dot {
+  animation-name: oscillate1;
+  animation-delay: -1.6s;
+}
+.ring:nth-child(1) .pos:nth-child(3) :after {
+  margin: -13px;
+  width: 26px;
+  height: 26px;
+  background: radial-gradient(at 25% 25%, currentColor, #7e1254);
+  color: #fd92d3;
+}
+.ring:nth-child(1) .pos:nth-child(4) {
+  transform: rotateY(216deg) translateZ(2em) rotateY(-216deg);
+}
+.ring:nth-child(1) .pos:nth-child(4) .dot {
+  animation-name: oscillate1;
+  animation-delay: -2.4s;
+}
+.ring:nth-child(1) .pos:nth-child(4) :after {
+  margin: -13px;
+  width: 26px;
+  height: 26px;
+  background: radial-gradient(at 25% 25%, currentColor, #7e1254);
+  color: #fd92d3;
+}
+.ring:nth-child(1) .pos:nth-child(5) {
+  transform: rotateY(288deg) translateZ(2em) rotateY(-288deg);
+}
+.ring:nth-child(1) .pos:nth-child(5) .dot {
+  animation-name: oscillate1;
+  animation-delay: -3.2s;
+}
+.ring:nth-child(1) .pos:nth-child(5) :after {
+  margin: -13px;
+  width: 26px;
+  height: 26px;
+  background: radial-gradient(at 25% 25%, currentColor, #7e1254);
+  color: #fd92d3;
+}
+
+@keyframes oscillate1 {
+  0% {
+    transform: translateY(-0.5em);
+  }
+  100% {
+    transform: translateY(0.5em);
+  }
+}
+.ring:nth-child(2), .ring:nth-child(2) :after {
+  animation-delay: -0.8571428571s;
+}
+.ring:nth-child(2) .pos:nth-child(1) {
+  transform: rotateY(0deg) translateZ(4em) rotateY(0deg);
+}
+.ring:nth-child(2) .pos:nth-child(1) .dot {
+  animation-name: oscillate2;
+  animation-delay: 0s;
+}
+.ring:nth-child(2) .pos:nth-child(1) :after {
+  margin: -11.5px;
+  width: 23px;
+  height: 23px;
+  background: radial-gradient(at 25% 25%, currentColor, #7b2c12);
+  color: #faab92;
+}
+.ring:nth-child(2) .pos:nth-child(2) {
+  transform: rotateY(40deg) translateZ(4em) rotateY(-40deg);
+}
+.ring:nth-child(2) .pos:nth-child(2) .dot {
+  animation-name: oscillate2;
+  animation-delay: -0.4444444444s;
+}
+.ring:nth-child(2) .pos:nth-child(2) :after {
+  margin: -11.5px;
+  width: 23px;
+  height: 23px;
+  background: radial-gradient(at 25% 25%, currentColor, #7b2c12);
+  color: #faab92;
+}
+.ring:nth-child(2) .pos:nth-child(3) {
+  transform: rotateY(80deg) translateZ(4em) rotateY(-80deg);
+}
+.ring:nth-child(2) .pos:nth-child(3) .dot {
+  animation-name: oscillate2;
+  animation-delay: -0.8888888889s;
+}
+.ring:nth-child(2) .pos:nth-child(3) :after {
+  margin: -11.5px;
+  width: 23px;
+  height: 23px;
+  background: radial-gradient(at 25% 25%, currentColor, #7b2c12);
+  color: #faab92;
+}
+.ring:nth-child(2) .pos:nth-child(4) {
+  transform: rotateY(120deg) translateZ(4em) rotateY(-120deg);
+}
+.ring:nth-child(2) .pos:nth-child(4) .dot {
+  animation-name: oscillate2;
+  animation-delay: -1.3333333333s;
+}
+.ring:nth-child(2) .pos:nth-child(4) :after {
+  margin: -11.5px;
+  width: 23px;
+  height: 23px;
+  background: radial-gradient(at 25% 25%, currentColor, #7b2c12);
+  color: #faab92;
+}
+.ring:nth-child(2) .pos:nth-child(5) {
+  transform: rotateY(160deg) translateZ(4em) rotateY(-160deg);
+}
+.ring:nth-child(2) .pos:nth-child(5) .dot {
+  animation-name: oscillate2;
+  animation-delay: -1.7777777778s;
+}
+.ring:nth-child(2) .pos:nth-child(5) :after {
+  margin: -11.5px;
+  width: 23px;
+  height: 23px;
+  background: radial-gradient(at 25% 25%, currentColor, #7b2c12);
+  color: #faab92;
+}
+.ring:nth-child(2) .pos:nth-child(6) {
+  transform: rotateY(200deg) translateZ(4em) rotateY(-200deg);
+}
+.ring:nth-child(2) .pos:nth-child(6) .dot {
+  animation-name: oscillate2;
+  animation-delay: -2.2222222222s;
+}
+.ring:nth-child(2) .pos:nth-child(6) :after {
+  margin: -11.5px;
+  width: 23px;
+  height: 23px;
+  background: radial-gradient(at 25% 25%, currentColor, #7b2c12);
+  color: #faab92;
+}
+.ring:nth-child(2) .pos:nth-child(7) {
+  transform: rotateY(240deg) translateZ(4em) rotateY(-240deg);
+}
+.ring:nth-child(2) .pos:nth-child(7) .dot {
+  animation-name: oscillate2;
+  animation-delay: -2.6666666667s;
+}
+.ring:nth-child(2) .pos:nth-child(7) :after {
+  margin: -11.5px;
+  width: 23px;
+  height: 23px;
+  background: radial-gradient(at 25% 25%, currentColor, #7b2c12);
+  color: #faab92;
+}
+.ring:nth-child(2) .pos:nth-child(8) {
+  transform: rotateY(280deg) translateZ(4em) rotateY(-280deg);
+}
+.ring:nth-child(2) .pos:nth-child(8) .dot {
+  animation-name: oscillate2;
+  animation-delay: -3.1111111111s;
+}
+.ring:nth-child(2) .pos:nth-child(8) :after {
+  margin: -11.5px;
+  width: 23px;
+  height: 23px;
+  background: radial-gradient(at 25% 25%, currentColor, #7b2c12);
+  color: #faab92;
+}
+.ring:nth-child(2) .pos:nth-child(9) {
+  transform: rotateY(320deg) translateZ(4em) rotateY(-320deg);
+}
+.ring:nth-child(2) .pos:nth-child(9) .dot {
+  animation-name: oscillate2;
+  animation-delay: -3.5555555556s;
+}
+.ring:nth-child(2) .pos:nth-child(9) :after {
+  margin: -11.5px;
+  width: 23px;
+  height: 23px;
+  background: radial-gradient(at 25% 25%, currentColor, #7b2c12);
+  color: #faab92;
+}
+
+@keyframes oscillate2 {
+  0% {
+    transform: translateY(-0.6875em);
+  }
+  100% {
+    transform: translateY(0.6875em);
+  }
+}
+.ring:nth-child(3), .ring:nth-child(3) :after {
+  animation-delay: -1.7142857143s;
+}
+.ring:nth-child(3) .pos:nth-child(1) {
+  transform: rotateY(0deg) translateZ(6em) rotateY(0deg);
+}
+.ring:nth-child(3) .pos:nth-child(1) .dot {
+  animation-name: oscillate3;
+  animation-delay: 0s;
+}
+.ring:nth-child(3) .pos:nth-child(1) :after {
+  margin: -10px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(at 25% 25%, currentColor, #707b12);
+  color: #f0fa91;
+}
+.ring:nth-child(3) .pos:nth-child(2) {
+  transform: rotateY(27.6923076923deg) translateZ(6em) rotateY(-27.6923076923deg);
+}
+.ring:nth-child(3) .pos:nth-child(2) .dot {
+  animation-name: oscillate3;
+  animation-delay: -0.3076923077s;
+}
+.ring:nth-child(3) .pos:nth-child(2) :after {
+  margin: -10px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(at 25% 25%, currentColor, #707b12);
+  color: #f0fa91;
+}
+.ring:nth-child(3) .pos:nth-child(3) {
+  transform: rotateY(55.3846153846deg) translateZ(6em) rotateY(-55.3846153846deg);
+}
+.ring:nth-child(3) .pos:nth-child(3) .dot {
+  animation-name: oscillate3;
+  animation-delay: -0.6153846154s;
+}
+.ring:nth-child(3) .pos:nth-child(3) :after {
+  margin: -10px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(at 25% 25%, currentColor, #707b12);
+  color: #f0fa91;
+}
+.ring:nth-child(3) .pos:nth-child(4) {
+  transform: rotateY(83.0769230769deg) translateZ(6em) rotateY(-83.0769230769deg);
+}
+.ring:nth-child(3) .pos:nth-child(4) .dot {
+  animation-name: oscillate3;
+  animation-delay: -0.9230769231s;
+}
+.ring:nth-child(3) .pos:nth-child(4) :after {
+  margin: -10px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(at 25% 25%, currentColor, #707b12);
+  color: #f0fa91;
+}
+.ring:nth-child(3) .pos:nth-child(5) {
+  transform: rotateY(110.7692307692deg) translateZ(6em) rotateY(-110.7692307692deg);
+}
+.ring:nth-child(3) .pos:nth-child(5) .dot {
+  animation-name: oscillate3;
+  animation-delay: -1.2307692308s;
+}
+.ring:nth-child(3) .pos:nth-child(5) :after {
+  margin: -10px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(at 25% 25%, currentColor, #707b12);
+  color: #f0fa91;
+}
+.ring:nth-child(3) .pos:nth-child(6) {
+  transform: rotateY(138.4615384615deg) translateZ(6em) rotateY(-138.4615384615deg);
+}
+.ring:nth-child(3) .pos:nth-child(6) .dot {
+  animation-name: oscillate3;
+  animation-delay: -1.5384615385s;
+}
+.ring:nth-child(3) .pos:nth-child(6) :after {
+  margin: -10px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(at 25% 25%, currentColor, #707b12);
+  color: #f0fa91;
+}
+.ring:nth-child(3) .pos:nth-child(7) {
+  transform: rotateY(166.1538461538deg) translateZ(6em) rotateY(-166.1538461538deg);
+}
+.ring:nth-child(3) .pos:nth-child(7) .dot {
+  animation-name: oscillate3;
+  animation-delay: -1.8461538462s;
+}
+.ring:nth-child(3) .pos:nth-child(7) :after {
+  margin: -10px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(at 25% 25%, currentColor, #707b12);
+  color: #f0fa91;
+}
+.ring:nth-child(3) .pos:nth-child(8) {
+  transform: rotateY(193.8461538462deg) translateZ(6em) rotateY(-193.8461538462deg);
+}
+.ring:nth-child(3) .pos:nth-child(8) .dot {
+  animation-name: oscillate3;
+  animation-delay: -2.1538461538s;
+}
+.ring:nth-child(3) .pos:nth-child(8) :after {
+  margin: -10px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(at 25% 25%, currentColor, #707b12);
+  color: #f0fa91;
+}
+.ring:nth-child(3) .pos:nth-child(9) {
+  transform: rotateY(221.5384615385deg) translateZ(6em) rotateY(-221.5384615385deg);
+}
+.ring:nth-child(3) .pos:nth-child(9) .dot {
+  animation-name: oscillate3;
+  animation-delay: -2.4615384615s;
+}
+.ring:nth-child(3) .pos:nth-child(9) :after {
+  margin: -10px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(at 25% 25%, currentColor, #707b12);
+  color: #f0fa91;
+}
+.ring:nth-child(3) .pos:nth-child(10) {
+  transform: rotateY(249.2307692308deg) translateZ(6em) rotateY(-249.2307692308deg);
+}
+.ring:nth-child(3) .pos:nth-child(10) .dot {
+  animation-name: oscillate3;
+  animation-delay: -2.7692307692s;
+}
+.ring:nth-child(3) .pos:nth-child(10) :after {
+  margin: -10px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(at 25% 25%, currentColor, #707b12);
+  color: #f0fa91;
+}
+.ring:nth-child(3) .pos:nth-child(11) {
+  transform: rotateY(276.9230769231deg) translateZ(6em) rotateY(-276.9230769231deg);
+}
+.ring:nth-child(3) .pos:nth-child(11) .dot {
+  animation-name: oscillate3;
+  animation-delay: -3.0769230769s;
+}
+.ring:nth-child(3) .pos:nth-child(11) :after {
+  margin: -10px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(at 25% 25%, currentColor, #707b12);
+  color: #f0fa91;
+}
+.ring:nth-child(3) .pos:nth-child(12) {
+  transform: rotateY(304.6153846154deg) translateZ(6em) rotateY(-304.6153846154deg);
+}
+.ring:nth-child(3) .pos:nth-child(12) .dot {
+  animation-name: oscillate3;
+  animation-delay: -3.3846153846s;
+}
+.ring:nth-child(3) .pos:nth-child(12) :after {
+  margin: -10px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(at 25% 25%, currentColor, #707b12);
+  color: #f0fa91;
+}
+.ring:nth-child(3) .pos:nth-child(13) {
+  transform: rotateY(332.3076923077deg) translateZ(6em) rotateY(-332.3076923077deg);
+}
+.ring:nth-child(3) .pos:nth-child(13) .dot {
+  animation-name: oscillate3;
+  animation-delay: -3.6923076923s;
+}
+.ring:nth-child(3) .pos:nth-child(13) :after {
+  margin: -10px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(at 25% 25%, currentColor, #707b12);
+  color: #f0fa91;
+}
+
+@keyframes oscillate3 {
+  0% {
+    transform: translateY(-0.875em);
+  }
+  100% {
+    transform: translateY(0.875em);
+  }
+}
+.ring:nth-child(4), .ring:nth-child(4) :after {
+  animation-delay: -2.5714285714s;
+}
+.ring:nth-child(4) .pos:nth-child(1) {
+  transform: rotateY(0deg) translateZ(8em) rotateY(0deg);
+}
+.ring:nth-child(4) .pos:nth-child(1) .dot {
+  animation-name: oscillate4;
+  animation-delay: 0s;
+}
+.ring:nth-child(4) .pos:nth-child(1) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(2) {
+  transform: rotateY(21.1764705882deg) translateZ(8em) rotateY(-21.1764705882deg);
+}
+.ring:nth-child(4) .pos:nth-child(2) .dot {
+  animation-name: oscillate4;
+  animation-delay: -0.2352941176s;
+}
+.ring:nth-child(4) .pos:nth-child(2) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(3) {
+  transform: rotateY(42.3529411765deg) translateZ(8em) rotateY(-42.3529411765deg);
+}
+.ring:nth-child(4) .pos:nth-child(3) .dot {
+  animation-name: oscillate4;
+  animation-delay: -0.4705882353s;
+}
+.ring:nth-child(4) .pos:nth-child(3) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(4) {
+  transform: rotateY(63.5294117647deg) translateZ(8em) rotateY(-63.5294117647deg);
+}
+.ring:nth-child(4) .pos:nth-child(4) .dot {
+  animation-name: oscillate4;
+  animation-delay: -0.7058823529s;
+}
+.ring:nth-child(4) .pos:nth-child(4) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(5) {
+  transform: rotateY(84.7058823529deg) translateZ(8em) rotateY(-84.7058823529deg);
+}
+.ring:nth-child(4) .pos:nth-child(5) .dot {
+  animation-name: oscillate4;
+  animation-delay: -0.9411764706s;
+}
+.ring:nth-child(4) .pos:nth-child(5) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(6) {
+  transform: rotateY(105.8823529412deg) translateZ(8em) rotateY(-105.8823529412deg);
+}
+.ring:nth-child(4) .pos:nth-child(6) .dot {
+  animation-name: oscillate4;
+  animation-delay: -1.1764705882s;
+}
+.ring:nth-child(4) .pos:nth-child(6) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(7) {
+  transform: rotateY(127.0588235294deg) translateZ(8em) rotateY(-127.0588235294deg);
+}
+.ring:nth-child(4) .pos:nth-child(7) .dot {
+  animation-name: oscillate4;
+  animation-delay: -1.4117647059s;
+}
+.ring:nth-child(4) .pos:nth-child(7) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(8) {
+  transform: rotateY(148.2352941176deg) translateZ(8em) rotateY(-148.2352941176deg);
+}
+.ring:nth-child(4) .pos:nth-child(8) .dot {
+  animation-name: oscillate4;
+  animation-delay: -1.6470588235s;
+}
+.ring:nth-child(4) .pos:nth-child(8) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(9) {
+  transform: rotateY(169.4117647059deg) translateZ(8em) rotateY(-169.4117647059deg);
+}
+.ring:nth-child(4) .pos:nth-child(9) .dot {
+  animation-name: oscillate4;
+  animation-delay: -1.8823529412s;
+}
+.ring:nth-child(4) .pos:nth-child(9) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(10) {
+  transform: rotateY(190.5882352941deg) translateZ(8em) rotateY(-190.5882352941deg);
+}
+.ring:nth-child(4) .pos:nth-child(10) .dot {
+  animation-name: oscillate4;
+  animation-delay: -2.1176470588s;
+}
+.ring:nth-child(4) .pos:nth-child(10) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(11) {
+  transform: rotateY(211.7647058824deg) translateZ(8em) rotateY(-211.7647058824deg);
+}
+.ring:nth-child(4) .pos:nth-child(11) .dot {
+  animation-name: oscillate4;
+  animation-delay: -2.3529411765s;
+}
+.ring:nth-child(4) .pos:nth-child(11) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(12) {
+  transform: rotateY(232.9411764706deg) translateZ(8em) rotateY(-232.9411764706deg);
+}
+.ring:nth-child(4) .pos:nth-child(12) .dot {
+  animation-name: oscillate4;
+  animation-delay: -2.5882352941s;
+}
+.ring:nth-child(4) .pos:nth-child(12) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(13) {
+  transform: rotateY(254.1176470588deg) translateZ(8em) rotateY(-254.1176470588deg);
+}
+.ring:nth-child(4) .pos:nth-child(13) .dot {
+  animation-name: oscillate4;
+  animation-delay: -2.8235294118s;
+}
+.ring:nth-child(4) .pos:nth-child(13) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(14) {
+  transform: rotateY(275.2941176471deg) translateZ(8em) rotateY(-275.2941176471deg);
+}
+.ring:nth-child(4) .pos:nth-child(14) .dot {
+  animation-name: oscillate4;
+  animation-delay: -3.0588235294s;
+}
+.ring:nth-child(4) .pos:nth-child(14) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(15) {
+  transform: rotateY(296.4705882353deg) translateZ(8em) rotateY(-296.4705882353deg);
+}
+.ring:nth-child(4) .pos:nth-child(15) .dot {
+  animation-name: oscillate4;
+  animation-delay: -3.2941176471s;
+}
+.ring:nth-child(4) .pos:nth-child(15) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(16) {
+  transform: rotateY(317.6470588235deg) translateZ(8em) rotateY(-317.6470588235deg);
+}
+.ring:nth-child(4) .pos:nth-child(16) .dot {
+  animation-name: oscillate4;
+  animation-delay: -3.5294117647s;
+}
+.ring:nth-child(4) .pos:nth-child(16) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+.ring:nth-child(4) .pos:nth-child(17) {
+  transform: rotateY(338.8235294118deg) translateZ(8em) rotateY(-338.8235294118deg);
+}
+.ring:nth-child(4) .pos:nth-child(17) .dot {
+  animation-name: oscillate4;
+  animation-delay: -3.7647058824s;
+}
+.ring:nth-child(4) .pos:nth-child(17) :after {
+  margin: -8.5px;
+  width: 17px;
+  height: 17px;
+  background: radial-gradient(at 25% 25%, currentColor, #137914);
+  color: #93f894;
+}
+
+@keyframes oscillate4 {
+  0% {
+    transform: translateY(-1.0625em);
+  }
+  100% {
+    transform: translateY(1.0625em);
+  }
+}
+.ring:nth-child(5), .ring:nth-child(5) :after {
+  animation-delay: -3.4285714286s;
+}
+.ring:nth-child(5) .pos:nth-child(1) {
+  transform: rotateY(0deg) translateZ(10em) rotateY(0deg);
+}
+.ring:nth-child(5) .pos:nth-child(1) .dot {
+  animation-name: oscillate5;
+  animation-delay: 0s;
+}
+.ring:nth-child(5) .pos:nth-child(1) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(2) {
+  transform: rotateY(17.1428571429deg) translateZ(10em) rotateY(-17.1428571429deg);
+}
+.ring:nth-child(5) .pos:nth-child(2) .dot {
+  animation-name: oscillate5;
+  animation-delay: -0.1904761905s;
+}
+.ring:nth-child(5) .pos:nth-child(2) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(3) {
+  transform: rotateY(34.2857142857deg) translateZ(10em) rotateY(-34.2857142857deg);
+}
+.ring:nth-child(5) .pos:nth-child(3) .dot {
+  animation-name: oscillate5;
+  animation-delay: -0.380952381s;
+}
+.ring:nth-child(5) .pos:nth-child(3) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(4) {
+  transform: rotateY(51.4285714286deg) translateZ(10em) rotateY(-51.4285714286deg);
+}
+.ring:nth-child(5) .pos:nth-child(4) .dot {
+  animation-name: oscillate5;
+  animation-delay: -0.5714285714s;
+}
+.ring:nth-child(5) .pos:nth-child(4) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(5) {
+  transform: rotateY(68.5714285714deg) translateZ(10em) rotateY(-68.5714285714deg);
+}
+.ring:nth-child(5) .pos:nth-child(5) .dot {
+  animation-name: oscillate5;
+  animation-delay: -0.7619047619s;
+}
+.ring:nth-child(5) .pos:nth-child(5) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(6) {
+  transform: rotateY(85.7142857143deg) translateZ(10em) rotateY(-85.7142857143deg);
+}
+.ring:nth-child(5) .pos:nth-child(6) .dot {
+  animation-name: oscillate5;
+  animation-delay: -0.9523809524s;
+}
+.ring:nth-child(5) .pos:nth-child(6) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(7) {
+  transform: rotateY(102.8571428571deg) translateZ(10em) rotateY(-102.8571428571deg);
+}
+.ring:nth-child(5) .pos:nth-child(7) .dot {
+  animation-name: oscillate5;
+  animation-delay: -1.1428571429s;
+}
+.ring:nth-child(5) .pos:nth-child(7) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(8) {
+  transform: rotateY(120deg) translateZ(10em) rotateY(-120deg);
+}
+.ring:nth-child(5) .pos:nth-child(8) .dot {
+  animation-name: oscillate5;
+  animation-delay: -1.3333333333s;
+}
+.ring:nth-child(5) .pos:nth-child(8) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(9) {
+  transform: rotateY(137.1428571429deg) translateZ(10em) rotateY(-137.1428571429deg);
+}
+.ring:nth-child(5) .pos:nth-child(9) .dot {
+  animation-name: oscillate5;
+  animation-delay: -1.5238095238s;
+}
+.ring:nth-child(5) .pos:nth-child(9) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(10) {
+  transform: rotateY(154.2857142857deg) translateZ(10em) rotateY(-154.2857142857deg);
+}
+.ring:nth-child(5) .pos:nth-child(10) .dot {
+  animation-name: oscillate5;
+  animation-delay: -1.7142857143s;
+}
+.ring:nth-child(5) .pos:nth-child(10) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(11) {
+  transform: rotateY(171.4285714286deg) translateZ(10em) rotateY(-171.4285714286deg);
+}
+.ring:nth-child(5) .pos:nth-child(11) .dot {
+  animation-name: oscillate5;
+  animation-delay: -1.9047619048s;
+}
+.ring:nth-child(5) .pos:nth-child(11) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(12) {
+  transform: rotateY(188.5714285714deg) translateZ(10em) rotateY(-188.5714285714deg);
+}
+.ring:nth-child(5) .pos:nth-child(12) .dot {
+  animation-name: oscillate5;
+  animation-delay: -2.0952380952s;
+}
+.ring:nth-child(5) .pos:nth-child(12) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(13) {
+  transform: rotateY(205.7142857143deg) translateZ(10em) rotateY(-205.7142857143deg);
+}
+.ring:nth-child(5) .pos:nth-child(13) .dot {
+  animation-name: oscillate5;
+  animation-delay: -2.2857142857s;
+}
+.ring:nth-child(5) .pos:nth-child(13) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(14) {
+  transform: rotateY(222.8571428571deg) translateZ(10em) rotateY(-222.8571428571deg);
+}
+.ring:nth-child(5) .pos:nth-child(14) .dot {
+  animation-name: oscillate5;
+  animation-delay: -2.4761904762s;
+}
+.ring:nth-child(5) .pos:nth-child(14) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(15) {
+  transform: rotateY(240deg) translateZ(10em) rotateY(-240deg);
+}
+.ring:nth-child(5) .pos:nth-child(15) .dot {
+  animation-name: oscillate5;
+  animation-delay: -2.6666666667s;
+}
+.ring:nth-child(5) .pos:nth-child(15) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(16) {
+  transform: rotateY(257.1428571429deg) translateZ(10em) rotateY(-257.1428571429deg);
+}
+.ring:nth-child(5) .pos:nth-child(16) .dot {
+  animation-name: oscillate5;
+  animation-delay: -2.8571428571s;
+}
+.ring:nth-child(5) .pos:nth-child(16) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(17) {
+  transform: rotateY(274.2857142857deg) translateZ(10em) rotateY(-274.2857142857deg);
+}
+.ring:nth-child(5) .pos:nth-child(17) .dot {
+  animation-name: oscillate5;
+  animation-delay: -3.0476190476s;
+}
+.ring:nth-child(5) .pos:nth-child(17) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(18) {
+  transform: rotateY(291.4285714286deg) translateZ(10em) rotateY(-291.4285714286deg);
+}
+.ring:nth-child(5) .pos:nth-child(18) .dot {
+  animation-name: oscillate5;
+  animation-delay: -3.2380952381s;
+}
+.ring:nth-child(5) .pos:nth-child(18) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(19) {
+  transform: rotateY(308.5714285714deg) translateZ(10em) rotateY(-308.5714285714deg);
+}
+.ring:nth-child(5) .pos:nth-child(19) .dot {
+  animation-name: oscillate5;
+  animation-delay: -3.4285714286s;
+}
+.ring:nth-child(5) .pos:nth-child(19) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(20) {
+  transform: rotateY(325.7142857143deg) translateZ(10em) rotateY(-325.7142857143deg);
+}
+.ring:nth-child(5) .pos:nth-child(20) .dot {
+  animation-name: oscillate5;
+  animation-delay: -3.619047619s;
+}
+.ring:nth-child(5) .pos:nth-child(20) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+.ring:nth-child(5) .pos:nth-child(21) {
+  transform: rotateY(342.8571428571deg) translateZ(10em) rotateY(-342.8571428571deg);
+}
+.ring:nth-child(5) .pos:nth-child(21) .dot {
+  animation-name: oscillate5;
+  animation-delay: -3.8095238095s;
+}
+.ring:nth-child(5) .pos:nth-child(21) :after {
+  margin: -7px;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(at 25% 25%, currentColor, #147a6a);
+  color: #93fae9;
+}
+
+@keyframes oscillate5 {
+  0% {
+    transform: translateY(-1.25em);
+  }
+  100% {
+    transform: translateY(1.25em);
+  }
+}
+.ring:nth-child(6), .ring:nth-child(6) :after {
+  animation-delay: -4.2857142857s;
+}
+.ring:nth-child(6) .pos:nth-child(1) {
+  transform: rotateY(0deg) translateZ(12em) rotateY(0deg);
+}
+.ring:nth-child(6) .pos:nth-child(1) .dot {
+  animation-name: oscillate6;
+  animation-delay: 0s;
+}
+.ring:nth-child(6) .pos:nth-child(1) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(2) {
+  transform: rotateY(14.4deg) translateZ(12em) rotateY(-14.4deg);
+}
+.ring:nth-child(6) .pos:nth-child(2) .dot {
+  animation-name: oscillate6;
+  animation-delay: -0.16s;
+}
+.ring:nth-child(6) .pos:nth-child(2) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(3) {
+  transform: rotateY(28.8deg) translateZ(12em) rotateY(-28.8deg);
+}
+.ring:nth-child(6) .pos:nth-child(3) .dot {
+  animation-name: oscillate6;
+  animation-delay: -0.32s;
+}
+.ring:nth-child(6) .pos:nth-child(3) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(4) {
+  transform: rotateY(43.2deg) translateZ(12em) rotateY(-43.2deg);
+}
+.ring:nth-child(6) .pos:nth-child(4) .dot {
+  animation-name: oscillate6;
+  animation-delay: -0.48s;
+}
+.ring:nth-child(6) .pos:nth-child(4) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(5) {
+  transform: rotateY(57.6deg) translateZ(12em) rotateY(-57.6deg);
+}
+.ring:nth-child(6) .pos:nth-child(5) .dot {
+  animation-name: oscillate6;
+  animation-delay: -0.64s;
+}
+.ring:nth-child(6) .pos:nth-child(5) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(6) {
+  transform: rotateY(72deg) translateZ(12em) rotateY(-72deg);
+}
+.ring:nth-child(6) .pos:nth-child(6) .dot {
+  animation-name: oscillate6;
+  animation-delay: -0.8s;
+}
+.ring:nth-child(6) .pos:nth-child(6) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(7) {
+  transform: rotateY(86.4deg) translateZ(12em) rotateY(-86.4deg);
+}
+.ring:nth-child(6) .pos:nth-child(7) .dot {
+  animation-name: oscillate6;
+  animation-delay: -0.96s;
+}
+.ring:nth-child(6) .pos:nth-child(7) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(8) {
+  transform: rotateY(100.8deg) translateZ(12em) rotateY(-100.8deg);
+}
+.ring:nth-child(6) .pos:nth-child(8) .dot {
+  animation-name: oscillate6;
+  animation-delay: -1.12s;
+}
+.ring:nth-child(6) .pos:nth-child(8) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(9) {
+  transform: rotateY(115.2deg) translateZ(12em) rotateY(-115.2deg);
+}
+.ring:nth-child(6) .pos:nth-child(9) .dot {
+  animation-name: oscillate6;
+  animation-delay: -1.28s;
+}
+.ring:nth-child(6) .pos:nth-child(9) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(10) {
+  transform: rotateY(129.6deg) translateZ(12em) rotateY(-129.6deg);
+}
+.ring:nth-child(6) .pos:nth-child(10) .dot {
+  animation-name: oscillate6;
+  animation-delay: -1.44s;
+}
+.ring:nth-child(6) .pos:nth-child(10) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(11) {
+  transform: rotateY(144deg) translateZ(12em) rotateY(-144deg);
+}
+.ring:nth-child(6) .pos:nth-child(11) .dot {
+  animation-name: oscillate6;
+  animation-delay: -1.6s;
+}
+.ring:nth-child(6) .pos:nth-child(11) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(12) {
+  transform: rotateY(158.4deg) translateZ(12em) rotateY(-158.4deg);
+}
+.ring:nth-child(6) .pos:nth-child(12) .dot {
+  animation-name: oscillate6;
+  animation-delay: -1.76s;
+}
+.ring:nth-child(6) .pos:nth-child(12) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(13) {
+  transform: rotateY(172.8deg) translateZ(12em) rotateY(-172.8deg);
+}
+.ring:nth-child(6) .pos:nth-child(13) .dot {
+  animation-name: oscillate6;
+  animation-delay: -1.92s;
+}
+.ring:nth-child(6) .pos:nth-child(13) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(14) {
+  transform: rotateY(187.2deg) translateZ(12em) rotateY(-187.2deg);
+}
+.ring:nth-child(6) .pos:nth-child(14) .dot {
+  animation-name: oscillate6;
+  animation-delay: -2.08s;
+}
+.ring:nth-child(6) .pos:nth-child(14) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(15) {
+  transform: rotateY(201.6deg) translateZ(12em) rotateY(-201.6deg);
+}
+.ring:nth-child(6) .pos:nth-child(15) .dot {
+  animation-name: oscillate6;
+  animation-delay: -2.24s;
+}
+.ring:nth-child(6) .pos:nth-child(15) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(16) {
+  transform: rotateY(216deg) translateZ(12em) rotateY(-216deg);
+}
+.ring:nth-child(6) .pos:nth-child(16) .dot {
+  animation-name: oscillate6;
+  animation-delay: -2.4s;
+}
+.ring:nth-child(6) .pos:nth-child(16) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(17) {
+  transform: rotateY(230.4deg) translateZ(12em) rotateY(-230.4deg);
+}
+.ring:nth-child(6) .pos:nth-child(17) .dot {
+  animation-name: oscillate6;
+  animation-delay: -2.56s;
+}
+.ring:nth-child(6) .pos:nth-child(17) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(18) {
+  transform: rotateY(244.8deg) translateZ(12em) rotateY(-244.8deg);
+}
+.ring:nth-child(6) .pos:nth-child(18) .dot {
+  animation-name: oscillate6;
+  animation-delay: -2.72s;
+}
+.ring:nth-child(6) .pos:nth-child(18) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(19) {
+  transform: rotateY(259.2deg) translateZ(12em) rotateY(-259.2deg);
+}
+.ring:nth-child(6) .pos:nth-child(19) .dot {
+  animation-name: oscillate6;
+  animation-delay: -2.88s;
+}
+.ring:nth-child(6) .pos:nth-child(19) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(20) {
+  transform: rotateY(273.6deg) translateZ(12em) rotateY(-273.6deg);
+}
+.ring:nth-child(6) .pos:nth-child(20) .dot {
+  animation-name: oscillate6;
+  animation-delay: -3.04s;
+}
+.ring:nth-child(6) .pos:nth-child(20) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(21) {
+  transform: rotateY(288deg) translateZ(12em) rotateY(-288deg);
+}
+.ring:nth-child(6) .pos:nth-child(21) .dot {
+  animation-name: oscillate6;
+  animation-delay: -3.2s;
+}
+.ring:nth-child(6) .pos:nth-child(21) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(22) {
+  transform: rotateY(302.4deg) translateZ(12em) rotateY(-302.4deg);
+}
+.ring:nth-child(6) .pos:nth-child(22) .dot {
+  animation-name: oscillate6;
+  animation-delay: -3.36s;
+}
+.ring:nth-child(6) .pos:nth-child(22) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(23) {
+  transform: rotateY(316.8deg) translateZ(12em) rotateY(-316.8deg);
+}
+.ring:nth-child(6) .pos:nth-child(23) .dot {
+  animation-name: oscillate6;
+  animation-delay: -3.52s;
+}
+.ring:nth-child(6) .pos:nth-child(23) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(24) {
+  transform: rotateY(331.2deg) translateZ(12em) rotateY(-331.2deg);
+}
+.ring:nth-child(6) .pos:nth-child(24) .dot {
+  animation-name: oscillate6;
+  animation-delay: -3.68s;
+}
+.ring:nth-child(6) .pos:nth-child(24) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+.ring:nth-child(6) .pos:nth-child(25) {
+  transform: rotateY(345.6deg) translateZ(12em) rotateY(-345.6deg);
+}
+.ring:nth-child(6) .pos:nth-child(25) .dot {
+  animation-name: oscillate6;
+  animation-delay: -3.84s;
+}
+.ring:nth-child(6) .pos:nth-child(25) :after {
+  margin: -5.5px;
+  width: 11px;
+  height: 11px;
+  background: radial-gradient(at 25% 25%, currentColor, #15337d);
+  color: #94b2fc;
+}
+
+@keyframes oscillate6 {
+  0% {
+    transform: translateY(-1.4375em);
+  }
+  100% {
+    transform: translateY(1.4375em);
+  }
+}
+.ring:nth-child(7), .ring:nth-child(7) :after {
+  animation-delay: -5.1428571429s;
+}
+.ring:nth-child(7) .pos:nth-child(1) {
+  transform: rotateY(0deg) translateZ(14em) rotateY(0deg);
+}
+.ring:nth-child(7) .pos:nth-child(1) .dot {
+  animation-name: oscillate7;
+  animation-delay: 0s;
+}
+.ring:nth-child(7) .pos:nth-child(1) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(2) {
+  transform: rotateY(12.4137931034deg) translateZ(14em) rotateY(-12.4137931034deg);
+}
+.ring:nth-child(7) .pos:nth-child(2) .dot {
+  animation-name: oscillate7;
+  animation-delay: -0.1379310345s;
+}
+.ring:nth-child(7) .pos:nth-child(2) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(3) {
+  transform: rotateY(24.8275862069deg) translateZ(14em) rotateY(-24.8275862069deg);
+}
+.ring:nth-child(7) .pos:nth-child(3) .dot {
+  animation-name: oscillate7;
+  animation-delay: -0.275862069s;
+}
+.ring:nth-child(7) .pos:nth-child(3) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(4) {
+  transform: rotateY(37.2413793103deg) translateZ(14em) rotateY(-37.2413793103deg);
+}
+.ring:nth-child(7) .pos:nth-child(4) .dot {
+  animation-name: oscillate7;
+  animation-delay: -0.4137931034s;
+}
+.ring:nth-child(7) .pos:nth-child(4) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(5) {
+  transform: rotateY(49.6551724138deg) translateZ(14em) rotateY(-49.6551724138deg);
+}
+.ring:nth-child(7) .pos:nth-child(5) .dot {
+  animation-name: oscillate7;
+  animation-delay: -0.5517241379s;
+}
+.ring:nth-child(7) .pos:nth-child(5) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(6) {
+  transform: rotateY(62.0689655172deg) translateZ(14em) rotateY(-62.0689655172deg);
+}
+.ring:nth-child(7) .pos:nth-child(6) .dot {
+  animation-name: oscillate7;
+  animation-delay: -0.6896551724s;
+}
+.ring:nth-child(7) .pos:nth-child(6) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(7) {
+  transform: rotateY(74.4827586207deg) translateZ(14em) rotateY(-74.4827586207deg);
+}
+.ring:nth-child(7) .pos:nth-child(7) .dot {
+  animation-name: oscillate7;
+  animation-delay: -0.8275862069s;
+}
+.ring:nth-child(7) .pos:nth-child(7) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(8) {
+  transform: rotateY(86.8965517241deg) translateZ(14em) rotateY(-86.8965517241deg);
+}
+.ring:nth-child(7) .pos:nth-child(8) .dot {
+  animation-name: oscillate7;
+  animation-delay: -0.9655172414s;
+}
+.ring:nth-child(7) .pos:nth-child(8) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(9) {
+  transform: rotateY(99.3103448276deg) translateZ(14em) rotateY(-99.3103448276deg);
+}
+.ring:nth-child(7) .pos:nth-child(9) .dot {
+  animation-name: oscillate7;
+  animation-delay: -1.1034482759s;
+}
+.ring:nth-child(7) .pos:nth-child(9) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(10) {
+  transform: rotateY(111.724137931deg) translateZ(14em) rotateY(-111.724137931deg);
+}
+.ring:nth-child(7) .pos:nth-child(10) .dot {
+  animation-name: oscillate7;
+  animation-delay: -1.2413793103s;
+}
+.ring:nth-child(7) .pos:nth-child(10) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(11) {
+  transform: rotateY(124.1379310345deg) translateZ(14em) rotateY(-124.1379310345deg);
+}
+.ring:nth-child(7) .pos:nth-child(11) .dot {
+  animation-name: oscillate7;
+  animation-delay: -1.3793103448s;
+}
+.ring:nth-child(7) .pos:nth-child(11) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(12) {
+  transform: rotateY(136.5517241379deg) translateZ(14em) rotateY(-136.5517241379deg);
+}
+.ring:nth-child(7) .pos:nth-child(12) .dot {
+  animation-name: oscillate7;
+  animation-delay: -1.5172413793s;
+}
+.ring:nth-child(7) .pos:nth-child(12) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(13) {
+  transform: rotateY(148.9655172414deg) translateZ(14em) rotateY(-148.9655172414deg);
+}
+.ring:nth-child(7) .pos:nth-child(13) .dot {
+  animation-name: oscillate7;
+  animation-delay: -1.6551724138s;
+}
+.ring:nth-child(7) .pos:nth-child(13) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(14) {
+  transform: rotateY(161.3793103448deg) translateZ(14em) rotateY(-161.3793103448deg);
+}
+.ring:nth-child(7) .pos:nth-child(14) .dot {
+  animation-name: oscillate7;
+  animation-delay: -1.7931034483s;
+}
+.ring:nth-child(7) .pos:nth-child(14) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(15) {
+  transform: rotateY(173.7931034483deg) translateZ(14em) rotateY(-173.7931034483deg);
+}
+.ring:nth-child(7) .pos:nth-child(15) .dot {
+  animation-name: oscillate7;
+  animation-delay: -1.9310344828s;
+}
+.ring:nth-child(7) .pos:nth-child(15) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(16) {
+  transform: rotateY(186.2068965517deg) translateZ(14em) rotateY(-186.2068965517deg);
+}
+.ring:nth-child(7) .pos:nth-child(16) .dot {
+  animation-name: oscillate7;
+  animation-delay: -2.0689655172s;
+}
+.ring:nth-child(7) .pos:nth-child(16) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(17) {
+  transform: rotateY(198.6206896552deg) translateZ(14em) rotateY(-198.6206896552deg);
+}
+.ring:nth-child(7) .pos:nth-child(17) .dot {
+  animation-name: oscillate7;
+  animation-delay: -2.2068965517s;
+}
+.ring:nth-child(7) .pos:nth-child(17) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(18) {
+  transform: rotateY(211.0344827586deg) translateZ(14em) rotateY(-211.0344827586deg);
+}
+.ring:nth-child(7) .pos:nth-child(18) .dot {
+  animation-name: oscillate7;
+  animation-delay: -2.3448275862s;
+}
+.ring:nth-child(7) .pos:nth-child(18) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(19) {
+  transform: rotateY(223.4482758621deg) translateZ(14em) rotateY(-223.4482758621deg);
+}
+.ring:nth-child(7) .pos:nth-child(19) .dot {
+  animation-name: oscillate7;
+  animation-delay: -2.4827586207s;
+}
+.ring:nth-child(7) .pos:nth-child(19) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(20) {
+  transform: rotateY(235.8620689655deg) translateZ(14em) rotateY(-235.8620689655deg);
+}
+.ring:nth-child(7) .pos:nth-child(20) .dot {
+  animation-name: oscillate7;
+  animation-delay: -2.6206896552s;
+}
+.ring:nth-child(7) .pos:nth-child(20) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(21) {
+  transform: rotateY(248.275862069deg) translateZ(14em) rotateY(-248.275862069deg);
+}
+.ring:nth-child(7) .pos:nth-child(21) .dot {
+  animation-name: oscillate7;
+  animation-delay: -2.7586206897s;
+}
+.ring:nth-child(7) .pos:nth-child(21) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(22) {
+  transform: rotateY(260.6896551724deg) translateZ(14em) rotateY(-260.6896551724deg);
+}
+.ring:nth-child(7) .pos:nth-child(22) .dot {
+  animation-name: oscillate7;
+  animation-delay: -2.8965517241s;
+}
+.ring:nth-child(7) .pos:nth-child(22) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(23) {
+  transform: rotateY(273.1034482759deg) translateZ(14em) rotateY(-273.1034482759deg);
+}
+.ring:nth-child(7) .pos:nth-child(23) .dot {
+  animation-name: oscillate7;
+  animation-delay: -3.0344827586s;
+}
+.ring:nth-child(7) .pos:nth-child(23) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(24) {
+  transform: rotateY(285.5172413793deg) translateZ(14em) rotateY(-285.5172413793deg);
+}
+.ring:nth-child(7) .pos:nth-child(24) .dot {
+  animation-name: oscillate7;
+  animation-delay: -3.1724137931s;
+}
+.ring:nth-child(7) .pos:nth-child(24) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(25) {
+  transform: rotateY(297.9310344828deg) translateZ(14em) rotateY(-297.9310344828deg);
+}
+.ring:nth-child(7) .pos:nth-child(25) .dot {
+  animation-name: oscillate7;
+  animation-delay: -3.3103448276s;
+}
+.ring:nth-child(7) .pos:nth-child(25) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(26) {
+  transform: rotateY(310.3448275862deg) translateZ(14em) rotateY(-310.3448275862deg);
+}
+.ring:nth-child(7) .pos:nth-child(26) .dot {
+  animation-name: oscillate7;
+  animation-delay: -3.4482758621s;
+}
+.ring:nth-child(7) .pos:nth-child(26) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(27) {
+  transform: rotateY(322.7586206897deg) translateZ(14em) rotateY(-322.7586206897deg);
+}
+.ring:nth-child(7) .pos:nth-child(27) .dot {
+  animation-name: oscillate7;
+  animation-delay: -3.5862068966s;
+}
+.ring:nth-child(7) .pos:nth-child(27) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(28) {
+  transform: rotateY(335.1724137931deg) translateZ(14em) rotateY(-335.1724137931deg);
+}
+.ring:nth-child(7) .pos:nth-child(28) .dot {
+  animation-name: oscillate7;
+  animation-delay: -3.724137931s;
+}
+.ring:nth-child(7) .pos:nth-child(28) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+.ring:nth-child(7) .pos:nth-child(29) {
+  transform: rotateY(347.5862068966deg) translateZ(14em) rotateY(-347.5862068966deg);
+}
+.ring:nth-child(7) .pos:nth-child(29) .dot {
+  animation-name: oscillate7;
+  animation-delay: -3.8620689655s;
+}
+.ring:nth-child(7) .pos:nth-child(29) :after {
+  margin: -4px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(at 25% 25%, currentColor, #4b117b);
+  color: #cb91fa;
+}
+
+@keyframes oscillate7 {
+  0% {
+    transform: translateY(-1.625em);
+  }
+  100% {
+    transform: translateY(1.625em);
+  }
+}
+@keyframes rotY {
+  to {
+    transform: rotateY(1turn);
+  }
+}
+.dot {
+  animation: oscillate 2s ease-in-out infinite alternate;
+}
+.dot:after {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  box-shadow: 0 0 2px currentColor;
+  animation-direction: reverse;
+  content: "";
+}
