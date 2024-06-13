@@ -4601,9 +4601,15 @@ body.is-loading #banner:before {
   }
 }
 
+#menu {
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background: url("menu.png") no-repeat center center fixed;
+  background-size: cover; /* Ensure the image covers the entire background */
+}
 #preloader {
-  background: #1d1f38 url(preloader.gif) no-repeat center center;
-  background-size: 20%;
+  background: #ffffff url(preloader1.gif) no-repeat center center;
+  background-size: 10%;
   height: 100vh;
   width: 100%;
   position: fixed;
