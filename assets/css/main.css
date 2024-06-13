@@ -4601,12 +4601,6 @@ body.is-loading #banner:before {
   }
 }
 
-#menu {
-  height: 100vh; /* Full viewport height */
-  overflow-y: auto; /* Enable vertical scrolling */
-  background: url("menu.png") no-repeat center center fixed;
-  background-size: cover; /* Ensure the image covers the entire background */
-}
 #preloader {
   background: #ffffff url(preloader1.gif) no-repeat center center;
   background-size: 10%;
