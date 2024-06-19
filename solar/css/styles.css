@@ -1289,7 +1289,7 @@ body {
 /* --------------------------------------------------------------------------- saturn ring */
 /*
 
-#saturn .ring           { animation-name:     shadow-saturn-ring; }
+/* #saturn .ring           { animation-name:     shadow-saturn-ring; }
 
 @keyframes 
 shadow-saturn-ring{ 0%   { box-shadow: inset -16px  0      4px   rgba(20, 40, 50, 0.45); opacity: .4; }
@@ -1301,7 +1301,7 @@ shadow-saturn-ring{ 0%   { box-shadow: inset -16px  0      4px   rgba(20, 40, 50
                 }
 
 .scaled.view-2D #saturn .ring,
-.scaled.view-3D #saturn .ring { box-shadow: inset 16px   0      4px   rgba(20, 40, 50, 0.6); }
+.scaled.view-3D #saturn .ring { box-shadow: inset 16px   0      4px   rgba(20, 40, 50, 0.6); } */
 
 */
 /* --------------------------------------------------------------------------- uranus ; pos: Left */
