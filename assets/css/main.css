@@ -4609,3 +4609,44 @@ body.is-loading #banner:before {
   position: fixed;
   z-index: 100;
 }
+
+.shop-button {
+  height: 8em; /* Height relative to viewport height */
+  width: 8em; /* Width relative to viewport width */
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  padding: 15px 30px;
+  background: url(../../images/scienceshop.gif);
+  background-color: rgba(0,0,0,0.7);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25%;
+  cursor: pointer;
+  animation: shop-button-enhancedMove 3s ease-in-out infinite;
+  transition: transform 0.3s ease-in-out, background-color 0.3s;
+  z-index: 1;
+}
+
+.shop-button:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+@keyframes shop-button-enhancedMove {
+  0% {
+      transform: translateY(0) rotate(0) scale(1);
+  }
+  25% {
+      transform: translateY(-10px) rotate(5deg) scale(1.1);
+  }
+  50% {
+      transform: translateY(0) rotate(0) scale(1);
+  }
+  75% {
+      transform: translateY(10px) rotate(-5deg) scale(0.9);
+  }
+  100% {
+      transform: translateY(0) rotate(0) scale(1);
+  }
+}
