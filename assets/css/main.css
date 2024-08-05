@@ -4604,9 +4604,10 @@ body.is-loading #banner:before {
 #preloader {
   background: #ffffff url(preloader1.gif) no-repeat center center;
   background-size: 10%;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  position: fixed;
+  position: absolute;
+  top: 0;
   z-index: 100;
 }
 
@@ -4649,4 +4650,8 @@ body.is-loading #banner:before {
   100% {
       transform: translateY(0) rotate(0) scale(1);
   }
+}
+
+.relative-div{
+  position: relative;
 }
