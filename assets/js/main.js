@@ -27,13 +27,13 @@
     var $height = $("#header").height();
 
     // Disable animations/transitions until the page has loaded.
-    $body.addClass("is-loading");
+    // $body.addClass("is-loading");
 
-    $window.on("load", function () {
-      window.setTimeout(function () {
-        $body.removeClass("is-loading");
-      }, 100);
-    });
+    // $window.on("load", function () {
+    //   window.setTimeout(function () {
+    //     $body.removeClass("is-loading");
+    //   }, 100);
+    // });
 
     // Fix: Placeholder polyfill.
     $("form").placeholder();
@@ -66,14 +66,15 @@
 
     // Get BG Image
 
-    if ($(".bg-img").length) {
-      $(".bg-img").each(function () {
-        var post = $(this),
-          bg = post.data("bg");
-
-        post.css("background-image", "url(images/" + bg + ")");
-      });
-    }
+    // if ($(".bg-img").length) {
+    //   $(".bg-img").each(function () {
+    //     var post = $(this),
+    //     bg = post.data("bg");
+    //     //console.log(bg);
+    //     console.log(post.css);  
+    //     post.css("background-image", "url(" + bg + ")");
+    //   });
+    // }
 
     // Posts
 

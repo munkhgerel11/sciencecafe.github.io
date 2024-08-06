@@ -3780,6 +3780,7 @@ body.subpage {
   position: relative;
   text-align: center;
   overflow: hidden;
+  background-image: url(https://lh3.googleusercontent.com/pw/AP1GczNLe0ARtCUeowni-3Fae_8Ww1mRiacvQrMDbhl9rvoE0MhL4zg0EE4DBK2A9kuDRYVOjiQeJq3inUalpZjD-itfHpsVHLMJc-xoAuoZVz1rNTqNHQFbO7bQXXY4iHK9cQZ-mzSgmFWtvaesrSVvQWOR=w1640-h923-s-no-gm?authuser=0);
 }
 
 #banner .inner {
@@ -4602,13 +4603,13 @@ body.is-loading #banner:before {
 }
 
 #preloader {
-  background: #ffffff url(preloader1.gif) no-repeat center center;
+  background: #ffffff url(https://lh3.googleusercontent.com/pw/AP1GczNR2hl6KKsd7lBP69Gdg0k3cfuHz6FO-L3WBoYUsoCDrkXMnmUdhdlp_Y-j9dsJnncNxEopdlPpzn5kuocQfyhOpDU-Hk8o9HLyvFEx971O7T_LA7SBBzloVYWF9O0AhknTxAtKezfSG0qh-AHJ3Zmt=w640-h640-s-no-gm?authuser=0) no-repeat center center;
   background-size: 10%;
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
-  z-index: 100;
+  z-index: 1;
 }
 
 .shop-button {
@@ -4618,7 +4619,7 @@ body.is-loading #banner:before {
   bottom: 2%;
   right: 2%;
   padding: 15px 30px;
-  background: url(../../images/scienceshop.gif);
+  background: url(https://lh3.googleusercontent.com/pw/AP1GczOSp23dRl7qBO4riaigGd033QRddKhiKp5F_XZDiJTvpT-QN13lcbR73CY3AmKxLWi9kVmTWehjuvA9WQ88odd2NO3RXcU_Uw0sxqx35998OPhfvqEuczzFver0MpJJnKKFftUa6EzvVW9CT8Yj6YOL=w360-h310-s-no-gm?authuser=0);
   background-color: rgba(0,0,0,0.7);
   background-size: cover;
   background-position: center;
@@ -4627,7 +4628,7 @@ body.is-loading #banner:before {
   cursor: pointer;
   animation: shop-button-enhancedMove 3s ease-in-out infinite;
   transition: transform 0.3s ease-in-out, background-color 0.3s;
-  z-index: 1;
+  z-index: 2;
 }
 
 .shop-button:hover {
@@ -4654,4 +4655,20 @@ body.is-loading #banner:before {
 
 .relative-div{
   position: relative;
+}
+
+#one{
+  background-image: url(https://lh3.googleusercontent.com/pw/AP1GczPGsmbeisqTbEu_ePnoOzUcTtelH6peb2286LPngeR1GnAkE6KUJHT2mslMA9-t6xTYzg44XrIzRrpo8SaXADqsfnpP8iLiJsxgDYZmqewtSO4yJKKgvY3NVypwPRqfK1o0SEfYmUkmT045AFIvPNQl=w1640-h923-s-no-gm?authuser=0);
+}
+
+#two{
+  background-image: url(https://lh3.googleusercontent.com/pw/AP1GczPK-GAdYud5OFAqQpEf9Mrg3aO51sZ_y44Fy5D7cKAkKU4ND5eZMmN6A3sClZQl0xVxi7r2kojsqY5x2wbh97AmcX14ZpOruEfQtHY39Ak9Q203fhw0a4HdpYf5yRxpVJIZ2pwwflKwVn-GhmDgljDZ=w1230-h923-s-no-gm?authuser=0);
+}
+
+#three{
+  background-image: url(https://lh3.googleusercontent.com/pw/AP1GczMSeT7g4YBGK20BdeJO6lGighE36D_V6Qd3jnHQTa4a4kWHHj7aJ7GcNcB35oIUWBbwtEX3sHznSiqZZZpZV8FOBQA523O37jQcndGxkXcRDtaFOzhnfDuCJHaBEpjuLNyl_rIkUZRvHM43Au4_nxeG=w1230-h923-s-no-gm?authuser=0);
+}
+
+#four{
+  background-image: url(https://lh3.googleusercontent.com/pw/AP1GczPAtCC7F-Ebnh1MCJEHiQL5Gbc_35KhEo0JtRSRRU6WAGjEzLncFqG-4125aIwwZiYfdckVB_Ui5AhNqKcxSSiF3LcCO8X38_zsiyKd4zG0AQRkFVwBOuNYktrUuqAfxkEvSqFYszBnRu6SOcZHQ6TW=w1230-h923-s-no-gm?authuser=0);
 }
