@@ -16,7 +16,7 @@
     containerDiv.addEventListener('click', function clicking(event){
       iframe_link = event.target
       const container = document.getElementsByClassName('container-iframe')[0];
-      container.innerHTML = `<iframe src="${this.dataset.iframeLink}" width="800px" height="600px" frameborder="1" allowfullscreen></iframe>`
+      container.innerHTML = `<iframe src="${this.dataset.iframeLink}" frameborder="1"  allowfullscreen></iframe>`
       window.scrollTo(0, 0);
     });
     return containerDiv;
