@@ -31,8 +31,8 @@
     }).catch(error => console.error(error));
 
   const container = document.getElementById('main');
-  const wrapper = document.getElementById('wrapper');
-  wrapper.appendChild(container);
+  const box = document.getElementById('box');
+  box.appendChild(container);
 })();
 
 
