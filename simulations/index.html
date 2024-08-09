@@ -20,17 +20,38 @@
         <!-- Nav -->
         <nav id="menu">
             <ul class="links">
-            <li ><a href="https://shop.sciencecafe.mn/">Science Shop - 🔭 🛍️</a></li>
-            <li ><a href="../menu.html">Cafe Меню - ⚗️ 🍹</a></li>
-            <li><a href="../graph/index.html">Кординатын хавтгай - 📉</a></li>
-            <li ><a href="../ptable_mn/index.html">Химийн үелэх систем - ⚛️</a></li>
-            <li ><a href="../solar/index.html">Нарны аймаг - 🪐</a></li>
-            <li ><a href="../index.html">Нүүр</a></li>
+                <li ><a href="https://shop.sciencecafe.mn/">Science Shop - 🔭 🛍️</a></li>
+                <li ><a href="../menu.html">Cafe Меню - ⚗️ 🍹</a></li>
+                <li><a href="../graph/index.html">Кординатын хавтгай - 📉</a></li>
+                <li ><a href="../ptable_mn/index.html">Химийн үелэх систем - ⚛️</a></li>
+                <li ><a href="../solar/index.html">Нарны аймаг - 🪐</a></li>
+                <li ><a href="../index.html">Нүүр</a></li>
             </ul>
         </nav>
         <div id="box" >
             <div class="container-iframe"></div>
-            <div id="main"></div>
+            <div id="filter-container">
+                <div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="filter" value="all" id="physics-checkbox" />
+                        <label for="physics-checkbox">Физик</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="filter" value="elementary" id="chem-checkbox" />
+                        <label for="chem-checkbox">Хими</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="filter" value="middle-school" id="math-checkbox" />
+                        <label for="math-checkbox">Математик</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="filter" value="high-school" id="biology-checkbox" />
+                        <label for="biology-checkbox">Биологи</label>
+                    </div>
+                </div>
+
+                <div id="main"></div>
+            </div>
         </div>
     </div>
     <!-- <footer>

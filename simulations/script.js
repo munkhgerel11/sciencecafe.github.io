@@ -1,4 +1,4 @@
-(function() {
+function start(options){
   const createDiv = (name, img_url, iframe_link) => {
     const containerDiv = document.createElement('div');
     containerDiv.className = 'list-item';
@@ -25,14 +25,21 @@
   fetch('phet_simulations_mn_with_iframe.json').then(response => response.json()).then(data => {
       const container = document.getElementById('main');
       data.forEach(item => {
-        const div = createDiv(item.name, item.img_url, item.iframe_url);
-        container.appendChild(div);
+          if(options[item.lesson_type] === true){
+            const div = createDiv(item.name, item.img_url, item.iframe_url);
+            container.appendChild(div);
+          }
       });
     }).catch(error => console.error(error));
 
   const container = document.getElementById('main');
-  const box = document.getElementById('box');
-  box.appendChild(container);
-})();
-
-
+  const filterContainer = document.getElementById('filterContainer');
+  filterContainer.appendChild(container);
+}
+options = {
+  physics: true,
+  chemistry: true,
+  math: true,
+  biology: true
+}
+start(options);
