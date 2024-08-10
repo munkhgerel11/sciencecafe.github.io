@@ -165,14 +165,14 @@
         "name": "Векторын Нийлбэр: Томъёо",
         "img_url": "https://phet.colorado.edu/sims/html/vector-addition-equations/latest/vector-addition-equations-420.png",
         "iframe_url": "https://phet.colorado.edu/sims/html/vector-addition-equations/latest/vector-addition-equations_mn.html",
-        "lesson_type": "physics"
+        "lesson_type": "math"
     },
     {
         "index": 24,
         "name": "Векторын Нийлбэр",
         "img_url": "https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition-420.png",
         "iframe_url": "https://phet.colorado.edu/sims/html/vector-addition/latest/vector-addition_mn.html",
-        "lesson_type": "physics"
+        "lesson_type": "math"
     },
     {
         "index": 25,
@@ -486,7 +486,7 @@
         "index": 69,
         "name": "Үйлдэл бүтээгч",
         "img_url": "https://phet.colorado.edu/sims/html/function-builder/latest/function-builder-420.png",
-        "iframe_url": null,
+        "iframe_url": "https://phet.colorado.edu/sims/html/function-builder/latest/function-builder_mn.html",
         "lesson_type": "math"
     },
     {
@@ -734,20 +734,8 @@
         "iframe_url": "https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_mn.html",
         "lesson_type": "chemistry"
     },
-    {
-        "index": 105,
-        "name": "Цэнэгийн Цацраг",
-        "img_url": "https://phet.colorado.edu/sims/radiating-charge/radiating-charge-420.png",
-        "iframe_url": null,
-        "lesson_type": "physics"
-    },
-    {
-        "index": 106,
-        "name": "Тектоник Хавтан",
-        "img_url": "https://phet.colorado.edu/sims/plate-tectonics/plate-tectonics-420.png",
-        "iframe_url": null,
-        "lesson_type": "physics"
-    },
+
+
     {
         "index": 107,
         "name": "Шингэний Даралт ба Урсгал",
@@ -762,13 +750,7 @@
         "iframe_url": "https://phet.colorado.edu/sims/cheerpj/sugar-and-salt-solutions/latest/sugar-and-salt-solutions.html?simulation=sugar-and-salt-solutions&locale=mn",
         "lesson_type": "chemistry"
     },
-    {
-        "index": 109,
-        "name": "Ресонанс",
-        "img_url": "https://phet.colorado.edu/sims/resonance/resonance-420.png",
-        "iframe_url": null,
-        "lesson_type": "physics"
-    },
+
     {
         "index": 110,
         "name": "Эсийн Бүрхүүлийн Суваг",
@@ -797,13 +779,7 @@
         "iframe_url": "https://phet.colorado.edu/sims/cheerpj/motion-series/latest/motion-series.html?simulation=ramp-forces-and-motion&locale=mn",
         "lesson_type": "physics"
     },
-    {
-        "index": 114,
-        "name": "Архимедийн хүч",
-        "img_url": "https://phet.colorado.edu/sims/density-and-buoyancy/buoyancy-420.png",
-        "iframe_url": null,
-        "lesson_type": "physics"
-    },
+
     {
         "index": 115,
         "name": "Гене Машин: Лак Оперон",
@@ -902,13 +878,7 @@
         "iframe_url": "https://phet.colorado.edu/sims/cheerpj/reactions-and-rates/latest/reactions-and-rates.html?simulation=reactions-and-rates&locale=mn",
         "lesson_type": "chemistry"
     },
-    {
-        "index": 129,
-        "name": "Штерна-Герлахийн Туршилт",
-        "img_url": "https://phet.colorado.edu/sims/stern-gerlach/stern-gerlach-420.png",
-        "iframe_url": null,
-        "lesson_type": "physics"
-    },
+
     {
         "index": 130,
         "name": "Долгионы бүтэц",
@@ -937,20 +907,8 @@
         "iframe_url": "https://phet.colorado.edu/sims/cheerpj/mri/latest/mri.html?simulation=mri&locale=mn",
         "lesson_type": "biology"
     },
-    {
-        "index": 134,
-        "name": "Дэвиссон-Жермер: Электрон Дифракц",
-        "img_url": "https://phet.colorado.edu/sims/quantum-wave-interference/davisson-germer-420.png",
-        "iframe_url": null,
-        "lesson_type": "physics"
-    },
-    {
-        "index": 135,
-        "name": "Саранд Газардагч",
-        "img_url": "https://phet.colorado.edu/sims/lunar-lander/lunar-lander-420.png",
-        "iframe_url": null,
-        "lesson_type": "physics"
-    },
+
+
     {
         "index": 136,
         "name": "Квант тунель ба Долгионы багцууд",
@@ -1028,13 +986,7 @@
         "iframe_url": "https://phet.colorado.edu/sims/cheerpj/signal-circuit/latest/signal-circuit.html?simulation=signal-circuit&locale=mn",
         "lesson_type": "physics"
     },
-    {
-        "index": 147,
-        "name": "Тооцоолол",
-        "img_url": "https://phet.colorado.edu/sims/estimation/estimation-420.png",
-        "iframe_url": null,
-        "lesson_type": "math"
-    },
+
     {
         "index": 148,
         "name": "1 Шулууны дагуух Хүч",
