@@ -1,0 +1,338 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-color: black;
+}
+.container-experiment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e0fbfc;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+.container-experiment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e0fbfc;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+.logo-experiment{
+    width: 140px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-experiment img {
+    width: 140px;
+    height: 90px;
+}
+.title-experiment {
+    font-size: 24px;
+    text-align: center;
+}
+.content-experiment {
+    text-align: center;
+}
+.sc-logo {
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    background: url(https://lh3.googleusercontent.com/pw/AP1GczPPaFVGwzrEL6SxbHh073a0sioG5nJnqSY3cvOPYnNxzv3-iB3cC-i6qjt4URFzphMj9WdtP8YbrqVQ2yMuGt-CsH7EW5Ax394oxBI0I5YrIAf9xe3KTLrPdn9M8D4FVk1YQfIfgEgF6EQOheIt_hG8=w225-h225-s-no-gm?authuser=0);
+    background-size: cover;
+}
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.big-div{
+    height: 1000px;
+}
+i {
+    margin-right: 10px;
+}
+a{
+    color: #e0fbfc;
+    text-decoration: none;
+}
+.main-text {
+    flex: 1;
+    max-width: 75%;    
+    font-size: 1.1em;
+    text-align: justify;
+}
+h1{
+    max-width: 70%;
+    font-size: 1.3em;
+    text-align: center;
+}
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.image-container {
+    display: flex;
+    margin: 10px;
+    width: 200px;
+}
+.image-container img{
+    width: 200px;
+    max-height: 250px;
+    object-fit: cover;
+}
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+.event-details {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+}
+.price-tag {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+}
+.price-content {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 20px;
+}
+.price-content h3 {
+    margin: 0;
+    font-size: 24px;
+}
+.price-content p {
+    margin: 0;
+    font-size: 14px;
+}
+.event-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.event-icon img {
+    width: 24px;
+    height: 24px;
+    marginul {
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+    .note {
+        font-style: italic;
+    }-right: 10px;
+}
+.middle{
+    text-align: center;
+    margin: auto;
+}
+.price-content h3{
+    color: black !important;
+}
+.event-details h3{
+    color: #ff0000;
+}
+.note {
+        font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border: 3px solid white;
+    display: inline-block;
+    text-align: center;
+}
+.hexagon-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    margin-bottom: -100px;
+}
+.hexagon {
+    width: 40%;
+    min-width: 300px;
+    background-color: white;
+    color: black;
+    clip-path: polygon(50% 20%, 100% 25%, 100% 75%, 50% 80%, 0% 75%, 0% 25%);
+    font-size: 12px;
+    margin-top: -150px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    padding-left: 10px;
+}
+.hexagon h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #000;
+}
+.rules {
+    text-align: left;
+    padding: 10px;
+}
+.rules h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.rules ul {
+    padding-left: 20px;
+    margin: 0;
+}
+.rules li {
+    margin-bottom: 5px;
+}
+#map {
+    background-color: #555;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+}
+.warning {
+    background-color: black;
+    color: red;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+.warning-icon {
+    color: yellow;
+    font-size: 36px;
+    margin: 0 10px;
+}
+.location-info {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+iframe{
+    max-width: 250px;
+}
+.info-item {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.info-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+.red-border {
+    padding: 10px;
+    flex: 1;
+}
+.flex-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+    .title-experiment {
+        font-size: 20px;
+    }
+    .contact-info {
+        flex-direction: column;
+    }
+    .images{
+        width: 100%;
+    }
+    .image-container img{
+        width: 70px;
+        max-height: 140px;
+    }
+    .image-container{
+        width: 70px;
+    }
+}
+@media (min-width: 1024px) {
+    .image-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .idk {
+        flex-direction: row;
+    }
+    .image-gallery {
+        flex: 2;
+    }
+    .event-details {
+        flex: 1;
+    }
+}
+@media (max-width: 767px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hexagon-container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    .hexagon{
+        padding-top: 210px;
+        padding-bottom: 190px;
+        margin-bottom: -150px;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    iframe{
+        max-width: 400px;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1023px) {
+    .image-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
