@@ -198,6 +198,9 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+#controls{
+  margin-top: 30px;
+}
 
 #sun,
 .planet,
@@ -1520,7 +1523,9 @@ h1 {
 #data {
   background: rgba(0, 0, 0, 0.4);
 }
-
+body.in-iframe #header {
+  display: none;
+}
 #navbar {
   z-index: 99;
   position: absolute;
@@ -1529,6 +1534,7 @@ h1 {
   padding: 16px;
   width: 100%;
   height: 48px;
+  margin-top: 50px;
 }
 
 #navbar a,
@@ -1615,7 +1621,7 @@ h1 {
   margin-top: 3px;
   text-align: center;
   color: #fff;
-  z-index: 99;
+  z-index: 100;
 }
 
 #controls label span {
@@ -1629,6 +1635,8 @@ h1 {
 #controls input {
   display: block;
   appearance: none;
+  opacity: 1 !important;
+
 }
 
 #controls input[type="radio"]:before {
@@ -1651,7 +1659,7 @@ h1 {
   height: 20px;
   border-radius: 10px;
   background: #fff;
-  z-index: 99;
+  z-index: 100;
 }
 
 #controls input[type="checkbox"]:before {
@@ -1673,7 +1681,7 @@ h1 {
   height: 20px;
   border-radius: 10px;
   background: #fff;
-  z-index: 99;
+  z-index: 100;
 }
 
 #controls label.set-view:before {

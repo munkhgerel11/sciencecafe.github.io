@@ -1,4 +1,18 @@
 function start(options){
+  const iframe = document.querySelector('.rezizable-iframe');
+  const fullscreenBtn = document.getElementById('fullscreenBtn');
+  fullscreenBtn.addEventListener('click', function() {
+      // Check if the Fullscreen API is supported
+      if (iframe.requestFullscreen) {
+          iframe.requestFullscreen();
+      } else if (iframe.mozRequestFullScreen) { // Firefox
+          iframe.mozRequestFullScreen();
+      } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari and Opera
+          iframe.webkitRequestFullscreen();
+      } else if (iframe.msRequestFullscreen) { // IE/Edge
+          iframe.msRequestFullscreen();
+      }
+  });
   const createDiv = (name, img_url, iframe_link) => {
     const containerDiv = document.createElement('div');
     containerDiv.className = 'list-item';
@@ -11,15 +25,23 @@ function start(options){
     
     const span = document.createElement('span');
     span.textContent = name;
-    containerDiv.appendChild(span);
+
+    const returninDiv = document.createElement('div');
+    returninDiv.appendChild(containerDiv);
+    returninDiv.appendChild(span)
+    returninDiv.className = 'returningDiv';
 
     containerDiv.addEventListener('click', function clicking(event){
       iframe_link = event.target
-      const container = document.getElementsByClassName('container-iframe')[0];
-      container.innerHTML = `<iframe src="${this.dataset.iframeLink}" frameborder="1"  allowfullscreen></iframe>`
+      const iframe = document.querySelector('.rezizable-iframe');
+      iframe.src = this.dataset.iframeLink;
+      const container = document.querySelector('.container-iframe');
+      container.style.display = 'flex';
+      const main = document.getElementById('main');
+      main.style.width = '250px';
       window.scrollTo(0, 0);
     });
-    return containerDiv;
+    return returninDiv;
   };
 
   fetch('phet_simulations_mn_with_iframe.json').then(response => response.json()).then(data => {

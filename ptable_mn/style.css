@@ -5,6 +5,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   height: 100%;
   font-size: 16px;
@@ -12,12 +13,6 @@ body {
   font-family: "Josefin Sans", "Roboto", sans-serif;
   overflow: auto;
 }
-@media screen and (max-width: 1450px) {
-  body {
-    justify-content: normal;
-  }
-}
-
 main {
   display: flex;
   flex-flow: row wrap;
@@ -25,7 +20,15 @@ main {
   justify-content: center;
   width: 100%;
   height: 100dvh;
+  margin-top: 80px;
+  margin-left: 10px;
 }
+@media screen and (max-width: 1450px) {
+  body {
+    justify-content: normal;
+  }
+}
+
 @media screen and (max-width: 1450px) {
   main {
     justify-content: normal;
@@ -262,7 +265,7 @@ sup {
   justify-content: center;
   width: 100%;
   min-width: 1300px;
-  margin-top: 0.4rem;
+  margin-top: 85px;
 }
 @media screen and (max-width: 1447.5px) {
   .dynamic-periodic-table {
@@ -1527,6 +1530,18 @@ sup {
 .modal__content__properties .element-miscellaneous {
   grid-row: 10;
   grid-column: 1/11;
+}
+#header{
+  z-index: 1001;
+}
+#header *{
+  z-index: 1001;
+}
+#menu{
+  z-index: 1001;
+}
+#menu *{
+  z-index: 1001;
 }
 
 @-webkit-keyframes criss-cross-left {

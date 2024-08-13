@@ -5,6 +5,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   height: 100%;
   font-size: 16px;
@@ -17,7 +18,6 @@ body {
     justify-content: normal;
   }
 }
-
 main {
   display: flex;
   flex-flow: row wrap;
@@ -25,6 +25,8 @@ main {
   justify-content: center;
   width: 100%;
   height: 100dvh;
+  margin-top: 80px;
+  margin-left: 10px;
 }
 @media screen and (max-width: 1450px) {
   main {
@@ -260,7 +262,7 @@ sup {
   justify-content: center;
   width: 100%;
   min-width: 1300px;
-  margin-top: 0.4rem;
+  margin-top: 85px;
 }
 @media screen and (max-width: 1447.5px) {
   .dynamic-periodic-table {
