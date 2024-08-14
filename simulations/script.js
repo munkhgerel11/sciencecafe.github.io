@@ -1,110 +1,125 @@
-function start(options){
-  const iframe = document.querySelector('.rezizable-iframe');
-  const fullscreenBtn = document.getElementById('fullscreenBtn');
-  fullscreenBtn.addEventListener('click', function() {
-      // Check if the Fullscreen API is supported
-      if (iframe.requestFullscreen) {
-          iframe.requestFullscreen();
-      } else if (iframe.mozRequestFullScreen) { // Firefox
-          iframe.mozRequestFullScreen();
-      } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari and Opera
-          iframe.webkitRequestFullscreen();
-      } else if (iframe.msRequestFullscreen) { // IE/Edge
-          iframe.msRequestFullscreen();
-      }
-  });
-  const createDiv = (name, img_url, iframe_link) => {
-    const containerDiv = document.createElement('div');
-    containerDiv.className = 'list-item';
-    containerDiv.dataset.iframeLink = iframe_link; // attach iframe_link to the div object
-
-    const itemDiv = document.createElement('div');
-    itemDiv.className = 'item';
-    itemDiv.style.backgroundImage = `url('${img_url}')`;
-    containerDiv.appendChild(itemDiv);
-    
-    const span = document.createElement('span');
-    span.textContent = name;
-
-    const returninDiv = document.createElement('div');
-    returninDiv.appendChild(containerDiv);
-    returninDiv.appendChild(span)
-    returninDiv.className = 'returningDiv';
-
-    containerDiv.addEventListener('click', function clicking(event){
-      iframe_link = event.target
-      const iframe = document.querySelector('.rezizable-iframe');
-      iframe.src = this.dataset.iframeLink;
-      const container = document.querySelector('.container-iframe');
-      container.style.display = 'flex';
-      const main = document.getElementById('main');
-      main.style.width = '250px';
-      window.scrollTo(0, 0);
-    });
-    return returninDiv;
-  };
-
-  fetch('phet_simulations_mn_with_iframe.json').then(response => response.json()).then(data => {
-      const container = document.getElementById('main');
-      if (JSON.stringify(options) === JSON.stringify({
-        physics: true,
-        chemistry: true,
-        math: true,
-        biology: true
-      })) {
-        data.forEach(item => {
-          const div = createDiv(item.name, item.img_url, item.iframe_url);
-          container.appendChild(div);
-        });
-      } else {
-        data.forEach(item => {
-          if (options[item.lesson_type] === true) {
-            const div = createDiv(item.name, item.img_url, item.iframe_url);
-            container.appendChild(div);
-          }
-        });
-      }
-    }).catch(error => console.error(error)); 
-
-  const container = document.getElementById('main');
-  const filterContainer = document.getElementById('filterContainer');
-  filterContainer.appendChild(container);
-}
-
-
-// Function to update options and restart
-function updateOptionsAndRestart(filterName, isChecked) {
-  options[filterName] = isChecked;
-  // Clear the main container before restarting
-  document.getElementById('main').innerHTML = '';
-  start(options);
-}
-
-// Function to initialize checkboxes and start the application
-function initializeApp() {
-  const checkboxes = document.querySelectorAll('.checkbox-container input[type="checkbox"]');
-  checkboxes.forEach(checkbox => {
-    const filterName = checkbox.id.replace('-checkbox', '').toLowerCase();
-    // Set initial checkbox state based on options
-    checkbox.checked = true;
-    
-    checkbox.addEventListener('change', function() {
-      updateOptionsAndRestart(filterName, this.checked);
-    });
-  });
-  
-  // Initial call to start
-  start(options);
-}
-
-// Object to store the current state of filters
+// Global variables
 let options = {
   physics: true,
   chemistry: true,
   math: true,
   biology: true
 };
-// Run initialization when the DOM is fully loaded
+
+// DOM manipulation functions
+function createDiv(name, img_url, iframe_link) {
+  const containerDiv = document.createElement('div');
+  containerDiv.className = 'list-item';
+  containerDiv.dataset.iframeLink = iframe_link;
+
+  const itemDiv = document.createElement('div');
+  itemDiv.className = 'item';
+  itemDiv.style.backgroundImage = `url('${img_url}')`;
+  containerDiv.appendChild(itemDiv);
+  
+  const span = document.createElement('span');
+  span.textContent = name;
+
+  const returningDiv = document.createElement('div');
+  returningDiv.appendChild(containerDiv);
+  returningDiv.appendChild(span);
+  returningDiv.className = 'returningDiv';
+
+  containerDiv.addEventListener('click', function(event) {
+    showIframe(this.dataset.iframeLink);
+  });
+
+  return returningDiv;
+}
+
+function showIframe(iframeLink) {
+  const iframe = document.querySelector('.rezizable-iframe');
+  iframe.src = iframeLink;
+  const container = document.querySelector('.container-iframe');
+  const overlay = document.querySelector('.overlay');
+  
+  // Show the container and overlay
+  container.style.display = 'flex';
+  overlay.style.display = 'block';
+  
+  // Adjust iframe height
+  const headerHeight = container.querySelector('.iframe-header').offsetHeight;
+  iframe.style.height = `calc(100% - ${headerHeight}px)`;
+  
+  document.body.style.overflow = 'hidden';
+}
+
+function hideIframe() {
+  const container = document.querySelector('.container-iframe');
+  const overlay = document.querySelector('.overlay');
+  container.style.display = 'none';
+  overlay.style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+// Main functionality
+function start(options) {
+  const iframe = document.querySelector('.rezizable-iframe');
+  const fullscreenBtn = document.getElementById('fullscreenBtn');
+  const escButton = document.getElementById('Esc');
+
+  fullscreenBtn.addEventListener('click', function() {
+    if (iframe.requestFullscreen) {
+      iframe.requestFullscreen();
+    } else if (iframe.mozRequestFullScreen) {
+      iframe.mozRequestFullScreen();
+    } else if (iframe.webkitRequestFullscreen) {
+      iframe.webkitRequestFullscreen();
+    } else if (iframe.msRequestFullscreen) {
+      iframe.msRequestFullscreen();
+    }
+  });
+
+  escButton.addEventListener('click', hideIframe);
+
+  const overlay = document.querySelector('.overlay');
+  overlay.addEventListener('click', hideIframe);
+
+  fetch('phet_simulations_mn_with_iframe.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('main');
+      const allOptionsEnabled = Object.values(options).every(val => val === true);
+
+      data.forEach(item => {
+        if (allOptionsEnabled || options[item.lesson_type]) {
+          const div = createDiv(item.name, item.img_url, item.iframe_url);
+          container.appendChild(div);
+        }
+      });
+    })
+    .catch(error => console.error(error));
+}
+
+// Filter and restart functions
+function updateOptionsAndRestart(filterName, isChecked) {
+  options[filterName] = isChecked;
+  document.getElementById('main').innerHTML = '';
+  start(options);
+}
+
+function initializeApp() {
+  const checkboxes = document.querySelectorAll('.checkbox-container input[type="checkbox"]');
+  checkboxes.forEach(checkbox => {
+    const filterName = checkbox.id.replace('-checkbox', '').toLowerCase();
+    checkbox.checked = true;
+    
+    checkbox.addEventListener('change', function() {
+      updateOptionsAndRestart(filterName, this.checked);
+    });
+  });
+  const container = document.querySelector('.container-iframe');
+  container.style.display = 'none';
+
+  start(options);
+}
+
+// Initialize the application
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initializeApp);
 } else {

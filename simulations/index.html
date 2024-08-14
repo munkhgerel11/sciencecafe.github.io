@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulations</title>
+    <title>Science Cafe: Сурах гоё | Шинжлэх ухааны кафе</title>
+    <meta name="description" content="Science Cafe Mongolia - Шинжлэх ухааны кафе. Физик, хими, математик, биологийн сонирхолтой мэдээлэл, дасгалууд.">
+    <meta name="keywords" content="science cafe, шинжлэх ухаан, монгол, физик, хими, математик, биологи">
+    <link rel="canonical" href="https://sciencecafe.mn/index.html">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/pw/AP1GczPPaFVGwzrEL6SxbHh073a0sioG5nJnqSY3cvOPYnNxzv3-iB3cC-i6qjt4URFzphMj9WdtP8YbrqVQ2yMuGt-CsH7EW5Ax394oxBI0I5YrIAf9xe3KTLrPdn9M8D4FVk1YQfIfgEgF6EQOheIt_hG8=w225-h225-s-no-gm?authuser=0" />
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
         <!-- Header -->
         <header id="header">
             <div class="logo">
-            <a href="../index.html">Science Cafe <span>: Сурах гоё</span></a>
+            <a href="../index.html" title="Science Cafe : Сурах гоё">Science Cafe <span>: Сурах гоё</span></a>
             </div>
             <a href="#menu"><span>Menu</span></a>
         </header>
@@ -22,36 +25,38 @@
         <!-- Nav -->
         <nav id="menu">
             <ul class="links">
-                <li ><a href="https://shop.sciencecafe.mn/">Science Shop - 🔭 🛍️</a></li>
-                <li ><a href="../menu.html">Cafe Меню - ⚗️ 🍹</a></li>
-                <li><a href="../graph/index.html">Кординатын хавтгай - 📉</a></li>
-                <li ><a href="../ptable_mn/index.html">Химийн үелэх систем - ⚛️</a></li>
-                <li ><a href="../solar/index.html">Нарны аймаг - 🪐</a></li>
-                <li ><a href="../index.html">Нүүр</a></li>
+                <li ><a href="https://shop.sciencecafe.mn/ title="Science Shop">Science Shop - 🔭 🛍️</a></li>
+                <li ><a href="../menu.html" title="Cafe Меню">Cafe Меню - ⚗️ 🍹</a></li>
+                <li><a href="../graph/index.html" title="Кординатын хавтгай">Кординатын хавтгай - 📉</a></li>
+                <li ><a href="../ptable_mn/index.html" title="Химийн үелэх систем">Химийн үелэх систем - ⚛️</a></li>
+                <li ><a href="../solar/index.html" title="Нарны аймаг">Нарны аймаг - 🪐</a></li>
+                <li ><a href="../index.html" title="Нүүр"   >Нүүр</a></li>
             </ul>
         </nav>
         <div id="box" >
             <div class="container-iframe">
-                <iframe src="" class="rezizable-iframe" frameborder="0"></iframe>
-                <!-- Button to make iframe fullscreen -->
-                <button id="fullscreenBtn">Go Fullscreen</button>
+                <div class="iframe-header">
+                    <button id="fullscreenBtn" class="material-icons">fullscreen</button>
+                    <button id="Esc" class="material-icons">close</button>
+                </div>
+                <iframe class="rezizable-iframe" src=""></iframe>
             </div>
             <div id="filter-container">
                 <div>
                     <div class="checkbox-container">
-                        <input type="checkbox" name="filter" value="physics" id="physics-checkbox" />
+                        <input type="checkbox" name="subject" value="physics" id="physics-checkbox" />
                         <label for="physics-checkbox">Физик</label>
                     </div>
                     <div class="checkbox-container">
-                        <input type="checkbox" name="filter" value="chemistry" id="chemistry-checkbox" />
+                        <input type="checkbox" name="subject" value="chemistry" id="chemistry-checkbox" />
                         <label for="chemistry-checkbox">Хими</label>
                     </div>
                     <div class="checkbox-container">
-                        <input type="checkbox" name="filter" value="math" id="math-checkbox" />
+                        <input type="checkbox" name="subject" value="math" id="math-checkbox" />
                         <label for="math-checkbox">Математик</label>
                     </div>
                     <div class="checkbox-container">
-                        <input type="checkbox" name="filter" value="biology" id="biology-checkbox" />
+                        <input type="checkbox" name="subject" value="biology" id="biology-checkbox" />
                         <label for="biology-checkbox">Биологи</label>
                     </div>
                 </div>
@@ -60,21 +65,11 @@
             </div>
         </div>
     </div>
-    <!-- <footer>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/sciencecafeub" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/sciencecafeub" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-        </div>
-    </footer>
-    <div class="copyright">
-        All rights reserved: <a href="https://sciencecafe.mn/">Сапиожен 2024</a>
-    </div> -->
+    <div class="overlay"></div>
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/skel.min.js"></script>
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
