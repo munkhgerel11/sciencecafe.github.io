@@ -22,7 +22,7 @@
 /* Container Styles */
 .container-iframe {
     width: 80vw;
-    height: 80vh;
+    height: 80vh !important;
     margin: auto;
     resize: both;
     border: 2px solid #333;
@@ -156,6 +156,7 @@
     }
     .container-iframe {
         width: 90% !important;  
+        height: 60% !important;
     }
     #filter-container > div {
         justify-content: space-around;
@@ -175,14 +176,7 @@
     #filter-container > div {
         margin-left: 10px;
     }
-}
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .container-iframe {
-        min-width: 90vw;
-        min-height: 90vh;
-    }
-}   
+}  
 /* Small Devices (Tablets) */
 @media (min-width: 577px) and (max-width: 950px) and (orientation: portrait) {
     .container-iframe {

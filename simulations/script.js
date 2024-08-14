@@ -42,10 +42,6 @@ function showIframe(iframeLink) {
   container.style.display = 'flex';
   overlay.style.display = 'block';
   
-  // Adjust iframe height
-  const headerHeight = container.querySelector('.iframe-header').offsetHeight;
-  iframe.style.height = `calc(100% - ${headerHeight}px)`;
-  
   document.body.style.overflow = 'hidden';
 }
 
