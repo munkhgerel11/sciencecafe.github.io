@@ -113,6 +113,8 @@
     align-items: center;
     text-wrap: wrap;
     width: 160px;
+    height: 170px;
+    text-align: center;
 }
 .overlay {
     display: none;
@@ -162,7 +164,7 @@
         justify-content: space-around;
     }
     #filter-container {
-        margin-top: 10px !important;
+        margin-top: 60px !important;
     }
 }
 
@@ -178,17 +180,17 @@
     }
 }  
 /* Small Devices (Tablets) */
-@media (min-width: 577px) and (max-width: 950px) and (orientation: portrait) {
+@media (min-width: 577px) and (max-width: 950px) {
     .container-iframe {
         margin-left: 10px;
-        width: 450px !important;
-    }
-    #box {
-        width: 450px !important;
     }
     .list-item {
-        width: 150px;
-        height: 120px;
+        width: 120px;
+        height: 90px;
+    }
+    .item{
+        width: 120px;
+        height: 90px;
     }
     #filter-container {
         margin-top: 55px;
