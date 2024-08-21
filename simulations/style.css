@@ -90,7 +90,6 @@
 
 .list-item {
     width: 100%;
-    max-width: 250px;
     background-size: cover;
     background-position: center;
     margin: 10px;
@@ -112,9 +111,10 @@
     flex-direction: column;
     align-items: center;
     text-wrap: wrap;
-    width: 160px;
-    height: 170px;
+    width: 400px;
+    height: 250px;
     text-align: center;
+    margin-bottom: 30px;
 }
 .overlay {
     display: none;
@@ -166,6 +166,11 @@
     #filter-container {
         margin-top: 60px !important;
     }
+    .returningDiv{
+        margin-bottom: 10px;
+        width: 180px;
+        height: 150px;
+    }
 }
 
 @media (max-width: 482px) {
@@ -184,14 +189,6 @@
     .container-iframe {
         margin-left: 10px;
     }
-    .list-item {
-        width: 120px;
-        height: 90px;
-    }
-    .item{
-        width: 120px;
-        height: 90px;
-    }
     #filter-container {
         margin-top: 55px;
     }
@@ -199,21 +196,26 @@
         justify-content: space-around;
     }
 }
-
+@media (max-width: 950px) and (orientation: landscape) {
+    .returningDiv{
+        margin-bottom: 10px;
+        width: 180px !important;
+    }
+    .item{
+        height: 150px;
+    }
+}
 /* Medium Devices (Tablets and Small Laptops) */
 @media (min-width: 951px) and (max-width: 1100px) {
-    .list-item {
-        height: 100px;
-        width: 150px;
+    #main{
+        justify-content: space-around !important;
     }
+    
 }
 
 /* Extra Large Devices (Large Desktops) */
 @media (min-width: 1100px) {
-    .list-item {
-        height: 100px;
-        width: 150px;
-    }
+    
     #filter-container > div {
         margin-top: 0px !important;
         justify-content: space-evenly;
