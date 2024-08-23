@@ -117,7 +117,8 @@ let options = {
   physics: true,
   chemistry: true,
   math: true,
-  biology: true
+  biology: true,
+  kids: true
 };
 
 let phetSimulationsData = [
@@ -154,14 +155,14 @@ let phetSimulationsData = [
       "name": "Number Compare",
       "img_url": "https://phet.colorado.edu/sims/html/number-compare/latest/number-compare-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/number-compare/latest/number-compare_mn.html",
-      "lesson_type": "math"
+      "lesson_type": "kids"
   },
   {
       "index": 5,
       "name": "Тоогоор Тогло",
       "img_url": "https://phet.colorado.edu/sims/html/number-play/latest/number-play-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/number-play/latest/number-play_mn.html",
-      "lesson_type": "math"
+      "lesson_type": "kids"
   },
   {
       "index": 6,
@@ -170,19 +171,13 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/html/greenhouse-effect/latest/greenhouse-effect_mn.html",
       "lesson_type": "biology"
   },
-  {
-      "index": 7,
-      "name": "Геометр Оптик: Үндсэн",
-      "img_url": "https://phet.colorado.edu/sims/html/geometric-optics-basics/latest/geometric-optics-basics-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/geometric-optics-basics/latest/geometric-optics-basics_mn.html",
-      "lesson_type": "physics"
-  },
+
   {
       "index": 8,
       "name": "Дундаж: Харилцах савны Тэнцвэр",
       "img_url": "https://phet.colorado.edu/sims/html/mean-share-and-balance/latest/mean-share-and-balance-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/mean-share-and-balance/latest/mean-share-and-balance_mn.html",
-      "lesson_type": "physics"
+      "lesson_type": "kids"
   },
   {
       "index": 9,
@@ -200,16 +195,9 @@ let phetSimulationsData = [
   },
   {
       "index": 11,
-      "name": "ХГ-ийн хэлээ угсрах бүрдэл",
+      "name": "ХГ-ийн хэлхээ угсрах",
       "img_url": "https://phet.colorado.edu/sims/html/circuit-construction-kit-ac/latest/circuit-construction-kit-ac-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/circuit-construction-kit-ac/latest/circuit-construction-kit-ac_mn.html",
-      "lesson_type": "physics"
-  },
-  {
-      "index": 12,
-      "name": "ХГ-ийн хэлхээ угсрах бүрдэл - ВирЛаб",
-      "img_url": "https://phet.colorado.edu/sims/html/circuit-construction-kit-ac-virtual-lab/latest/circuit-construction-kit-ac-virtual-lab-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/circuit-construction-kit-ac-virtual-lab/latest/circuit-construction-kit-ac-virtual-lab_mn.html",
       "lesson_type": "physics"
   },
   {
@@ -228,7 +216,7 @@ let phetSimulationsData = [
   },
   {
       "index": 15,
-      "name": "Тоон шулуун: Зай",
+      "name": "Тоон шулуун: Модуль",
       "img_url": "https://phet.colorado.edu/sims/html/number-line-distance/latest/number-line-distance-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/number-line-distance/latest/number-line-distance_mn.html",
       "lesson_type": "math"
@@ -238,7 +226,7 @@ let phetSimulationsData = [
       "name": "Харьцаа ба Пропорц",
       "img_url": "https://phet.colorado.edu/sims/html/ratio-and-proportion/latest/ratio-and-proportion-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/ratio-and-proportion/latest/ratio-and-proportion_mn.html",
-      "lesson_type": "math"
+      "lesson_type": "kids"
   },
   {
       "index": 17,
@@ -282,13 +270,7 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/html/number-line-integers/latest/number-line-integers_mn.html",
       "lesson_type": "math"
   },
-  {
-      "index": 23,
-      "name": "Векторын Нийлбэр: Томъёо",
-      "img_url": "https://phet.colorado.edu/sims/html/vector-addition-equations/latest/vector-addition-equations-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/vector-addition-equations/latest/vector-addition-equations_mn.html",
-      "lesson_type": "math"
-  },
+
   {
       "index": 24,
       "name": "Векторын Нийлбэр",
@@ -298,18 +280,12 @@ let phetSimulationsData = [
   },
   {
       "index": 25,
-      "name": "Муруйг тодорхойлох",
+      "name": "Статистик, Дундаж",
       "img_url": "https://phet.colorado.edu/sims/html/curve-fitting/latest/curve-fitting-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/curve-fitting/latest/curve-fitting_mn.html",
       "lesson_type": "math"
   },
-  {
-      "index": 26,
-      "name": "Гравитацын Хүч Лаб: Үндсэн",
-      "img_url": "https://phet.colorado.edu/sims/html/gravity-force-lab-basics/latest/gravity-force-lab-basics-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/gravity-force-lab-basics/latest/gravity-force-lab-basics_mn.html",
-      "lesson_type": "physics"
-  },
+
   {
       "index": 27,
       "name": "Долгион Танилц",
@@ -317,20 +293,8 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/html/waves-intro/latest/waves-intro_mn.html",
       "lesson_type": "physics"
   },
-  {
-      "index": 28,
-      "name": "Нэвчилт",
-      "img_url": "https://phet.colorado.edu/sims/html/diffusion/latest/diffusion-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/diffusion/latest/diffusion_mn.html",
-      "lesson_type": "chemistry"
-  },
-  {
-      "index": 29,
-      "name": "Хийтэй Танилц",
-      "img_url": "https://phet.colorado.edu/sims/html/gases-intro/latest/gases-intro-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/gases-intro/latest/gases-intro_mn.html",
-      "lesson_type": "physics"
-  },
+
+
   {
       "index": 30,
       "name": "Хийн Шинж",
@@ -340,18 +304,12 @@ let phetSimulationsData = [
   },
   {
       "index": 31,
-      "name": "Хар биеийн Спектр",
+      "name": "Хар биеийн цацаргалт",
       "img_url": "https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum_mn.html",
       "lesson_type": "physics"
   },
-  {
-      "index": 32,
-      "name": "Масс ба Пүрш: Үндсэн",
-      "img_url": "https://phet.colorado.edu/sims/html/masses-and-springs-basics/latest/masses-and-springs-basics-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/masses-and-springs-basics/latest/masses-and-springs-basics_mn.html",
-      "lesson_type": "physics"
-  },
+
   {
       "index": 33,
       "name": "Энергийн Хэлбэрүүд ба Хувирлууд",
@@ -368,31 +326,18 @@ let phetSimulationsData = [
   },
   {
       "index": 35,
-      "name": "Бутархай: Холимог Тоо",
+      "name": "Бутархай",
       "img_url": "https://phet.colorado.edu/sims/html/fractions-mixed-numbers/latest/fractions-mixed-numbers-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/fractions-mixed-numbers/latest/fractions-mixed-numbers_mn.html",
-      "lesson_type": "math"
+      "lesson_type": "kids"
   },
-  {
-      "index": 36,
-      "name": "Бутархай: Тайлбар",
-      "img_url": "https://phet.colorado.edu/sims/html/fractions-intro/latest/fractions-intro-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/fractions-intro/latest/fractions-intro_mn.html",
-      "lesson_type": "math"
-  },
-  {
-      "index": 37,
-      "name": "Бутархайг Бүтээх",
-      "img_url": "https://phet.colorado.edu/sims/html/build-a-fraction/latest/build-a-fraction-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/build-a-fraction/latest/build-a-fraction_mn.html",
-      "lesson_type": "math"
-  },
+
   {
       "index": 38,
       "name": "Бутархай: Тэнцэтгэл",
       "img_url": "https://phet.colorado.edu/sims/html/fractions-equality/latest/fractions-equality-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/fractions-equality/latest/fractions-equality_mn.html",
-      "lesson_type": "math"
+      "lesson_type": "kids"
   },
   {
       "index": 39,
@@ -415,55 +360,24 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/html/masses-and-springs/latest/masses-and-springs_mn.html",
       "lesson_type": "physics"
   },
-  {
-      "index": 42,
-      "name": "Тэнцэтгэл Судлах: Хоёр Хувьсагч",
-      "img_url": "https://phet.colorado.edu/sims/html/equality-explorer-two-variables/latest/equality-explorer-two-variables-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/equality-explorer-two-variables/latest/equality-explorer-two-variables_mn.html",
-      "lesson_type": "math"
-  },
-  {
-      "index": 43,
-      "name": "Тэнцэтгэл Судлах: Үндсэн",
-      "img_url": "https://phet.colorado.edu/sims/html/equality-explorer-basics/latest/equality-explorer-basics-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/equality-explorer-basics/latest/equality-explorer-basics_mn.html",
-      "lesson_type": "math"
-  },
+
   {
       "index": 44,
       "name": "Тэнцэтгэл Судлах",
       "img_url": "https://phet.colorado.edu/sims/html/equality-explorer/latest/equality-explorer-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/equality-explorer/latest/equality-explorer_mn.html",
-      "lesson_type": "math"
+      "lesson_type": "kids"
   },
   {
       "index": 45,
       "name": "Талбайн загварын Алгебр",
       "img_url": "https://phet.colorado.edu/sims/html/area-model-algebra/latest/area-model-algebra-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/area-model-algebra/latest/area-model-algebra_mn.html",
-      "lesson_type": "math"
+      "lesson_type": "kids"
   },
-  {
-      "index": 46,
-      "name": "Талбайн Загвар Бутархайгаар",
-      "img_url": "https://phet.colorado.edu/sims/html/area-model-decimals/latest/area-model-decimals-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/area-model-decimals/latest/area-model-decimals_mn.html",
-      "lesson_type": "math"
-  },
-  {
-      "index": 47,
-      "name": "Талбайн Загварын Үржвэр",
-      "img_url": "https://phet.colorado.edu/sims/html/area-model-multiplication/latest/area-model-multiplication-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/area-model-multiplication/latest/area-model-multiplication_mn.html",
-      "lesson_type": "math"
-  },
-  {
-      "index": 48,
-      "name": "Талбайн Загварын Танилцуулга",
-      "img_url": "https://phet.colorado.edu/sims/html/area-model-introduction/latest/area-model-introduction-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/area-model-introduction/latest/area-model-introduction_mn.html",
-      "lesson_type": "math"
-  },
+
+
+
   {
       "index": 49,
       "name": "Генийг Илэрхийлэх Зүйлс",
@@ -478,16 +392,10 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/html/capacitor-lab-basics/latest/capacitor-lab-basics_mn.html",
       "lesson_type": "physics"
   },
-  {
-      "index": 51,
-      "name": "Хэлхээний Иж бүрдэл: Тогтмол гүйдэл - Виртуаль Лаб",
-      "img_url": "https://phet.colorado.edu/sims/html/circuit-construction-kit-dc-virtual-lab/latest/circuit-construction-kit-dc-virtual-lab-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/circuit-construction-kit-dc-virtual-lab/latest/circuit-construction-kit-dc-virtual-lab_mn.html",
-      "lesson_type": "physics"
-  },
+
   {
       "index": 52,
-      "name": "Хэлхээний Иж бүрдэл: Тогтмол Гүйдэл",
+      "name": "Хэлхээ угсрах",
       "img_url": "https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_mn.html",
       "lesson_type": "physics"
@@ -515,53 +423,41 @@ let phetSimulationsData = [
   },
   {
       "index": 56,
-      "name": "Шуурхай Өөрчлөх",
+      "name": "Тэгшитгэл задлах",
       "img_url": "https://phet.colorado.edu/sims/html/expression-exchange/latest/expression-exchange-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/expression-exchange/latest/expression-exchange_mn.html",
-      "lesson_type": "math"
+      "lesson_type": "kids"
   },
-  {
-      "index": 57,
-      "name": "Налуу-Хэрчимийн График",
-      "img_url": "https://phet.colorado.edu/sims/html/graphing-slope-intercept/latest/graphing-slope-intercept-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/graphing-slope-intercept/latest/graphing-slope-intercept_mn.html",
-      "lesson_type": "math"
-  },
+
   {
       "index": 58,
       "name": "Үйлдэл Бүтээгч: Үндсэн",
       "img_url": "https://phet.colorado.edu/sims/html/function-builder-basics/latest/function-builder-basics-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/function-builder-basics/latest/function-builder-basics_mn.html",
-      "lesson_type": "math"
+      "lesson_type": "kids"
   },
   {
       "index": 59,
       "name": "Хамаарлын Тоглоомын талбай",
       "img_url": "https://phet.colorado.edu/sims/html/proportion-playground/latest/proportion-playground-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/proportion-playground/latest/proportion-playground_mn.html",
-      "lesson_type": "math"
+      "lesson_type": "kids"
   },
   {
       "index": 60,
       "name": "Нэгжийн харьцаа",
       "img_url": "https://phet.colorado.edu/sims/html/unit-rates/latest/unit-rates-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/unit-rates/latest/unit-rates_mn.html",
-      "lesson_type": "physics"
+      "lesson_type": "kids"
   },
   {
       "index": 61,
       "name": "Арвыг Үүсгэх",
       "img_url": "https://phet.colorado.edu/sims/html/make-a-ten/latest/make-a-ten-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/make-a-ten/latest/make-a-ten_mn.html",
-      "lesson_type": "math"
+      "lesson_type": "kids"
   },
-  {
-      "index": 62,
-      "name": "Материйн Төлөв: Үндсэн",
-      "img_url": "https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics_mn.html",
-      "lesson_type": "physics"
-  },
+
   {
       "index": 63,
       "name": "Материйн Төлөв",
@@ -627,7 +523,7 @@ let phetSimulationsData = [
   },
   {
       "index": 72,
-      "name": "Тригно Аян",
+      "name": "Тригонометр нэгж тойрог",
       "img_url": "https://phet.colorado.edu/sims/html/trig-tour/latest/trig-tour-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/trig-tour/latest/trig-tour_mn.html",
       "lesson_type": "math"
@@ -641,10 +537,10 @@ let phetSimulationsData = [
   },
   {
       "index": 74,
-      "name": "Арифметик",
+      "name": "Үржвэр",
       "img_url": "https://phet.colorado.edu/sims/html/arithmetic/latest/arithmetic-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/arithmetic/latest/arithmetic_mn.html",
-      "lesson_type": "math"
+      "lesson_type": "kids"
   },
   {
       "index": 75,
@@ -674,13 +570,7 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/html/molecule-shapes/latest/molecule-shapes_mn.html",
       "lesson_type": "chemistry"
   },
-  {
-      "index": 79,
-      "name": "Молекул байгуулалт: Үндсэн",
-      "img_url": "https://phet.colorado.edu/sims/html/molecule-shapes-basics/latest/molecule-shapes-basics-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/molecule-shapes-basics/latest/molecule-shapes-basics_mn.html",
-      "lesson_type": "chemistry"
-  },
+
   {
       "index": 80,
       "name": "Бодис, Бүтээгдэхүүн, Үлдэц",
@@ -688,13 +578,7 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/html/reactants-products-and-leftovers/latest/reactants-products-and-leftovers_mn.html",
       "lesson_type": "chemistry"
   },
-  {
-      "index": 81,
-      "name": "Дугуйт тэшүүрийн талбай",
-      "img_url": "https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics_mn.html",
-      "lesson_type": "physics"
-  },
+
   {
       "index": 82,
       "name": "Фарадейн хууль",
@@ -702,19 +586,13 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/html/faradays-law/latest/faradays-law_mn.html",
       "lesson_type": "physics"
   },
-  {
-      "index": 83,
-      "name": "pH Хуваарь: Үндсэн",
-      "img_url": "https://phet.colorado.edu/sims/html/ph-scale-basics/latest/ph-scale-basics-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/ph-scale-basics/latest/ph-scale-basics_mn.html",
-      "lesson_type": "chemistry"
-  },
+
   {
       "index": 84,
       "name": "Талбай байгуулагч",
       "img_url": "https://phet.colorado.edu/sims/html/area-builder/latest/area-builder-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/area-builder/latest/area-builder_mn.html",
-      "lesson_type": "math"
+      "lesson_type": "kids"
   },
   {
       "index": 85,
@@ -732,7 +610,7 @@ let phetSimulationsData = [
   },
   {
       "index": 87,
-      "name": "pH Хуваарь",
+      "name": "pH Хүчил Шүлт",
       "img_url": "https://phet.colorado.edu/sims/html/ph-scale/latest/ph-scale-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/ph-scale/latest/ph-scale_mn.html",
       "lesson_type": "chemistry"
@@ -756,7 +634,7 @@ let phetSimulationsData = [
       "name": "Бутархайн Харьцуулалт",
       "img_url": "https://phet.colorado.edu/sims/html/fraction-matcher/latest/fraction-matcher-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/fraction-matcher/latest/fraction-matcher_mn.html",
-      "lesson_type": "math"
+      "lesson_type": "kids"
   },
   {
       "index": 91,
@@ -798,15 +676,9 @@ let phetSimulationsData = [
       "name": "Жон Травольт",
       "img_url": "https://phet.colorado.edu/sims/html/john-travoltage/latest/john-travoltage-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/john-travoltage/latest/john-travoltage_mn.html",
-      "lesson_type": "physics"
+      "lesson_type": "kids"
   },
-  {
-      "index": 97,
-      "name": "Концентрац",
-      "img_url": "https://phet.colorado.edu/sims/html/concentration/latest/concentration-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/concentration/latest/concentration_mn.html",
-      "lesson_type": "chemistry"
-  },
+
   {
       "index": 98,
       "name": "Гравитацийн хүчний лаборатори",
@@ -823,14 +695,14 @@ let phetSimulationsData = [
   },
   {
       "index": 100,
-      "name": "Бийрийн хуулийн Лаб",
+      "name": "Концентрац",
       "img_url": "https://phet.colorado.edu/sims/html/beers-law-lab/latest/beers-law-lab-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/beers-law-lab/latest/beers-law-lab_mn.html",
       "lesson_type": "chemistry"
   },
   {
       "index": 101,
-      "name": "Молийн хэмжээ",
+      "name": "Молийн хэмжээ, уусмал болгох",
       "img_url": "https://phet.colorado.edu/sims/html/molarity/latest/molarity-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/molarity/latest/molarity_mn.html",
       "lesson_type": "chemistry"
@@ -851,7 +723,7 @@ let phetSimulationsData = [
   },
   {
       "index": 104,
-      "name": "Атом Угсрах",
+      "name": "Химийн үелэх систем, Атом Угсрах",
       "img_url": "https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom-420.png",
       "iframe_url": "https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_mn.html",
       "lesson_type": "chemistry"
@@ -865,21 +737,9 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/cheerpj/fluid-pressure-and-flow/latest/fluid-pressure-and-flow.html?simulation=fluid-pressure-and-flow&locale=mn",
       "lesson_type": "physics"
   },
-  {
-      "index": 108,
-      "name": "Сахар ба Давсны Уусмал",
-      "img_url": "https://phet.colorado.edu/sims/sugar-and-salt-solutions/sugar-and-salt-solutions-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/cheerpj/sugar-and-salt-solutions/latest/sugar-and-salt-solutions.html?simulation=sugar-and-salt-solutions&locale=mn",
-      "lesson_type": "chemistry"
-  },
 
-  {
-      "index": 110,
-      "name": "Эсийн Бүрхүүлийн Суваг",
-      "img_url": "https://phet.colorado.edu/sims/membrane-channels/membrane-channels-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/cheerpj/membrane-channels/latest/membrane-channels.html?simulation=membrane-channels&locale=mn",
-      "lesson_type": "biology"
-  },
+
+
   {
       "index": 111,
       "name": "Конденсаторын Лаборатори",
@@ -887,13 +747,7 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/cheerpj/capacitor-lab/latest/capacitor-lab.html?simulation=capacitor-lab&locale=mn",
       "lesson_type": "physics"
   },
-  {
-      "index": 112,
-      "name": "Хүч ба хөдөлгөөн",
-      "img_url": "https://phet.colorado.edu/sims/motion-series/forces-and-motion-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/cheerpj/motion-series/latest/motion-series.html?simulation=forces-and-motion&locale=mn",
-      "lesson_type": "physics"
-  },
+
   {
       "index": 113,
       "name": "Ramp: Forces and Motion",
@@ -916,13 +770,7 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/cheerpj/nuclear-physics/latest/nuclear-physics.html?simulation=beta-decay&locale=mn",
       "lesson_type": "physics"
   },
-  {
-      "index": 117,
-      "name": "Цохны 2 хэмжээст Хөдөлгөөн",
-      "img_url": "https://phet.colorado.edu/sims/ladybug-motion-2d/ladybug-motion-2d-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/cheerpj/ladybug-motion-2d/latest/ladybug-motion-2d.html?simulation=ladybug-motion-2d&locale=mn",
-      "lesson_type": "physics"
-  },
+
   {
       "index": 118,
       "name": "Цацраг идэвхт хугацаат Тоглоом",
@@ -958,20 +806,7 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/cheerpj/rotation/latest/rotation.html?simulation=torque&locale=mn",
       "lesson_type": "physics"
   },
-  {
-      "index": 123,
-      "name": "Molecular Motors",
-      "img_url": "https://phet.colorado.edu/sims/optical-tweezers/molecular-motors-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/cheerpj/optical-tweezers/latest/optical-tweezers.html?simulation=molecular-motors&locale=mn",
-      "lesson_type": "biology"
-  },
-  {
-      "index": 124,
-      "name": "Stretching DNA",
-      "img_url": "https://phet.colorado.edu/sims/optical-tweezers/stretching-dna-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/cheerpj/optical-tweezers/latest/optical-tweezers.html?simulation=stretching-dna&locale=mn",
-      "lesson_type": "biology"
-  },
+
   {
       "index": 125,
       "name": "Optical Tweezers and Applications",
@@ -979,13 +814,7 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/cheerpj/optical-tweezers/latest/optical-tweezers.html?simulation=optical-tweezers&locale=mn",
       "lesson_type": "biology"
   },
-  {
-      "index": 126,
-      "name": "Цохны Хувьсгал",
-      "img_url": "https://phet.colorado.edu/sims/rotation/rotation-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/cheerpj/rotation/latest/rotation.html?simulation=rotation&locale=mn",
-      "lesson_type": "physics"
-  },
+
   {
       "index": 127,
       "name": "Устөрөгчийн Атомын Загвар",
@@ -1008,20 +837,7 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/cheerpj/bound-states/latest/bound-states.html?simulation=band-structure&locale=mn",
       "lesson_type": "physics"
   },
-  {
-      "index": 131,
-      "name": "Quantum Bound States",
-      "img_url": "https://phet.colorado.edu/sims/bound-states/bound-states-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/cheerpj/bound-states/latest/bound-states.html?simulation=bound-states&locale=mn",
-      "lesson_type": "physics"
-  },
-  {
-      "index": 132,
-      "name": "Хоёр нүх ба",
-      "img_url": "https://phet.colorado.edu/sims/bound-states/covalent-bonds-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/cheerpj/bound-states/latest/bound-states.html?simulation=covalent-bonds&locale=mn",
-      "lesson_type": "physics"
-  },
+
   {
       "index": 133,
       "name": "Хялбаршуулсан MRI",
@@ -1200,27 +1016,8 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/cheerpj/radio-waves/latest/radio-waves.html?simulation=radio-waves&locale=mn",
       "lesson_type": "physics"
   },
-  {
-      "index": 161,
-      "name": "Generator",
-      "img_url": "https://phet.colorado.edu/sims/html/generator/latest/generator-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/generator/latest/generator_en.html",
-      "lesson_type": "physics"
-  },
-  {
-      "index": 162,
-      "name": "Magnets and Electromagnets",
-      "img_url": "https://phet.colorado.edu/sims/html/magnets-and-electromagnets/latest/magnets-and-electromagnets-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/magnets-and-electromagnets/latest/magnets-and-electromagnets_en.html",
-      "lesson_type": "physics"
-  },
-  {
-      "index": 163,
-      "name": "Magnet and Compass",
-      "img_url": "https://phet.colorado.edu/sims/html/magnet-and-compass/latest/magnet-and-compass-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/magnet-and-compass/latest/magnet-and-compass_en.html",
-      "lesson_type": "physics"
-  },
+
+
   {
       "index": 164,
       "name": "Faraday's Electromagnetic Lab",
@@ -1228,13 +1025,7 @@ let phetSimulationsData = [
       "iframe_url": "https://phet.colorado.edu/sims/html/faradays-electromagnetic-lab/latest/faradays-electromagnetic-lab_en.html",
       "lesson_type": "physics"
   },
-  {
-      "index": 165,
-      "name": "Projectile Sampling Distributions",
-      "img_url": "https://phet.colorado.edu/sims/html/projectile-sampling-distributions/latest/projectile-sampling-distributions-420.png",
-      "iframe_url": "https://phet.colorado.edu/sims/html/projectile-sampling-distributions/latest/projectile-sampling-distributions_en.html",
-      "lesson_type": "physics"
-  },
+
   {
       "index": 166,
       "name": "Projectile Data Lab",
