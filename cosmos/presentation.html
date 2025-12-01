@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos Academy | Human Science Institute</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #000000;
+            --void: #050505;
+            --panel: rgba(20, 20, 20, 0.8);
+            --gold: #ffaa00;
+            --gold-dim: #b37700;
+            --star: #ffffff;
+            --text: #e0e0e0;
+            --text-muted: #888;
+            --border: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            padding-bottom: 50px;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        .font-cinzel {
+            font-family: 'Cinzel', serif;
+            letter-spacing: 2px;
+        }
+
+        /* STAR BACKGROUND */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            z-index: -1;
+        }
+
+        .stars::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 3px),
+                radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 2px),
+                radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 3px);
+            background-size: 550px 550px, 350px 350px, 250px 250px;
+            background-position: 0 0, 40px 60px, 130px 270px;
+            opacity: 0.8;
+        }
+
+        /* HEADER */
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px 40px;
+            border-bottom: 1px solid rgba(255, 170, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-text {
+            font-family: 'Cinzel', serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--gold);
+            text-transform: uppercase;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            border-radius: 2px;
+            cursor: pointer;
+            border: 1px solid var(--gold);
+            font-family: 'Cinzel', serif;
+            font-weight: bold;
+            transition: 0.3s;
+            margin-left: 10px;
+            background: transparent;
+            color: var(--gold);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        .btn:hover {
+            background: var(--gold);
+            color: black;
+            box-shadow: 0 0 20px var(--gold-dim);
+        }
+
+        /* DEEP SPACE HERO */
+        .black-hole-container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: black;
+        }
+
+        /* The Video Container - Seamless Blend */
+        .event-horizon {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Soft vignette to blend edges without cutting off the disk */
+            -webkit-mask-image: radial-gradient(circle, black 50%, transparent 95%);
+            mask-image: radial-gradient(circle, black 50%, transparent 95%);
+            z-index: 1;
+        }
+
+        .logo-video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transform: scale(1.2);
+        }
+
+        .hero-text {
+            position: absolute;
+            z-index: 2;
+            text-align: center;
+            bottom: 10%;
+            width: 100%;
+        }
+
+        .hero-text h1 {
+            font-size: 5rem;
+            color: white;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 15px;
+            font-weight: 400;
+            text-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+            opacity: 0;
+            animation: fadeUp 2s ease forwards 1s;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            color: #888;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeUp 2s ease forwards 1.5s;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* LAYOUT */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* TABS */
+        .main-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .main-tab {
+            padding: 15px 0;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-family: 'Cinzel', serif;
+            transition: 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .main-tab:hover {
+            color: var(--gold);
+        }
+
+        .main-tab.active {
+            color: var(--gold);
+            border-bottom: 2px solid var(--gold);
+            text-shadow: 0 0 10px var(--gold-dim);
+        }
+
+        /* SECTIONS */
+        .view-section {
+            display: none;
+            animation: fadeIn 1s ease;
+        }
+
+        .view-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* CARDS */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.5s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: var(--gold);
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--gold);
+            opacity: 0.8;
+        }
+
+        .card h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            font-family: 'Cinzel', serif;
+        }
+
+        .card p {
+            color: #aaa;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        /* LOCATION */
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .loc-img-frame {
+            border: 1px solid var(--gold-dim);
+            padding: 10px;
+            position: relative;
+        }
+
+        .loc-img-frame::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 50px;
+            height: 50px;
+            border-top: 2px solid var(--gold);
+            border-right: 2px solid var(--gold);
+        }
+
+        .loc-img-frame::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: -10px;
+            width: 50px;
+            height: 50px;
+            border-bottom: 2px solid var(--gold);
+            border-left: 2px solid var(--gold);
+        }
+
+        .loc-img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            filter: sepia(20%) contrast(1.2);
+        }
+
+        .proposal-box {
+            border-left: 2px solid var(--gold);
+            padding-left: 30px;
+            margin-bottom: 40px;
+        }
+
+        .proposal-box h3 {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* FINANCIAL DASHBOARD */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .kpi-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 25px;
+            border-top: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .kpi-title {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 2px;
+            font-family: 'Cinzel', serif;
+        }
+
+        .kpi-val {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 10px;
+            color: white;
+            font-family: 'Cinzel', serif;
+        }
+
+        .kpi-sub {
+            font-size: 0.75rem;
+            margin-top: 5px;
+            color: var(--gold);
+        }
+
+        .sub-tabs {
+            display: flex;
+            gap: 2px;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 5px;
+            width: fit-content;
+        }
+
+        .sub-tab {
+            padding: 10px 30px;
+            background: transparent;
+            color: var(--text-muted);
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .sub-tab:hover {
+            color: white;
+        }
+
+        .sub-tab.active {
+            background: var(--gold);
+            color: black;
+            font-weight: bold;
+        }
+
+        .sub-section {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .sub-section.active {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th {
+            border-bottom: 1px solid var(--gold-dim);
+            color: var(--gold);
+            padding: 15px;
+            text-align: left;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.9rem;
+        }
+
+        tr:hover td {
+            background: rgba(255, 170, 0, 0.05);
+        }
+
+        input.cell-input {
+            background: transparent;
+            border: none;
+            color: white;
+            width: 100%;
+            font-size: 1rem;
+            padding: 5px;
+            outline: none;
+            border-bottom: 1px solid transparent;
+            transition: 0.3s;
+        }
+
+        input.cell-input:focus {
+            border-bottom: 1px solid var(--gold);
+        }
+
+        .add-row-btn {
+            width: 100%;
+            padding: 15px;
+            background: transparent;
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            color: var(--text-muted);
+            margin-top: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .add-row-btn:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        .config-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .config-panel {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color: #aaa;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .slider-val {
+            color: var(--gold);
+            font-family: 'Cinzel', serif;
+        }
+
+        input[type=range] {
+            width: 100%;
+            cursor: pointer;
+            accent-color: var(--gold);
+        }
+
+        .input-money {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 12px;
+            width: 100%;
+            font-size: 1rem;
+            font-family: 'Cinzel', serif;
+        }
+
+        .chart-box {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            height: 400px;
+        }
+
+        /* UTILS */
+        .text-gold {
+            color: var(--gold);
+        }
+
+        .text-danger {
+            color: #ff4757;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="stars"></div>
+
+    <header>
+        <div class="logo-text">Cosmos Academy</div>
+        <div>
+            <button class="btn" onclick="saveData()">Save Mission</button>
+            <button class="btn" onclick="resetData()">Abort</button>
+        </div>
+    </header>
+
+    <!-- DEEP SPACE HERO -->
+    <div class="black-hole-container">
+        <div class="event-horizon">
+            <video autoplay loop muted playsinline class="logo-video">
+                <source src="logo_video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-text">
+            <h1>Cosmos Academy</h1>
+            <p>The Future of "Human" Knowledge</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- MAIN NAVIGATION -->
+        <div class="main-tabs">
+            <button class="main-tab active" onclick="switchMainTab('vision')">Mission Vision</button>
+            <button class="main-tab" onclick="switchMainTab('location')">Strategic Base</button>
+            <button class="main-tab" onclick="switchMainTab('financials')">Flight Data</button>
+        </div>
+
+        <!-- VIEW 1: VISION -->
+        <div id="vision" class="view-section active">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <h2 class="font-cinzel" style="font-size: 2.5rem; color: white;">A New Dimension of Learning</h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 20px auto;">We don't just teach
+                    definitions. We prepare the next generation of explorers to push the boundaries of what is possible.
+                </p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-atom"></i></div>
+                    <h3>Integrated Sciences</h3>
+                    <p>Nature doesn't divide itself into Physics, Chemistry, and Biology. Neither do we. We teach
+                        science as a unified, interconnected fabric of reality.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-infinity"></i></div>
+                    <h3>Discovery Math</h3>
+                    <p>Mathematics is the language of the universe. We guide students to discover its laws from scratch,
+                        building the intuition of a true pioneer.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-microscope"></i></div>
+                    <h3>Real Research</h3>
+                    <p>Our students aren't just observers; they are contributors. They conduct real experiments in
+                        robotics, bio-chem, and physics, publishing their findings.</p>
+                </div>
+            </div>
+
+            <!-- 5-YEAR VISION -->
+            <div style="margin-top: 100px; text-align: center;">
+                <h2 class="font-cinzel" style="font-size: 2.5rem; margin-bottom: 60px;">The <span
+                        class="text-gold">5-Year Horizon</span></h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
+                        <h3>Voice of Science</h3>
+                        <p>Mongolia’s most trusted source. When the world is uncertain, the nation looks to Cosmos
+                            Academy for truth and clarity.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Impact Research</h3>
+                        <p>An independent institute that drives progress. We don't just study the future; we help build
+                            it through impactful research.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-user-astronaut"></i></div>
+                        <h3>Premier Talent</h3>
+                        <p>The launchpad for Mongolia's future engineers and scientists. We prepare the minds that will
+                            solve tomorrow's problems.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Market Dominance</h3>
+                        <p>Supplying <strong>80%</strong> of modern school labs and curricula. We set the standard for
+                            science education across the nation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW 2: LOCATION -->
+        <div id="location" class="view-section">
+            <div class="location-grid">
+                <div class="loc-img-frame">
+                    <img src="requested_area.jpeg" alt="Strategic Location" class="loc-img">
+                </div>
+                <div>
+                    <h2 class="font-cinzel" style="font-size: 3rem; margin-bottom: 40px;">Strategic <span
+                            class="text-gold">Proposal</span></h2>
+
+                    <div class="proposal-box">
+                        <h3>1. Partnership (Rent-Free)</h3>
+                        <p style="color: #aaa;">We request this location as a strategic contribution. By removing the
+                            burden of rent, we channel all resources into world-class equipment and education.</p>
+                    </div>
+
+                    <div class="proposal-box">
+                        <h3>2. Renovation (Separate Budget)</h3>
+                        <p style="color: #aaa;">The 250M MNT seed investment is strictly for <strong>Operations &
+                                Equipment</strong>. We propose a separate budget to transform this space into a
+                            futuristic Science Museum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW 3: FINANCIALS -->
+        <div id="financials" class="view-section">
+
+            <!-- KPI TOP BAR -->
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-title">Required Investment</div>
+                    <div class="kpi-val" id="kpi-capex">0 ₮</div>
+                    <div class="kpi-sub">Total Startup Cost</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-title">Monthly Burn</div>
+                    <div class="kpi-val text-danger" id="kpi-opex">0 ₮</div>
+                    <div class="kpi-sub">Fixed Operations</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-title">ROI Date</div>
+                    <div class="kpi-val text-gold" id="kpi-roi">---</div>
+                    <div class="kpi-sub">Break-Even Point</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-title">Month 24 Profit</div>
+                    <div class="kpi-val text-gold" id="kpi-profit">0 ₮</div>
+                    <div class="kpi-sub">Projected Net</div>
+                </div>
+            </div>
+
+            <!-- SUB TABS -->
+            <div class="sub-tabs">
+                <button class="sub-tab active" onclick="switchSubTab('capex')">Detailed CAPEX</button>
+                <button class="sub-tab" onclick="switchSubTab('opex')">Fixed OPEX</button>
+                <button class="sub-tab" onclick="switchSubTab('config')">Parameters</button>
+                <button class="sub-tab" onclick="switchSubTab('charts')">Projections</button>
+            </div>
+
+            <!-- TAB 1: CAPEX -->
+            <div id="capex" class="sub-section active">
+                <div class="config-panel">
+                    <table id="capex-table">
+                        <thead>
+                            <tr>
+                                <th width="20%">Category</th>
+                                <th width="40%">Item</th>
+                                <th width="10%">Qty</th>
+                                <th width="15%">Unit Cost (₮)</th>
+                                <th width="15%">Total</th>
+                                <th width="5%"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="capex-body"></tbody>
+                    </table>
+                    <button class="add-row-btn" onclick="addCapexRow()">+ Add Spending Item</button>
+                </div>
+            </div>
+
+            <!-- TAB 2: OPEX -->
+            <div id="opex" class="sub-section">
+                <div class="config-panel">
+                    <table id="opex-table">
+                        <thead>
+                            <tr>
+                                <th width="30%">Category</th>
+                                <th width="40%">Description</th>
+                                <th width="20%">Monthly Cost (₮)</th>
+                                <th width="10%"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="opex-body"></tbody>
+                    </table>
+                    <button class="add-row-btn" onclick="addOpexRow()">+ Add Monthly Fixed Cost</button>
+                </div>
+            </div>
+
+            <!-- TAB 3: CONFIG -->
+            <div id="config" class="sub-section">
+                <div class="config-grid">
+
+                    <!-- Unit Economics -->
+                    <div class="config-panel">
+                        <h3 class="font-cinzel text-gold" style="margin-bottom: 20px;">Unit Economics</h3>
+
+                        <div class="form-group">
+                            <label class="form-label">Monthly Tuition Fee (₮)</label>
+                            <input type="number" class="input-money" id="conf-tuition" oninput="updateAll()">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Variable Cost per Student</label>
+                            <input type="number" class="input-money" id="conf-varcost" oninput="updateAll()">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Science Box: Selling Price</label>
+                            <input type="number" class="input-money" id="conf-boxprice" oninput="updateAll()">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Science Box: Cost</label>
+                            <input type="number" class="input-money" id="conf-boxcost" oninput="updateAll()">
+                        </div>
+                    </div>
+
+                    <!-- Growth Strategy -->
+                    <div class="config-panel">
+                        <h3 class="font-cinzel text-gold" style="margin-bottom: 20px;">Growth Vector</h3>
+
+                        <div class="form-group">
+                            <label class="form-label">Starting Students <span class="slider-val"
+                                    id="val-start">0</span></label>
+                            <input type="range" id="slide-start" min="1" max="100" step="1" oninput="updateAll()">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Monthly Growth <span class="slider-val"
+                                    id="val-growth">0</span></label>
+                            <input type="range" id="slide-growth" min="0" max="20" step="1" oninput="updateAll()">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Box Sales / Month <span class="slider-val"
+                                    id="val-boxes">0</span></label>
+                            <input type="range" id="slide-boxes" min="0" max="200" step="5" oninput="updateAll()">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Inflation Rate <span class="slider-val"
+                                    id="val-inf">0%</span></label>
+                            <input type="range" id="slide-inf" min="0" max="20" step="1" oninput="updateAll()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 4: CHARTS -->
+            <div id="charts" class="sub-section">
+                <div class="config-grid" style="grid-template-columns: 2fr 1fr;">
+                    <div class="chart-box">
+                        <canvas id="cashflowChart"></canvas>
+                    </div>
+                    <div class="chart-box">
+                        <canvas id="opsChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="config-panel" style="margin-top: 30px; max-height: 400px; overflow-y: auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Month</th>
+                                <th>Students</th>
+                                <th>Revenue</th>
+                                <th>Expense</th>
+                                <th>Net Profit</th>
+                                <th>Bank Balance</th>
+                            </tr>
+                        </thead>
+                        <tbody id="proj-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // --- DEFAULT DATA ---
+        const defaultData = {
+            capex: [
+                // 1. High-Tech Equipment
+                { cat: 'High-Tech', item: 'Bambu Lab X1-Carbon Combo (3D Printer)', qty: 1, cost: 11500000 },
+                { cat: 'High-Tech', item: 'High-Spec Workstations (RTX 4060+)', qty: 3, cost: 6000000 }, // 18M total / 3
+                { cat: 'High-Tech', item: 'Robotic Skeletal & Modules (Arduino/Pi)', qty: 1, cost: 6000000 },
+                { cat: 'High-Tech', item: 'Electronic Modules (Soldering/Oscilloscopes)', qty: 1, cost: 2500000 },
+                { cat: 'High-Tech', item: 'Silent Air Compressor', qty: 1, cost: 800000 },
+
+                // 2. Chemistry Lab
+                { cat: 'Chem Lab', item: 'Fume Chamber (Industrial PP)', qty: 1, cost: 5500000 },
+                { cat: 'Chem Lab', item: 'Lab Tables (Epoxy Resin/Sink)', qty: 1, cost: 6000000 },
+                { cat: 'Chem Lab', item: 'Ventilation System (Ductwork)', qty: 1, cost: 3500000 },
+                { cat: 'Chem Lab', item: 'Glassware Bulk (Beakers/Flasks)', qty: 1, cost: 2500000 },
+                { cat: 'Chem Lab', item: 'Reagents (Initial Chemical Stock)', qty: 1, cost: 5000000 },
+
+                // 3. Classroom & Media
+                { cat: 'Media', item: 'Interactive Display (86" Touch)', qty: 1, cost: 4000000 },
+                { cat: 'Media', item: 'DaVinci Resolve Studio + Panel', qty: 1, cost: 1500000 },
+                { cat: 'Furniture', item: 'Student Ergonomic Sets (25)', qty: 1, cost: 5000000 },
+                { cat: 'Media', item: 'Event Set (Lighting/Smoke/Mic)', qty: 1, cost: 3500000 },
+
+                // 4. Interior & Ops
+                { cat: 'Renovation', item: 'Science Decor & Wall Art', qty: 1, cost: 25000000 },
+                { cat: 'Inventory', item: 'Science Box Kits (Stock)', qty: 1, cost: 8000000 },
+                { cat: 'Furniture', item: 'Office Furniture & Shelving', qty: 1, cost: 3000000 },
+                { cat: 'Logistics', item: 'Cargo & Customs (China -> UB)', qty: 1, cost: 12000000 },
+
+                // 5. Runway / Reserves (Initial Funding)
+                { cat: 'Runway', item: 'Salary Fund (6 Months Reserve)', qty: 1, cost: 80000000 },
+                { cat: 'Runway', item: 'Rent Fund (6 Months Reserve)', qty: 1, cost: 24000000 },
+                { cat: 'Marketing', item: 'Launch Campaign & Branding', qty: 1, cost: 15000000 },
+                { cat: 'Reserves', item: 'Contingency Fund (5%)', qty: 1, cost: 12200000 }
+            ],
+            opex: [
+                { cat: 'Rent', desc: 'Premise Cost (Monthly)', cost: 4000000 }, // 24M / 6
+                { cat: 'Salaries', desc: 'Teachers, Admin, Cleaner (4-5 Staff)', cost: 13300000 }, // 80M / 6
+                { cat: 'Marketing', desc: 'FB Ads & Content (Monthly)', cost: 2500000 }, // 15M / 6 approx
+                { cat: 'Utilities', desc: 'Internet, Elec, Heating', cost: 800000 }
+            ],
+            config: {
+                tuition: 350000,
+                varCost: 25000,
+                boxPrice: 80000,
+                boxCost: 30000,
+                startStudents: 30,
+                growthRate: 5,
+                boxSales: 50,
+                inflation: 6
+            }
+        };
+
+        let appData = JSON.parse(localStorage.getItem('cosmosMaster')) || JSON.parse(JSON.stringify(defaultData));
+
+        // --- INIT ---
+        let chart1, chart2;
+        window.onload = function () {
+            renderCapex();
+            renderOpex();
+            renderConfigInputs();
+            updateAll();
+        };
+
+        // --- TAB LOGIC ---
+        function switchMainTab(id) {
+            document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.main-tab').forEach(el => el.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        function switchSubTab(id) {
+            document.querySelectorAll('.sub-section').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.sub-tab').forEach(el => el.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            event.currentTarget.classList.add('active');
+            if (id === 'charts') updateCharts();
+        }
+
+        // --- CAPEX FUNCTIONS ---
+        function renderCapex() {
+            const tbody = document.getElementById('capex-body');
+            tbody.innerHTML = '';
+            appData.capex.forEach((row, i) => {
+                let total = row.qty * row.cost;
+                let tr = `<tr>
+                <td><input class="cell-input" value="${row.cat}" onchange="updateCapex(${i}, 'cat', this.value)"></td>
+                <td><input class="cell-input" value="${row.item}" onchange="updateCapex(${i}, 'item', this.value)"></td>
+                <td><input type="number" class="cell-input" value="${row.qty}" onchange="updateCapex(${i}, 'qty', this.value)"></td>
+                <td><input type="number" class="cell-input" value="${row.cost}" onchange="updateCapex(${i}, 'cost', this.value)"></td>
+                <td style="font-weight:bold; color:var(--gold);">${formatMoney(total)}</td>
+                <td class="text-danger"><i class="fas fa-trash action-icon" onclick="delCapex(${i})" style="cursor:pointer;"></i></td>
+            </tr>`;
+                tbody.innerHTML += tr;
+            });
+        }
+        function updateCapex(i, field, val) { appData.capex[i][field] = field === 'qty' || field === 'cost' ? Number(val) : val; updateAll(); }
+        function delCapex(i) { appData.capex.splice(i, 1); renderCapex(); updateAll(); }
+        function addCapexRow() { appData.capex.push({ cat: 'New', item: 'Description', qty: 1, cost: 0 }); renderCapex(); }
+
+        // --- OPEX FUNCTIONS ---
+        function renderOpex() {
+            const tbody = document.getElementById('opex-body');
+            tbody.innerHTML = '';
+            appData.opex.forEach((row, i) => {
+                let tr = `<tr>
+                <td><input class="cell-input" value="${row.cat}" onchange="updateOpex(${i}, 'cat', this.value)"></td>
+                <td><input class="cell-input" value="${row.desc}" onchange="updateOpex(${i}, 'desc', this.value)"></td>
+                <td><input type="number" class="cell-input" value="${row.cost}" onchange="updateOpex(${i}, 'cost', this.value)"></td>
+                <td class="text-danger"><i class="fas fa-trash action-icon" onclick="delOpex(${i})" style="cursor:pointer;"></i></td>
+            </tr>`;
+                tbody.innerHTML += tr;
+            });
+        }
+        function updateOpex(i, field, val) { appData.opex[i][field] = field === 'cost' ? Number(val) : val; updateAll(); }
+        function delOpex(i) { appData.opex.splice(i, 1); renderOpex(); updateAll(); }
+        function addOpexRow() { appData.opex.push({ cat: 'General', desc: 'Expense Name', cost: 0 }); renderOpex(); }
+
+        // --- CONFIG FUNCTIONS ---
+        function renderConfigInputs() {
+            document.getElementById('conf-tuition').value = appData.config.tuition;
+            document.getElementById('conf-varcost').value = appData.config.varCost;
+            document.getElementById('conf-boxprice').value = appData.config.boxPrice;
+            document.getElementById('conf-boxcost').value = appData.config.boxCost;
+
+            document.getElementById('slide-start').value = appData.config.startStudents;
+            document.getElementById('slide-growth').value = appData.config.growthRate;
+            document.getElementById('slide-boxes').value = appData.config.boxSales;
+            document.getElementById('slide-inf').value = appData.config.inflation;
+
+            updateSliderLabels();
+        }
+
+        function updateSliderLabels() {
+            document.getElementById('val-start').innerText = document.getElementById('slide-start').value;
+            document.getElementById('val-growth').innerText = document.getElementById('slide-growth').value;
+            document.getElementById('val-boxes').innerText = document.getElementById('slide-boxes').value;
+            document.getElementById('val-inf').innerText = document.getElementById('slide-inf').value + '%';
+        }
+
+        // --- MASTER UPDATE LOGIC ---
+        function updateAll() {
+            // 1. Sync Inputs to State
+            appData.config.tuition = Number(document.getElementById('conf-tuition').value);
+            appData.config.varCost = Number(document.getElementById('conf-varcost').value);
+            appData.config.boxPrice = Number(document.getElementById('conf-boxprice').value);
+            appData.config.boxCost = Number(document.getElementById('conf-boxcost').value);
+            appData.config.startStudents = Number(document.getElementById('slide-start').value);
+            appData.config.growthRate = Number(document.getElementById('slide-growth').value);
+            appData.config.boxSales = Number(document.getElementById('slide-boxes').value);
+            appData.config.inflation = Number(document.getElementById('slide-inf').value);
+            updateSliderLabels();
+
+            // 2. Calculate Aggregates
+            let totalCapex = appData.capex.reduce((sum, item) => sum + (item.qty * item.cost), 0);
+            let monthlyFixed = appData.opex.reduce((sum, item) => sum + item.cost, 0);
+
+            // 3. Update KPI Header
+            document.getElementById('kpi-capex').innerText = formatCompact(totalCapex);
+            document.getElementById('kpi-opex').innerText = formatCompact(monthlyFixed);
+
+            // 4. Run Projection Loop
+            let proj = runProjection(totalCapex, monthlyFixed);
+
+            // 5. Update Remaining KPIs
+            document.getElementById('kpi-profit').innerText = formatCompact(proj.profits[23]);
+            document.getElementById('kpi-roi').innerText = proj.roiMonth > -1 ? `Month ${proj.roiMonth}` : 'Not in 2 yrs';
+
+            // 6. Update Proj Table
+            renderProjTable(proj);
+
+            // 7. Update Charts (if needed)
+            if (document.getElementById('charts').classList.contains('active') || document.getElementById('financials').classList.contains('active')) {
+                renderCharts(proj);
+            }
+        }
+
+        function runProjection(totalCapex, fixedOpex) {
+            let months = [], revenues = [], expenses = [], profits = [], cash = [];
+            let currentCash = -totalCapex;
+            let students = appData.config.startStudents;
+            let roiMonth = -1;
+            const maxCap = 140;
+
+            for (let m = 1; m <= 24; m++) {
+                // Growth
+                if (m > 1) students += appData.config.growthRate;
+                if (students > maxCap) students = maxCap;
+
+                // Revenue
+                let revTuition = Math.floor(students) * appData.config.tuition;
+                let revBoxes = appData.config.boxSales * appData.config.boxPrice;
+                let totalRev = revTuition + revBoxes;
+
+                // Expenses
+                let infMultiplier = (m >= 13) ? (1 + (appData.config.inflation / 100)) : 1;
+                let expFixed = fixedOpex * infMultiplier;
+                let expVar = (Math.floor(students) * appData.config.varCost) + (appData.config.boxSales * appData.config.boxCost);
+                let totalExp = expFixed + expVar;
+
+                // Result
+                let net = totalRev - totalExp;
+                currentCash += net;
+
+                if (roiMonth === -1 && currentCash >= 0) roiMonth = m;
+
+                months.push(`M${m}`);
+                revenues.push(totalRev);
+                expenses.push(totalExp);
+                profits.push(net);
+                cash.push(currentCash);
+            }
+
+            return { months, revenues, expenses, profits, cash, roiMonth, students };
+        }
+
+        function renderProjTable(data) {
+            let tbody = document.getElementById('proj-body');
+            tbody.innerHTML = '';
+            for (let i = 0; i < 12; i++) {
+                let row = `<tr>
+                <td>${data.months[i]}</td>
+                <td>${Math.round(data.students - ((11 - i) * appData.config.growthRate))}</td>
+                <td style="color:var(--gold);">${formatCompact(data.revenues[i])}</td>
+                <td class="text-danger">${formatCompact(data.expenses[i])}</td>
+                <td style="font-weight:bold">${formatCompact(data.profits[i])}</td>
+                <td style="color:${data.cash[i] >= 0 ? '#00ff9d' : '#888'}">${formatCompact(data.cash[i])}</td>
+            </tr>`;
+                tbody.innerHTML += row;
+            }
+        }
+
+        function renderCharts(data) {
+            if (!data) {
+                let totalCapex = appData.capex.reduce((sum, item) => sum + (item.qty * item.cost), 0);
+                let monthlyFixed = appData.opex.reduce((sum, item) => sum + item.cost, 0);
+                data = runProjection(totalCapex, monthlyFixed);
+            }
+
+            if (chart1) chart1.destroy();
+            if (chart2) chart2.destroy();
+
+            // Chart 1: Cash Flow
+            const ctx1 = document.getElementById('cashflowChart').getContext('2d');
+            let gradient = ctx1.createLinearGradient(0, 0, 0, 400);
+            gradient.addColorStop(0, 'rgba(255, 170, 0, 0.4)');
+            gradient.addColorStop(1, 'rgba(255, 170, 0, 0)');
+
+            chart1 = new Chart(ctx1, {
+                type: 'line',
+                data: {
+                    labels: data.months,
+                    datasets: [{
+                        label: 'Cumulative Cash (ROI)',
+                        data: data.cash,
+                        borderColor: '#ffaa00',
+                        backgroundColor: gradient,
+                        fill: true,
+                        borderWidth: 2,
+                        pointRadius: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: { display: true, text: 'Investment Recovery Curve', color: 'white', font: { family: 'Cinzel' } },
+                        legend: { display: false }
+                    },
+                    scales: {
+                        x: { grid: { color: '#333' } },
+                        y: { grid: { color: '#333' }, ticks: { callback: (val) => formatCompact(val) } }
+                    }
+                }
+            });
+
+            // Chart 2: Operations
+            const ctx2 = document.getElementById('opsChart').getContext('2d');
+            chart2 = new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: data.months,
+                    datasets: [
+                        { label: 'Revenue', data: data.revenues, backgroundColor: '#ffaa00' },
+                        { label: 'Expenses', data: data.expenses, backgroundColor: '#ff4757' }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: { display: true, text: 'Monthly In vs Out', color: 'white', font: { family: 'Cinzel' } },
+                        legend: { position: 'bottom', labels: { color: '#aaa' } }
+                    },
+                    scales: {
+                        x: { grid: { display: false } },
+                        y: { grid: { color: '#333' }, ticks: { callback: (val) => formatCompact(val) } }
+                    }
+                }
+            });
+        }
+
+        function updateCharts() {
+            renderCharts();
+        }
+
+        // --- UTILS ---
+        function formatMoney(n) { return new Intl.NumberFormat('mn-MN').format(n); }
+        function formatCompact(n) { return new Intl.NumberFormat('mn-MN', { notation: "compact" }).format(n) + '₮'; }
+        function saveData() { localStorage.setItem('cosmosMaster', JSON.stringify(appData)); alert('Mission Data Saved!'); }
+        function resetData() { if (confirm('Abort Mission? (Reset Data)')) { appData = JSON.parse(JSON.stringify(defaultData)); localStorage.removeItem('cosmosMaster'); location.reload(); } }
+
+    </script>
+
+</body>
+
+</html>
