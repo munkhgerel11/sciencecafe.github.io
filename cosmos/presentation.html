@@ -855,52 +855,36 @@
         // --- DEFAULT DATA ---
         const defaultData = {
             capex: [
-                // 1. High-Tech Equipment
-                { cat: 'High-Tech', item: 'Bambu Lab X1-Carbon Combo (3D Printer)', qty: 1, cost: 11500000 },
-                { cat: 'High-Tech', item: 'High-Spec Workstations (RTX 4060+)', qty: 3, cost: 6000000 }, // 18M total / 3
-                { cat: 'High-Tech', item: 'Robotic Skeletal & Modules (Arduino/Pi)', qty: 1, cost: 6000000 },
-                { cat: 'High-Tech', item: 'Electronic Modules (Soldering/Oscilloscopes)', qty: 1, cost: 2500000 },
-                { cat: 'High-Tech', item: 'Silent Air Compressor', qty: 1, cost: 800000 },
-
-                // 2. Chemistry Lab
-                { cat: 'Chem Lab', item: 'Fume Chamber (Industrial PP)', qty: 1, cost: 5500000 },
-                { cat: 'Chem Lab', item: 'Lab Tables (Epoxy Resin/Sink)', qty: 1, cost: 6000000 },
-                { cat: 'Chem Lab', item: 'Ventilation System (Ductwork)', qty: 1, cost: 3500000 },
-                { cat: 'Chem Lab', item: 'Glassware Bulk (Beakers/Flasks)', qty: 1, cost: 2500000 },
-                { cat: 'Chem Lab', item: 'Reagents (Initial Chemical Stock)', qty: 1, cost: 5000000 },
-
-                // 3. Classroom & Media
-                { cat: 'Media', item: 'Interactive Display (86" Touch)', qty: 1, cost: 4000000 },
-                { cat: 'Media', item: 'DaVinci Resolve Studio + Panel', qty: 1, cost: 1500000 },
-                { cat: 'Furniture', item: 'Student Ergonomic Sets (25)', qty: 1, cost: 5000000 },
-                { cat: 'Media', item: 'Event Set (Lighting/Smoke/Mic)', qty: 1, cost: 3500000 },
-
-                // 4. Interior & Ops
-                { cat: 'Renovation', item: 'Science Decor & Wall Art', qty: 1, cost: 25000000 },
-                { cat: 'Inventory', item: 'Science Box Kits (Stock)', qty: 1, cost: 8000000 },
-                { cat: 'Furniture', item: 'Office Furniture & Shelving', qty: 1, cost: 3000000 },
-                { cat: 'Logistics', item: 'Cargo & Customs (China -> UB)', qty: 1, cost: 12000000 },
-
-                // 5. Runway / Reserves (Initial Funding)
-                { cat: 'Runway', item: 'Salary Fund (6 Months Reserve)', qty: 1, cost: 80000000 },
-                { cat: 'Runway', item: 'Rent Fund (6 Months Reserve)', qty: 1, cost: 24000000 },
-                { cat: 'Marketing', item: 'Launch Campaign & Branding', qty: 1, cost: 15000000 },
-                { cat: 'Reserves', item: 'Contingency Fund (5%)', qty: 1, cost: 12200000 }
+                { cat: 'Robotic Skeletal & Modules', item: 'Arduino kits, Raspberry Pi, Servo motors, Sensors, structural beams', qty: 1, cost: 6000000 },
+                { cat: 'Science Decor Renovation', item: 'Painting, lighting,Planet, Rocke futuristic/science aesthetic wall art ..etc..', qty: 1, cost: 25000000 },
+                { cat: 'Electronic Modules & Tools', item: 'Oscilloscope, Soldering stations, multimeters, oscilloscopes, wires, PCBs', qty: 1, cost: 5500000 },
+                { cat: 'Fume Chamber ', item: 'Industrial grade PP acid-resistant fume hood with ventilation motor. ', qty: 1, cost: 4500000 },
+                { cat: 'Bambu Lab X1-Carbon Combo', item: '3d printer, engraver, Laser cnc all in one', qty: 1, cost: 11500000 },
+                { cat: 'DaVinci Resolve & 3D Rendering', item: 'and other Softwares', qty: 1, cost: 3000000 },
+                { cat: 'Lab Tables ', item: 'hexagonal table 20pcs', qty: 1, cost: 6000000 },
+                { cat: 'Glassware ', item: 'flask, beaker, cylinders, sprink tubes, gas tubes, ', qty: 1, cost: 6000000 },
+                { cat: 'Reagents, Chemicals', item: 'Initial stock of safe and intermediate chemicals for experiments.', qty: 1, cost: 6000000 },
+                { cat: 'Interactive Display', item: '75-86 inch Touch screen', qty: 1, cost: 10000000 },
+                { cat: 'Salary Fund runway', item: 'Description', qty: 0, cost: 80000000 },
+                { cat: 'Contingency Fund', item: '5%', qty: 1, cost: 12200000 },
+                { cat: 'Logistics, Cargo', item: 'includede everything we buy ', qty: 1, cost: 8000000 },
+                { cat: 'Furniture', item: 'Shelves, storage units, office desks, `', qty: 1, cost: 25000000 },
+                { cat: 'Experiment Event Set\'s', item: 'Everything combined(Science learning tools)', qty: 1, cost: 17000000 },
+                { cat: 'Chemical, biology specs', item: 'Centrifuge, Microscope, atomic scale, Uv chamber, Ultrasonic', qty: 1, cost: 10500000 },
             ],
             opex: [
-                { cat: 'Rent', desc: 'Premise Cost (Monthly)', cost: 4000000 }, // 24M / 6
-                { cat: 'Salaries', desc: 'Teachers, Admin, Cleaner (4-5 Staff)', cost: 13300000 }, // 80M / 6
-                { cat: 'Marketing', desc: 'FB Ads & Content (Monthly)', cost: 2500000 }, // 15M / 6 approx
+                { cat: 'Salaries', desc: 'Teachers, Admin, Cleaner (4-5 Staff)', cost: 8000000 }, // 80M / 6
+                { cat: 'Business Permit', desc: 'FB Ads & Content (Monthly)', cost: 1000000 }, // 15M / 6 approx
                 { cat: 'Utilities', desc: 'Internet, Elec, Heating', cost: 800000 }
             ],
             config: {
-                tuition: 350000,
-                varCost: 25000,
-                boxPrice: 80000,
-                boxCost: 30000,
-                startStudents: 30,
-                growthRate: 5,
-                boxSales: 50,
+                tuition: 1000000,
+                varCost: 100000,
+                boxPrice: 49500,
+                boxCost: 25000,
+                startStudents: 1,
+                growthRate: 1,
+                boxSales: 0,
                 inflation: 6
             }
         };
